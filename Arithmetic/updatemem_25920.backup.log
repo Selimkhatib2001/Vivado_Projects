@@ -1,0 +1,19 @@
+#-----------------------------------------------------------
+# updatemem v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# 
+# Start of session at: Mon Feb 16 11:48:06 2026
+# Process ID: 25920
+# Current directory: d:/Vivado_Projects/Arithmetic
+# Command line: updatemem.exe -mode batch -source D:/Xilinx/SDK/2019.1/scripts/updatemem/main.tcl -notrace -tclargs -meminfo D:/Vivado_Projects/Arithmetic/Arithmetic.sdk/design_1_wrapper_hw_platform_1/design_1_wrapper.mmi -data D:/Xilinx/SDK/2019.1/data/embeddedsw/lib/microblaze/mb_bootloop_le.elf -proc design_1_i/microblaze_0 -bit D:/Vivado_Projects/Arithmetic/Arithmetic.sdk/design_1_wrapper_hw_platform_1/design_1_wrapper.bit -out D:/Vivado_Projects/Arithmetic/Arithmetic.sdk/design_1_wrapper_hw_platform_1/download.bit -force
+# Log file: d:/Vivado_Projects/Arithmetic/updatemem.log
+# Journal file: d:/Vivado_Projects/Arithmetic\updatemem.jou
+#-----------------------------------------------------------
+source D:/Xilinx/SDK/2019.1/scripts/updatemem/main.tcl -notrace
+ Loading bitfile D:/Vivado_Projects/Arithmetic/Arithmetic.sdk/design_1_wrapper_hw_platform_1/design_1_wrapper.bit
+Loading data files...
+Updating memory content...
+Creating bitstream...
+Writing bitstream D:/Vivado_Projects/Arithmetic/Arithmetic.sdk/design_1_wrapper_hw_platform_1/download.bit...
+  update_mem: Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 535.117 ; gain = 443.371
+INFO: [Common 17-206] Exiting updatemem at Mon Feb 16 11:48:20 2026...

@@ -1,0 +1,112 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.2 (win64) Build 6299465 Fri Nov 14 19:35:11 GMT 2025
+| Date         : Mon Jan 19 10:50:33 2026
+| Host         : PC running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
+| Design       : top
+| Device       : xc7a100t
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    34 |
+|    Minimum number of control sets                        |    34 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   108 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    34 |
+| >= 0 to < 4        |     0 |
+| >= 4 to < 6        |     9 |
+| >= 6 to < 8        |     7 |
+| >= 8 to < 10       |     3 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    15 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              58 |           28 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             152 |           45 |
+| Yes          | No                    | No                     |              57 |           21 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             177 |           55 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++------------------------+----------------------------------------------------+------------------------------------------------+------------------+----------------+--------------+
+|      Clock Signal      |                    Enable Signal                   |                Set/Reset Signal                | Slice Load Count | Bel Load Count | Bels / Slice |
++------------------------+----------------------------------------------------+------------------------------------------------+------------------+----------------+--------------+
+|  clk_i_IBUF_BUFG       | inst_lap_timer/view_index__0[0]                    | inst_lap_timer/p_0_in                          |                1 |              4 |         4.00 |
+|  clk_i_IBUF_BUFG       | inst_clock/tick_reg_n_0                            | inst_clock/tick_reg_1                          |                1 |              4 |         4.00 |
+|  clk_i_IBUF_BUFG       | inst_lap_timer/main_mins[7]_i_1_n_0                | inst_lap_timer/main_mins[5]_i_1_n_0            |                1 |              4 |         4.00 |
+|  clk_i_IBUF_BUFG       | inst_lap_timer/main_mins[7]_i_1_n_0                |                                                |                2 |              4 |         2.00 |
+| ~inst_clock/toggle_mod |                                                    |                                                |                2 |              5 |         2.50 |
+|  clk_i_IBUF_BUFG       |                                                    | inst_lap_timer/btn_reg[4]_i_1_n_0              |                2 |              5 |         2.50 |
+|  clk_i_IBUF_BUFG       | inst_lap_timer/main_hrs[6]_i_2_n_0                 | inst_lap_timer/main_hrs[6]_i_1_n_0             |                3 |              5 |         1.67 |
+|  clk_i_IBUF_BUFG       | inst_stopwatch/hours[4]_i_1_n_0                    | GEN_DEBOUNCE[1].deb_inst/rising_pulse_reg_5[0] |                1 |              5 |         5.00 |
+|  clk_i_IBUF_BUFG       | inst_clock/hours[4]_i_1__0_n_0                     |                                                |                3 |              5 |         1.67 |
+|  clk_i_IBUF_BUFG       | insta_countdown/secs[0]                            | GEN_DEBOUNCE[1].deb_inst/SR[0]                 |                3 |              6 |         2.00 |
+|  clk_i_IBUF_BUFG       | GEN_DEBOUNCE[4].deb_inst/E[0]                      |                                                |                4 |              6 |         1.50 |
+|  clk_i_IBUF_BUFG       | inst_stopwatch/secs[5]_i_2_n_0                     | GEN_DEBOUNCE[1].deb_inst/rising_pulse_reg_5[0] |                2 |              6 |         3.00 |
+|  clk_i_IBUF_BUFG       | inst_stopwatch/minutes[5]_i_1_n_0                  | GEN_DEBOUNCE[1].deb_inst/rising_pulse_reg_5[0] |                2 |              6 |         3.00 |
+|  clk_i_IBUF_BUFG       | insta_countdown/minutes[0]                         | GEN_DEBOUNCE[1].deb_inst/SR[0]                 |                3 |              6 |         2.00 |
+|  clk_i_IBUF_BUFG       |                                                    | inst_main_display/sevenseg_o[6]_i_1_n_0        |                5 |              7 |         1.40 |
+|  clk_i_IBUF_BUFG       | insta_countdown/hours[0]                           | GEN_DEBOUNCE[1].deb_inst/SR[0]                 |                5 |              7 |         1.40 |
+|  clk_i_IBUF_BUFG       | inst_lap_timer/main_secs0                          | inst_lap_timer/main_secs__0[0]                 |                2 |              8 |         4.00 |
+|  clk_i_IBUF_BUFG       | inst_main_display/anodes[0]                        |                                                |                2 |              8 |         4.00 |
+|  clk_i_IBUF_BUFG       | inst_lap_display/anodes[0]                         |                                                |                3 |              8 |         2.67 |
+|  clk_i_IBUF_BUFG       | insta_countdown/temp_led[0]                        | GEN_DEBOUNCE[1].deb_inst/SR[0]                 |                6 |             16 |         2.67 |
+|  clk_i_IBUF_BUFG       |                                                    | inst_main_display/anodes[0]                    |                5 |             17 |         3.40 |
+|  clk_i_IBUF_BUFG       |                                                    | inst_lap_display/anodes[0]                     |                5 |             17 |         3.40 |
+|  clk_i_IBUF_BUFG       | GEN_DEBOUNCE[4].deb_inst/counter_reg[0]_i_2__3_n_1 | GEN_DEBOUNCE[4].deb_inst/counter_set           |                5 |             20 |         4.00 |
+|  clk_i_IBUF_BUFG       | GEN_DEBOUNCE[3].deb_inst/counter_reg[0]_i_2__2_n_1 | GEN_DEBOUNCE[3].deb_inst/counter_set           |                5 |             20 |         4.00 |
+|  clk_i_IBUF_BUFG       | GEN_DEBOUNCE[1].deb_inst/counter_reg[0]_i_2__0_n_1 | GEN_DEBOUNCE[1].deb_inst/counter_set           |                5 |             20 |         4.00 |
+|  clk_i_IBUF_BUFG       | GEN_DEBOUNCE[2].deb_inst/counter_reg[0]_i_2__1_n_1 | GEN_DEBOUNCE[2].deb_inst/counter_set           |                5 |             20 |         4.00 |
+|  clk_i_IBUF_BUFG       | GEN_DEBOUNCE[0].deb_inst/counter_reg[0]_i_2_n_1    | GEN_DEBOUNCE[0].deb_inst/counter_set           |                5 |             20 |         4.00 |
+|  clk_i_IBUF_BUFG       |                                                    | inst_lap_timer/timer_cnt[26]_i_1_n_0           |                7 |             26 |         3.71 |
+|  clk_i_IBUF_BUFG       | insta_countdown/timer_2Hz[0]_i_1_n_0               |                                                |                7 |             26 |         3.71 |
+|  clk_i_IBUF_BUFG       |                                                    | inst_clock/timer[26]_i_1__0_n_0                |                7 |             26 |         3.71 |
+|  clk_i_IBUF_BUFG       |                                                    | GEN_DEBOUNCE[1].deb_inst/rising_pulse_reg_0    |                7 |             27 |         3.86 |
+|  clk_i_IBUF_BUFG       |                                                    | inst_stopwatch/timer[26]_i_1_n_0               |                7 |             27 |         3.86 |
+|  clk_i_IBUF_BUFG       | inst_lap_timer/lap_sec_arr_reg_0_15_0_5_i_1_n_0    |                                                |                4 |             32 |         8.00 |
+|  clk_i_IBUF_BUFG       |                                                    |                                                |               26 |             53 |         2.04 |
++------------------------+----------------------------------------------------+------------------------------------------------+------------------+----------------+--------------+
+
+

@@ -1,0 +1,33 @@
+{
+	"version": "1.0",
+	"modules": {
+		"design_1": {
+			"proto_instances": {
+				"/div_gen_0/M_AXIS_DOUT": {
+					"interface": "xilinx.com:interface:axis:1.0",
+					"ports": {
+						"ACLK": { "actual": "aclk"},
+						"TDATA": { "actual": "m_axis_dout_tdata"},
+						"TVALID": { "actual": "m_axis_dout_tvalid"}
+					}
+				},
+				"/div_gen_0/S_AXIS_DIVIDEND": {
+					"interface": "xilinx.com:interface:axis:1.0",
+					"ports": {
+						"ACLK": { "actual": "aclk"},
+						"TDATA": { "actual": "s_axis_dividend_tdata"},
+						"TVALID": { "actual": "s_axis_dividend_tvalid"}
+					}
+				},
+				"/div_gen_0/S_AXIS_DIVISOR": {
+					"interface": "xilinx.com:interface:axis:1.0",
+					"ports": {
+						"ACLK": { "actual": "aclk"},
+						"TDATA": { "actual": "s_axis_divisor_tdata"},
+						"TVALID": { "actual": "s_axis_divisor_tvalid"}
+					}
+				}
+			}
+		}
+	}
+}

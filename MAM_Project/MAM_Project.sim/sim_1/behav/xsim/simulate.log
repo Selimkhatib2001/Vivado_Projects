@@ -1,0 +1,19 @@
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+Warning: DRC Warning : The IOSTANDARD attribute on IOBUFDS instance is either set to LVDS_25 or LVDSEXT_25. These are fixed impedance structure optimized to 100ohm differential. If the intended usage is a bus architecture, please use BLVDS. This is only intended to be used in point to point transmissions that do not have turn around timing requirements
+Time: 0 ps  Iteration: 0  Process: /data_generator_tb/uut/IOBUFDS_inst_3/prcs_init  File: D:\Xilinx\Vivado\2019.1\data/vhdl/src/unisims/primitive/IOBUFDS.vhd
+Warning: DRC Warning : The IOSTANDARD attribute on IOBUFDS instance is either set to LVDS_25 or LVDSEXT_25. These are fixed impedance structure optimized to 100ohm differential. If the intended usage is a bus architecture, please use BLVDS. This is only intended to be used in point to point transmissions that do not have turn around timing requirements
+Time: 0 ps  Iteration: 0  Process: /data_generator_tb/uut/IOBUFDS_inst_2/prcs_init  File: D:\Xilinx\Vivado\2019.1\data/vhdl/src/unisims/primitive/IOBUFDS.vhd
+Warning: DRC Warning : The IOSTANDARD attribute on IOBUFDS instance is either set to LVDS_25 or LVDSEXT_25. These are fixed impedance structure optimized to 100ohm differential. If the intended usage is a bus architecture, please use BLVDS. This is only intended to be used in point to point transmissions that do not have turn around timing requirements
+Time: 0 ps  Iteration: 0  Process: /data_generator_tb/uut/IOBUFDS_inst_1/prcs_init  File: D:\Xilinx\Vivado\2019.1\data/vhdl/src/unisims/primitive/IOBUFDS.vhd
+Warning: HATA: LVDS Data hatlarý ayný deðerde! (Short circuit simulation)
+Time: 0 ps  Iteration: 0  Process: /data_generator_tb/monitor_proc  File: D:/Vivado_Projects/MAM_Project/MAM_Project.srcs/sim_1/new/data_generator_tb.vhd
+Warning: HATA: LVDS Data hatlarý ayný deðerde! (Short circuit simulation)
+Time: 0 ps  Iteration: 1  Process: /data_generator_tb/monitor_proc  File: D:/Vivado_Projects/MAM_Project/MAM_Project.srcs/sim_1/new/data_generator_tb.vhd
+Warning: HATA: LVDS Data hatlarý ayný deðerde! (Short circuit simulation)
+Time: 0 ps  Iteration: 3  Process: /data_generator_tb/monitor_proc  File: D:/Vivado_Projects/MAM_Project/MAM_Project.srcs/sim_1/new/data_generator_tb.vhd
+Note: Simulasyon Basladi...
+Time: 100 ns  Iteration: 0  Process: /data_generator_tb/stim_proc  File: D:/Vivado_Projects/MAM_Project/MAM_Project.srcs/sim_1/new/data_generator_tb.vhd
+Failure: SIM DONE
+Time: 100100 ns  Iteration: 0  Process: /data_generator_tb/stim_proc  File: D:/Vivado_Projects/MAM_Project/MAM_Project.srcs/sim_1/new/data_generator_tb.vhd
+$finish called at time : 100100 ns : File "D:/Vivado_Projects/MAM_Project/MAM_Project.srcs/sim_1/new/data_generator_tb.vhd" Line 92

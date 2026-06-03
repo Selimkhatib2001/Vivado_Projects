@@ -1,0 +1,7 @@
+set_property SRC_FILE_INFO {cfile:D:/Vivado_Projects/Zynq_Workspace/Zynq_Workspace.srcs/constrs_1/new/config.xdc rfile:../../../Zynq_Workspace.srcs/constrs_1/new/config.xdc id:1} [current_design]
+set_property src_info {type:XDC file:1 line:4 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN J20 [get_ports signal_o_p_2]
+set_property src_info {type:XDC file:1 line:6 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN Y19 [get_ports signal_i]
+set_property src_info {type:XDC file:1 line:7 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN U14 [get_ports clk_i]

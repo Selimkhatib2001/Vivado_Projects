@@ -1,0 +1,224 @@
+#include "xaxidma.h"
+#include "xparameters.h"
+#include "xil_exception.h"
+#include "xdebug.h"
+#include "xscugic.h"
+#include "xil_printf.h"
+
+// DMA Device ID
+#define DMA_DEV_ID		XPAR_AXIDMA_0_DEVICE_ID
+
+
+#define MEM_BASE_ADDR		0x01000000
+
+// Interrupt IDs
+#define RX_INTR_ID		XPAR_FABRIC_AXI_DMA_0_S2MM_INTROUT_INTR
+
+
+#define FIFO_INTR_ID	62
+
+
+#define RX_BUFFER_BASE		(MEM_BASE_ADDR + 0x00300000)
+
+#define INTC_DEVICE_ID      XPAR_SCUGIC_SINGLE_DEVICE_ID
+#define INTC				XScuGic
+#define INTC_HANDLER		XScuGic_InterruptHandler
+
+#define RESET_TIMEOUT_COUNTER	10000
+
+#define TRANSFER_LEN		(656 * 4)
+
+static void RxIntrHandler(void *Callback);
+static void FifoIntrHandler(void *Callback);
+
+static int SetupIntrSystem(XScuGic * IntcInstancePtr, XAxiDma * AxiDmaPtr, u16 RxIntrId, u16 FifoIntrId);
+int XAxiDma_TransferExample(u16 DeviceId);
+
+static XAxiDma AxiDma;		// Instance of the XAxiDma
+static INTC Intc;			// Instance of the Interrupt Controller
+
+// Bayraklar/Flags
+volatile int RxDone;
+volatile int Error;
+volatile int FifoInterruptProcessed = 0;
+
+int main()
+{
+	int Status;
+
+	xil_printf("\r\n--- Entering main() --- \r\n");
+
+	Status = XAxiDma_TransferExample(DMA_DEV_ID);
+
+	if (Status != XST_SUCCESS) {
+		xil_printf("XAxiDma Example Failed\r\n");
+		return XST_FAILURE;
+	}
+
+	xil_printf("Successfully ran XAxiDma Example\r\n");
+	xil_printf("--- Exiting main() --- \r\n");
+
+	return XST_SUCCESS;
+}
+
+int XAxiDma_TransferExample(u16 DeviceId)
+{
+	XAxiDma_Config *CfgPtr;
+	int Status;
+	u8 *RxBufferPtr;
+
+	RxBufferPtr = (u8 *)RX_BUFFER_BASE;
+
+	CfgPtr = XAxiDma_LookupConfig(DMA_DEV_ID);
+	if (!CfgPtr) {
+		xil_printf("No config found for %d\r\n", DMA_DEV_ID);
+		return XST_FAILURE;
+	}
+
+	Status = XAxiDma_CfgInitialize(&AxiDma, CfgPtr);
+	if (Status != XST_SUCCESS) {
+		xil_printf("Initialization failed %d\r\n", Status);
+		return XST_FAILURE;
+	}
+
+	if(XAxiDma_HasSg(&AxiDma)){
+		xil_printf("Device configured as SG mode \r\n");
+		return XST_FAILURE;
+	}
+
+	Status = SetupIntrSystem(&Intc, &AxiDma, RX_INTR_ID, FIFO_INTR_ID);
+	if (Status != XST_SUCCESS) {
+		xil_printf("Failed intr setup\r\n");
+		return XST_FAILURE;
+	}
+
+	XAxiDma_IntrDisable(&AxiDma, XAXIDMA_IRQ_ALL_MASK, XAXIDMA_DEVICE_TO_DMA);
+	XAxiDma_IntrEnable(&AxiDma, XAXIDMA_IRQ_ALL_MASK, XAXIDMA_DEVICE_TO_DMA);
+
+	RxDone = 0;
+	Error = 0;
+	FifoInterruptProcessed = 0;
+
+	xil_printf("Waiting for FIFO to collect 3000 elements...\r\n");
+	u8 test_value = 0;
+	for(;;) {
+
+		if (FifoInterruptProcessed == 1) {
+			FifoInterruptProcessed = 0;
+
+			if(test_value == 255 ){
+				test_value = 0;
+			}else {
+				test_value++;
+			}
+
+			Status = XAxiDma_SimpleTransfer(&AxiDma, (UINTPTR) RxBufferPtr,
+					TRANSFER_LEN, XAXIDMA_DEVICE_TO_DMA);
+
+			if (Status != XST_SUCCESS) {
+				return XST_FAILURE;
+			}
+
+			while (!RxDone && !Error) {
+
+			}
+
+			RxDone = 0;
+		}
+
+
+
+	}
+
+	XScuGic_Disconnect(&Intc, RX_INTR_ID);
+	XScuGic_Disconnect(&Intc, FIFO_INTR_ID);
+
+	return XST_SUCCESS;
+}
+
+
+static int SetupIntrSystem(XScuGic * IntcInstancePtr, XAxiDma * AxiDmaPtr, u16 RxIntrId, u16 FifoIntrId)
+{
+	int Status;
+	XScuGic_Config *IntcConfig;
+
+
+	IntcConfig = XScuGic_LookupConfig(INTC_DEVICE_ID);
+	if (NULL == IntcConfig) {
+		return XST_FAILURE;
+	}
+
+	Status = XScuGic_CfgInitialize(IntcInstancePtr, IntcConfig, IntcConfig->CpuBaseAddress);
+	if (Status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
+
+
+	XScuGic_SetPriorityTriggerType(IntcInstancePtr, RxIntrId, 0xA0, 0x3);
+	XScuGic_SetPriorityTriggerType(IntcInstancePtr, FifoIntrId, 0xA0, 0x3);
+
+	Status = XScuGic_Connect(IntcInstancePtr, RxIntrId,
+			(Xil_InterruptHandler)RxIntrHandler,
+			AxiDmaPtr);
+	if (Status != XST_SUCCESS) {
+		return Status;
+	}
+
+	Status = XScuGic_Connect(IntcInstancePtr, FifoIntrId,
+			(Xil_InterruptHandler)FifoIntrHandler,
+			NULL);
+	if (Status != XST_SUCCESS) {
+		return Status;
+	}
+
+	XScuGic_Enable(IntcInstancePtr, RxIntrId);
+	XScuGic_Enable(IntcInstancePtr, FifoIntrId);
+
+	Xil_ExceptionInit();
+	Xil_ExceptionRegisterHandler(XIL_EXCEPTION_ID_INT,
+			(Xil_ExceptionHandler)INTC_HANDLER,
+			(void *)IntcInstancePtr);
+
+	Xil_ExceptionEnable();
+
+	return XST_SUCCESS;
+}
+
+static void FifoIntrHandler(void *Callback)
+{
+	FifoInterruptProcessed = 1;
+}
+
+static void RxIntrHandler(void *Callback)
+{
+	u32 IrqStatus;
+	int TimeOut;
+	XAxiDma *AxiDmaInst = (XAxiDma *)Callback;
+
+	IrqStatus = XAxiDma_IntrGetIrq(AxiDmaInst, XAXIDMA_DEVICE_TO_DMA);
+
+	XAxiDma_IntrAckIrq(AxiDmaInst, IrqStatus, XAXIDMA_DEVICE_TO_DMA);
+
+	if (!(IrqStatus & XAXIDMA_IRQ_ALL_MASK)) {
+		return;
+	}
+
+	if ((IrqStatus & XAXIDMA_IRQ_ERROR_MASK)) {
+
+		Error = 1;
+
+		XAxiDma_Reset(AxiDmaInst);
+		TimeOut = RESET_TIMEOUT_COUNTER;
+		while (TimeOut) {
+			if(XAxiDma_ResetIsDone(AxiDmaInst)) {
+				break;
+			}
+			TimeOut -= 1;
+		}
+		return;
+	}
+
+	if ((IrqStatus & XAXIDMA_IRQ_IOC_MASK)) {
+		RxDone = 1;
+	}
+}

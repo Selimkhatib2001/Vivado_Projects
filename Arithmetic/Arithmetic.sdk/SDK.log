@@ -1,0 +1,703 @@
+12:03:19 INFO  : Registering command handlers for SDK TCF services
+12:03:20 INFO  : Launching XSCT server: xsct.bat -interactive D:\Vivado_Projects\Arithmetic\Arithmetic.sdk\temp_xsdb_launch_script.tcl
+12:03:23 INFO  : XSCT server has started successfully.
+12:03:23 INFO  : Successfully done setting XSCT server connection channel  
+12:03:23 INFO  : Successfully done setting SDK workspace  
+12:03:23 INFO  : Processing command line option -hwspec D:/Vivado_Projects/Arithmetic/Arithmetic.sdk/design_1_wrapper.hdf.
+12:04:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:04:51 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB3100A" && level==0} -index 0' command is executed.
+12:04:53 INFO  : FPGA configured successfully with bitstream "D:/Vivado_Projects/Arithmetic/Arithmetic.sdk/design_1_wrapper_hw_platform_0/download.bit"
+12:05:45 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB3100A" && level==0} -index 0' command is executed.
+12:05:45 INFO  : 'fpga -state' command is executed.
+12:05:45 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:05:45 INFO  : Jtag cable 'Digilent Nexys A7 -100T 210292BB3100A' is selected.
+12:05:45 INFO  : 'jtag frequency' command is executed.
+12:05:45 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+12:05:45 INFO  : Context for processor 'microblaze_0' is selected.
+12:05:45 INFO  : Processor reset is completed for 'microblaze_0'.
+12:05:45 INFO  : Context for processor 'microblaze_0' is selected.
+12:05:45 INFO  : The application 'D:/Vivado_Projects/Arithmetic/Arithmetic.sdk/arith_soft/Debug/arith_soft.elf' is downloaded to processor 'microblaze_0'.
+12:05:45 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB3100A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB3100A"} -index 0
+dow D:/Vivado_Projects/Arithmetic/Arithmetic.sdk/arith_soft/Debug/arith_soft.elf
+----------------End of Script----------------
+
+12:05:46 INFO  : Memory regions updated for context PA
+12:05:46 INFO  : Memory regions updated for context PA
+12:05:46 INFO  : Context for processor 'microblaze_0' is selected.
+12:05:46 INFO  : 'con' command is executed.
+12:05:46 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB3100A"} -index 0
+con
+----------------End of Script----------------
+
+12:05:46 INFO  : Launch script is exported to file 'D:\Vivado_Projects\Arithmetic\Arithmetic.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_arith_soft.elf_on_local.tcl'
+12:05:58 INFO  : Disconnected from the channel tcfchan#1.
+12:05:59 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB3100A" && level==0} -index 0' command is executed.
+12:05:59 INFO  : 'fpga -state' command is executed.
+12:05:59 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:05:59 INFO  : Jtag cable 'Digilent Nexys A7 -100T 210292BB3100A' is selected.
+12:05:59 INFO  : 'jtag frequency' command is executed.
+12:05:59 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+12:05:59 INFO  : Context for processor 'microblaze_0' is selected.
+12:06:00 INFO  : Processor reset is completed for 'microblaze_0'.
+12:06:00 INFO  : Context for processor 'microblaze_0' is selected.
+12:06:00 INFO  : The application 'D:/Vivado_Projects/Arithmetic/Arithmetic.sdk/arith_soft/Debug/arith_soft.elf' is downloaded to processor 'microblaze_0'.
+12:06:00 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB3100A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB3100A"} -index 0
+dow D:/Vivado_Projects/Arithmetic/Arithmetic.sdk/arith_soft/Debug/arith_soft.elf
+----------------End of Script----------------
+
+12:06:00 INFO  : Memory regions updated for context PA
+12:06:00 INFO  : Memory regions updated for context PA
+12:06:00 INFO  : Context for processor 'microblaze_0' is selected.
+12:06:00 INFO  : 'con' command is executed.
+12:06:00 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB3100A"} -index 0
+con
+----------------End of Script----------------
+
+12:06:00 INFO  : Launch script is exported to file 'D:\Vivado_Projects\Arithmetic\Arithmetic.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_arith_soft.elf_on_local.tcl'
+12:06:24 INFO  : Disconnected from the channel tcfchan#2.
+12:06:58 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB3100A" && level==0} -index 0' command is executed.
+12:06:58 INFO  : 'fpga -state' command is executed.
+12:06:58 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:06:58 INFO  : Jtag cable 'Digilent Nexys A7 -100T 210292BB3100A' is selected.
+12:06:58 INFO  : 'jtag frequency' command is executed.
+12:06:58 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+12:06:58 INFO  : Context for processor 'microblaze_0' is selected.
+12:06:58 INFO  : Processor reset is completed for 'microblaze_0'.
+12:06:58 INFO  : Context for processor 'microblaze_0' is selected.
+12:06:58 INFO  : The application 'D:/Vivado_Projects/Arithmetic/Arithmetic.sdk/arith_soft/Debug/arith_soft.elf' is downloaded to processor 'microblaze_0'.
+12:06:58 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB3100A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB3100A"} -index 0
+dow D:/Vivado_Projects/Arithmetic/Arithmetic.sdk/arith_soft/Debug/arith_soft.elf
+----------------End of Script----------------
+
+12:06:59 INFO  : Memory regions updated for context PA
+12:06:59 INFO  : Memory regions updated for context PA
+12:06:59 INFO  : Context for processor 'microblaze_0' is selected.
+12:06:59 INFO  : 'con' command is executed.
+12:06:59 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB3100A"} -index 0
+con
+----------------End of Script----------------
+
+12:06:59 INFO  : Launch script is exported to file 'D:\Vivado_Projects\Arithmetic\Arithmetic.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_arith_soft.elf_on_local.tcl'
+12:07:25 INFO  : Disconnected from the channel tcfchan#3.
+12:07:27 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB3100A" && level==0} -index 0' command is executed.
+12:07:27 INFO  : 'fpga -state' command is executed.
+12:07:27 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:07:28 INFO  : Jtag cable 'Digilent Nexys A7 -100T 210292BB3100A' is selected.
+12:07:28 INFO  : 'jtag frequency' command is executed.
+12:07:28 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+12:07:28 INFO  : Context for processor 'microblaze_0' is selected.
+12:07:28 INFO  : Processor reset is completed for 'microblaze_0'.
+12:07:28 INFO  : Context for processor 'microblaze_0' is selected.
+12:07:28 INFO  : The application 'D:/Vivado_Projects/Arithmetic/Arithmetic.sdk/arith_soft/Debug/arith_soft.elf' is downloaded to processor 'microblaze_0'.
+12:07:28 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB3100A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB3100A"} -index 0
+dow D:/Vivado_Projects/Arithmetic/Arithmetic.sdk/arith_soft/Debug/arith_soft.elf
+----------------End of Script----------------
+
+12:07:28 INFO  : Memory regions updated for context PA
+12:07:28 INFO  : Memory regions updated for context PA
+12:07:28 INFO  : Context for processor 'microblaze_0' is selected.
+12:07:28 INFO  : 'con' command is executed.
+12:07:28 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB3100A"} -index 0
+con
+----------------End of Script----------------
+
+12:07:28 INFO  : Launch script is exported to file 'D:\Vivado_Projects\Arithmetic\Arithmetic.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_arith_soft.elf_on_local.tcl'
+12:09:20 INFO  : Disconnected from the channel tcfchan#4.
+12:09:21 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB3100A" && level==0} -index 0' command is executed.
+12:09:21 INFO  : 'fpga -state' command is executed.
+12:09:21 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:09:21 INFO  : Jtag cable 'Digilent Nexys A7 -100T 210292BB3100A' is selected.
+12:09:21 INFO  : 'jtag frequency' command is executed.
+12:09:21 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+12:09:21 INFO  : Context for processor 'microblaze_0' is selected.
+12:09:22 INFO  : Processor reset is completed for 'microblaze_0'.
+12:09:22 INFO  : Context for processor 'microblaze_0' is selected.
+12:09:22 INFO  : The application 'D:/Vivado_Projects/Arithmetic/Arithmetic.sdk/arith_soft/Debug/arith_soft.elf' is downloaded to processor 'microblaze_0'.
+12:09:22 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB3100A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB3100A"} -index 0
+dow D:/Vivado_Projects/Arithmetic/Arithmetic.sdk/arith_soft/Debug/arith_soft.elf
+----------------End of Script----------------
+
+12:09:22 INFO  : Memory regions updated for context PA
+12:09:22 INFO  : Memory regions updated for context PA
+12:09:22 INFO  : Context for processor 'microblaze_0' is selected.
+12:09:22 INFO  : 'con' command is executed.
+12:09:22 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB3100A"} -index 0
+con
+----------------End of Script----------------
+
+12:09:22 INFO  : Launch script is exported to file 'D:\Vivado_Projects\Arithmetic\Arithmetic.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_arith_soft.elf_on_local.tcl'
+12:10:45 INFO  : Disconnected from the channel tcfchan#5.
+12:10:48 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB3100A" && level==0} -index 0' command is executed.
+12:10:48 INFO  : 'fpga -state' command is executed.
+12:10:48 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:10:48 INFO  : Jtag cable 'Digilent Nexys A7 -100T 210292BB3100A' is selected.
+12:10:48 INFO  : 'jtag frequency' command is executed.
+12:10:48 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+12:10:48 INFO  : Context for processor 'microblaze_0' is selected.
+12:10:48 INFO  : Processor reset is completed for 'microblaze_0'.
+12:10:48 INFO  : Context for processor 'microblaze_0' is selected.
+12:10:48 INFO  : The application 'D:/Vivado_Projects/Arithmetic/Arithmetic.sdk/arith_soft/Debug/arith_soft.elf' is downloaded to processor 'microblaze_0'.
+12:10:48 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB3100A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB3100A"} -index 0
+dow D:/Vivado_Projects/Arithmetic/Arithmetic.sdk/arith_soft/Debug/arith_soft.elf
+----------------End of Script----------------
+
+12:10:48 INFO  : Memory regions updated for context PA
+12:10:48 INFO  : Memory regions updated for context PA
+12:10:48 INFO  : Context for processor 'microblaze_0' is selected.
+12:10:48 INFO  : 'con' command is executed.
+12:10:48 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB3100A"} -index 0
+con
+----------------End of Script----------------
+
+12:10:48 INFO  : Launch script is exported to file 'D:\Vivado_Projects\Arithmetic\Arithmetic.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_arith_soft.elf_on_local.tcl'
+12:19:57 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1771237051921,  Project:1771230664648
+12:19:57 INFO  : Project design_1_wrapper_hw_platform_0's source hardware specification located at D:/Vivado_Projects/Arithmetic/Arithmetic.sdk/design_1_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+12:20:01 INFO  : Copied contents of D:/Vivado_Projects/Arithmetic/Arithmetic.sdk/design_1_wrapper.hdf into \design_1_wrapper_hw_platform_0\system.hdf.
+12:20:02 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+12:20:04 INFO  : 
+12:20:05 INFO  : Updating hardware inferred compiler options for arith_soft.
+12:20:05 INFO  : Clearing existing target manager status.
+12:20:05 INFO  : Closing and re-opening the MSS file of ther project arith_soft_bsp
+12:20:06 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+12:20:08 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+12:22:17 INFO  : The new hardware specification file contains the same information as the current specification file. No changes were done to the workspace.
+12:34:44 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1771237987690,  Project:1771237051921
+12:34:44 INFO  : Project design_1_wrapper_hw_platform_0's source hardware specification located at D:\Vivado_Projects\Arithmetic\Arithmetic.sdk\design_1_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+12:35:00 INFO  : Copied contents of D:\Vivado_Projects\Arithmetic\Arithmetic.sdk\design_1_wrapper.hdf into \design_1_wrapper_hw_platform_0\system.hdf.
+12:35:00 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+12:35:03 INFO  : 
+12:35:04 INFO  : Updating hardware inferred compiler options for arith_soft.
+12:35:04 INFO  : Clearing existing target manager status.
+12:35:04 INFO  : Closing and re-opening the MSS file of ther project arith_soft_bsp
+12:35:05 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+12:35:07 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+12:40:57 INFO  : Disconnected from the channel tcfchan#6.
+12:40:58 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB3100A" && level==0} -index 0' command is executed.
+12:40:58 INFO  : 'fpga -state' command is executed.
+12:40:58 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:40:58 INFO  : Jtag cable 'Digilent Nexys A7 -100T 210292BB3100A' is selected.
+12:40:58 INFO  : 'jtag frequency' command is executed.
+12:40:58 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+12:40:58 INFO  : Context for processor 'microblaze_0' is selected.
+12:40:59 INFO  : Processor reset is completed for 'microblaze_0'.
+12:40:59 INFO  : Context for processor 'microblaze_0' is selected.
+12:40:59 INFO  : The application 'D:/Vivado_Projects/Arithmetic/Arithmetic.sdk/arith_soft/Debug/arith_soft.elf' is downloaded to processor 'microblaze_0'.
+12:40:59 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB3100A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB3100A"} -index 0
+dow D:/Vivado_Projects/Arithmetic/Arithmetic.sdk/arith_soft/Debug/arith_soft.elf
+----------------End of Script----------------
+
+12:40:59 INFO  : Memory regions updated for context PA
+12:40:59 INFO  : Memory regions updated for context PA
+12:40:59 INFO  : Context for processor 'microblaze_0' is selected.
+12:40:59 INFO  : 'con' command is executed.
+12:40:59 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB3100A"} -index 0
+con
+----------------End of Script----------------
+
+12:40:59 INFO  : Launch script is exported to file 'D:\Vivado_Projects\Arithmetic\Arithmetic.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_arith_soft.elf_on_local.tcl'
+12:46:17 INFO  : Disconnected from the channel tcfchan#7.
+12:46:18 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB3100A" && level==0} -index 0' command is executed.
+12:46:18 INFO  : 'fpga -state' command is executed.
+12:46:18 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:46:18 INFO  : Jtag cable 'Digilent Nexys A7 -100T 210292BB3100A' is selected.
+12:46:18 INFO  : 'jtag frequency' command is executed.
+12:46:18 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+12:46:18 INFO  : Context for processor 'microblaze_0' is selected.
+12:46:18 INFO  : Processor reset is completed for 'microblaze_0'.
+12:46:18 INFO  : Context for processor 'microblaze_0' is selected.
+12:46:18 INFO  : The application 'D:/Vivado_Projects/Arithmetic/Arithmetic.sdk/arith_soft/Debug/arith_soft.elf' is downloaded to processor 'microblaze_0'.
+12:46:18 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB3100A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB3100A"} -index 0
+dow D:/Vivado_Projects/Arithmetic/Arithmetic.sdk/arith_soft/Debug/arith_soft.elf
+----------------End of Script----------------
+
+12:46:18 INFO  : Memory regions updated for context PA
+12:46:18 INFO  : Memory regions updated for context PA
+12:46:18 INFO  : Context for processor 'microblaze_0' is selected.
+12:46:18 INFO  : 'con' command is executed.
+12:46:18 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB3100A"} -index 0
+con
+----------------End of Script----------------
+
+12:46:18 INFO  : Launch script is exported to file 'D:\Vivado_Projects\Arithmetic\Arithmetic.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_arith_soft.elf_on_local.tcl'
+12:56:10 INFO  : Disconnected from the channel tcfchan#8.
+12:56:11 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB3100A" && level==0} -index 0' command is executed.
+12:56:11 INFO  : 'fpga -state' command is executed.
+12:56:11 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:56:11 INFO  : Jtag cable 'Digilent Nexys A7 -100T 210292BB3100A' is selected.
+12:56:11 INFO  : 'jtag frequency' command is executed.
+12:56:11 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+12:56:12 INFO  : Context for processor 'microblaze_0' is selected.
+12:56:12 INFO  : Processor reset is completed for 'microblaze_0'.
+12:56:12 INFO  : Context for processor 'microblaze_0' is selected.
+12:56:12 INFO  : The application 'D:/Vivado_Projects/Arithmetic/Arithmetic.sdk/arith_soft/Debug/arith_soft.elf' is downloaded to processor 'microblaze_0'.
+12:56:12 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB3100A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB3100A"} -index 0
+dow D:/Vivado_Projects/Arithmetic/Arithmetic.sdk/arith_soft/Debug/arith_soft.elf
+----------------End of Script----------------
+
+12:56:12 INFO  : Memory regions updated for context PA
+12:56:12 INFO  : Memory regions updated for context PA
+12:56:12 INFO  : Context for processor 'microblaze_0' is selected.
+12:56:12 INFO  : 'con' command is executed.
+12:56:12 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB3100A"} -index 0
+con
+----------------End of Script----------------
+
+12:56:12 INFO  : Launch script is exported to file 'D:\Vivado_Projects\Arithmetic\Arithmetic.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_arith_soft.elf_on_local.tcl'
+13:18:55 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1771240665617,  Project:1771237987690
+13:18:55 INFO  : Project design_1_wrapper_hw_platform_0's source hardware specification located at D:\Vivado_Projects\Arithmetic\Arithmetic.sdk\design_1_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+13:18:58 INFO  : Copied contents of D:\Vivado_Projects\Arithmetic\Arithmetic.sdk\design_1_wrapper.hdf into \design_1_wrapper_hw_platform_0\system.hdf.
+13:18:58 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+13:19:01 INFO  : 
+13:19:02 INFO  : Updating hardware inferred compiler options for arith_soft.
+13:19:02 INFO  : Clearing existing target manager status.
+13:19:02 INFO  : Closing and re-opening the MSS file of ther project arith_soft_bsp
+13:19:03 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+13:19:05 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+13:19:45 INFO  : Disconnected from the channel tcfchan#9.
+13:19:47 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB3100A" && level==0} -index 0' command is executed.
+13:19:47 INFO  : 'fpga -state' command is executed.
+13:19:47 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:19:47 INFO  : Jtag cable 'Digilent Nexys A7 -100T 210292BB3100A' is selected.
+13:19:47 INFO  : 'jtag frequency' command is executed.
+13:19:47 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+13:19:47 INFO  : Context for processor 'microblaze_0' is selected.
+13:19:47 INFO  : Processor reset is completed for 'microblaze_0'.
+13:19:47 INFO  : Context for processor 'microblaze_0' is selected.
+13:19:47 INFO  : The application 'D:/Vivado_Projects/Arithmetic/Arithmetic.sdk/arith_soft/Debug/arith_soft.elf' is downloaded to processor 'microblaze_0'.
+13:19:47 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB3100A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB3100A"} -index 0
+dow D:/Vivado_Projects/Arithmetic/Arithmetic.sdk/arith_soft/Debug/arith_soft.elf
+----------------End of Script----------------
+
+13:19:47 INFO  : Memory regions updated for context PA
+13:19:47 INFO  : Memory regions updated for context PA
+13:19:47 INFO  : Context for processor 'microblaze_0' is selected.
+13:19:47 INFO  : 'con' command is executed.
+13:19:47 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB3100A"} -index 0
+con
+----------------End of Script----------------
+
+13:19:47 INFO  : Launch script is exported to file 'D:\Vivado_Projects\Arithmetic\Arithmetic.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_arith_soft.elf_on_local.tcl'
+13:20:37 INFO  : Disconnected from the channel tcfchan#10.
+13:20:38 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB3100A" && level==0} -index 0' command is executed.
+13:20:38 INFO  : 'fpga -state' command is executed.
+13:20:38 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:20:38 INFO  : Jtag cable 'Digilent Nexys A7 -100T 210292BB3100A' is selected.
+13:20:38 INFO  : 'jtag frequency' command is executed.
+13:20:38 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+13:20:38 INFO  : Context for processor 'microblaze_0' is selected.
+13:20:38 INFO  : Processor reset is completed for 'microblaze_0'.
+13:20:38 INFO  : Context for processor 'microblaze_0' is selected.
+13:20:38 INFO  : The application 'D:/Vivado_Projects/Arithmetic/Arithmetic.sdk/arith_soft/Debug/arith_soft.elf' is downloaded to processor 'microblaze_0'.
+13:20:38 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB3100A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB3100A"} -index 0
+dow D:/Vivado_Projects/Arithmetic/Arithmetic.sdk/arith_soft/Debug/arith_soft.elf
+----------------End of Script----------------
+
+13:20:39 INFO  : Memory regions updated for context PA
+13:20:39 INFO  : Memory regions updated for context PA
+13:20:39 INFO  : Context for processor 'microblaze_0' is selected.
+13:20:39 INFO  : 'con' command is executed.
+13:20:39 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB3100A"} -index 0
+con
+----------------End of Script----------------
+
+13:20:39 INFO  : Launch script is exported to file 'D:\Vivado_Projects\Arithmetic\Arithmetic.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_arith_soft.elf_on_local.tcl'
+13:22:46 INFO  : Disconnected from the channel tcfchan#11.
+13:22:47 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB3100A" && level==0} -index 0' command is executed.
+13:22:47 INFO  : 'fpga -state' command is executed.
+13:22:47 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:22:47 INFO  : Jtag cable 'Digilent Nexys A7 -100T 210292BB3100A' is selected.
+13:22:47 INFO  : 'jtag frequency' command is executed.
+13:22:47 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+13:22:47 INFO  : Context for processor 'microblaze_0' is selected.
+13:22:47 INFO  : Processor reset is completed for 'microblaze_0'.
+13:22:47 INFO  : Context for processor 'microblaze_0' is selected.
+13:22:48 INFO  : The application 'D:/Vivado_Projects/Arithmetic/Arithmetic.sdk/arith_soft/Debug/arith_soft.elf' is downloaded to processor 'microblaze_0'.
+13:22:48 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB3100A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB3100A"} -index 0
+dow D:/Vivado_Projects/Arithmetic/Arithmetic.sdk/arith_soft/Debug/arith_soft.elf
+----------------End of Script----------------
+
+13:22:48 INFO  : Memory regions updated for context PA
+13:22:48 INFO  : Memory regions updated for context PA
+13:22:48 INFO  : Context for processor 'microblaze_0' is selected.
+13:22:48 INFO  : 'con' command is executed.
+13:22:48 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB3100A"} -index 0
+con
+----------------End of Script----------------
+
+13:22:48 INFO  : Launch script is exported to file 'D:\Vivado_Projects\Arithmetic\Arithmetic.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_arith_soft.elf_on_local.tcl'
+13:28:06 INFO  : Disconnected from the channel tcfchan#12.
+13:28:07 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB3100A" && level==0} -index 0' command is executed.
+13:28:07 INFO  : 'fpga -state' command is executed.
+13:28:07 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:28:07 INFO  : Jtag cable 'Digilent Nexys A7 -100T 210292BB3100A' is selected.
+13:28:07 INFO  : 'jtag frequency' command is executed.
+13:28:07 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+13:28:07 INFO  : Context for processor 'microblaze_0' is selected.
+13:28:07 INFO  : Processor reset is completed for 'microblaze_0'.
+13:28:07 INFO  : Context for processor 'microblaze_0' is selected.
+13:28:07 INFO  : The application 'D:/Vivado_Projects/Arithmetic/Arithmetic.sdk/arith_soft/Debug/arith_soft.elf' is downloaded to processor 'microblaze_0'.
+13:28:07 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB3100A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB3100A"} -index 0
+dow D:/Vivado_Projects/Arithmetic/Arithmetic.sdk/arith_soft/Debug/arith_soft.elf
+----------------End of Script----------------
+
+13:28:08 INFO  : Memory regions updated for context PA
+13:28:08 INFO  : Memory regions updated for context PA
+13:28:08 INFO  : Context for processor 'microblaze_0' is selected.
+13:28:08 INFO  : 'con' command is executed.
+13:28:08 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB3100A"} -index 0
+con
+----------------End of Script----------------
+
+13:28:08 INFO  : Launch script is exported to file 'D:\Vivado_Projects\Arithmetic\Arithmetic.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_arith_soft.elf_on_local.tcl'
+13:28:22 INFO  : Disconnected from the channel tcfchan#13.
+13:28:23 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB3100A" && level==0} -index 0' command is executed.
+13:28:23 INFO  : 'fpga -state' command is executed.
+13:28:23 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:28:23 INFO  : Jtag cable 'Digilent Nexys A7 -100T 210292BB3100A' is selected.
+13:28:23 INFO  : 'jtag frequency' command is executed.
+13:28:23 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+13:28:23 INFO  : Context for processor 'microblaze_0' is selected.
+13:28:23 INFO  : Processor reset is completed for 'microblaze_0'.
+13:28:23 INFO  : Context for processor 'microblaze_0' is selected.
+13:28:24 INFO  : The application 'D:/Vivado_Projects/Arithmetic/Arithmetic.sdk/arith_soft/Debug/arith_soft.elf' is downloaded to processor 'microblaze_0'.
+13:28:24 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB3100A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB3100A"} -index 0
+dow D:/Vivado_Projects/Arithmetic/Arithmetic.sdk/arith_soft/Debug/arith_soft.elf
+----------------End of Script----------------
+
+13:28:24 INFO  : Memory regions updated for context PA
+13:28:24 INFO  : Memory regions updated for context PA
+13:28:24 INFO  : Context for processor 'microblaze_0' is selected.
+13:28:24 INFO  : 'con' command is executed.
+13:28:24 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB3100A"} -index 0
+con
+----------------End of Script----------------
+
+13:28:24 INFO  : Launch script is exported to file 'D:\Vivado_Projects\Arithmetic\Arithmetic.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_arith_soft.elf_on_local.tcl'
+13:37:59 INFO  : Disconnected from the channel tcfchan#14.
+13:38:00 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB3100A" && level==0} -index 0' command is executed.
+13:38:00 INFO  : 'fpga -state' command is executed.
+13:38:00 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:38:00 INFO  : Jtag cable 'Digilent Nexys A7 -100T 210292BB3100A' is selected.
+13:38:00 INFO  : 'jtag frequency' command is executed.
+13:38:00 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+13:38:00 INFO  : Context for processor 'microblaze_0' is selected.
+13:38:00 INFO  : Processor reset is completed for 'microblaze_0'.
+13:38:00 INFO  : Context for processor 'microblaze_0' is selected.
+13:38:00 INFO  : The application 'D:/Vivado_Projects/Arithmetic/Arithmetic.sdk/arith_soft/Debug/arith_soft.elf' is downloaded to processor 'microblaze_0'.
+13:38:00 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB3100A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB3100A"} -index 0
+dow D:/Vivado_Projects/Arithmetic/Arithmetic.sdk/arith_soft/Debug/arith_soft.elf
+----------------End of Script----------------
+
+13:38:00 INFO  : Memory regions updated for context PA
+13:38:00 INFO  : Memory regions updated for context PA
+13:38:00 INFO  : Context for processor 'microblaze_0' is selected.
+13:38:00 INFO  : 'con' command is executed.
+13:38:00 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB3100A"} -index 0
+con
+----------------End of Script----------------
+
+13:38:00 INFO  : Launch script is exported to file 'D:\Vivado_Projects\Arithmetic\Arithmetic.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_arith_soft.elf_on_local.tcl'
+13:38:17 INFO  : Disconnected from the channel tcfchan#15.
+13:38:18 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB3100A" && level==0} -index 0' command is executed.
+13:38:18 INFO  : 'fpga -state' command is executed.
+13:38:18 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:38:18 INFO  : Jtag cable 'Digilent Nexys A7 -100T 210292BB3100A' is selected.
+13:38:18 INFO  : 'jtag frequency' command is executed.
+13:38:18 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+13:38:18 INFO  : Context for processor 'microblaze_0' is selected.
+13:38:18 INFO  : Processor reset is completed for 'microblaze_0'.
+13:38:18 INFO  : Context for processor 'microblaze_0' is selected.
+13:38:18 INFO  : The application 'D:/Vivado_Projects/Arithmetic/Arithmetic.sdk/arith_soft/Debug/arith_soft.elf' is downloaded to processor 'microblaze_0'.
+13:38:18 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB3100A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB3100A"} -index 0
+dow D:/Vivado_Projects/Arithmetic/Arithmetic.sdk/arith_soft/Debug/arith_soft.elf
+----------------End of Script----------------
+
+13:38:18 INFO  : Memory regions updated for context PA
+13:38:18 INFO  : Memory regions updated for context PA
+13:38:18 INFO  : Context for processor 'microblaze_0' is selected.
+13:38:19 INFO  : 'con' command is executed.
+13:38:19 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB3100A"} -index 0
+con
+----------------End of Script----------------
+
+13:38:19 INFO  : Launch script is exported to file 'D:\Vivado_Projects\Arithmetic\Arithmetic.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_arith_soft.elf_on_local.tcl'
+13:59:59 INFO  : Disconnected from the channel tcfchan#16.
+14:00:00 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB3100A" && level==0} -index 0' command is executed.
+14:00:00 INFO  : 'fpga -state' command is executed.
+14:00:00 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:00:00 INFO  : Jtag cable 'Digilent Nexys A7 -100T 210292BB3100A' is selected.
+14:00:00 INFO  : 'jtag frequency' command is executed.
+14:00:00 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+14:00:00 INFO  : Context for processor 'microblaze_0' is selected.
+14:00:00 INFO  : Processor reset is completed for 'microblaze_0'.
+14:00:01 INFO  : Context for processor 'microblaze_0' is selected.
+14:00:01 INFO  : The application 'D:/Vivado_Projects/Arithmetic/Arithmetic.sdk/arith_soft/Debug/arith_soft.elf' is downloaded to processor 'microblaze_0'.
+14:00:01 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB3100A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB3100A"} -index 0
+dow D:/Vivado_Projects/Arithmetic/Arithmetic.sdk/arith_soft/Debug/arith_soft.elf
+----------------End of Script----------------
+
+14:00:01 INFO  : Memory regions updated for context PA
+14:00:01 INFO  : Memory regions updated for context PA
+14:00:01 INFO  : Context for processor 'microblaze_0' is selected.
+14:00:01 INFO  : 'con' command is executed.
+14:00:01 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB3100A"} -index 0
+con
+----------------End of Script----------------
+
+14:00:01 INFO  : Launch script is exported to file 'D:\Vivado_Projects\Arithmetic\Arithmetic.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_arith_soft.elf_on_local.tcl'
+14:04:26 INFO  : Disconnected from the channel tcfchan#17.
+14:04:27 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB3100A" && level==0} -index 0' command is executed.
+14:04:27 INFO  : 'fpga -state' command is executed.
+14:04:27 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:04:27 INFO  : Jtag cable 'Digilent Nexys A7 -100T 210292BB3100A' is selected.
+14:04:27 INFO  : 'jtag frequency' command is executed.
+14:04:27 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+14:04:27 INFO  : Context for processor 'microblaze_0' is selected.
+14:04:27 INFO  : Processor reset is completed for 'microblaze_0'.
+14:04:28 INFO  : Context for processor 'microblaze_0' is selected.
+14:04:28 INFO  : The application 'D:/Vivado_Projects/Arithmetic/Arithmetic.sdk/arith_soft/Debug/arith_soft.elf' is downloaded to processor 'microblaze_0'.
+14:04:28 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB3100A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB3100A"} -index 0
+dow D:/Vivado_Projects/Arithmetic/Arithmetic.sdk/arith_soft/Debug/arith_soft.elf
+----------------End of Script----------------
+
+14:04:28 INFO  : Memory regions updated for context PA
+14:04:28 INFO  : Memory regions updated for context PA
+14:04:28 INFO  : Context for processor 'microblaze_0' is selected.
+14:04:28 INFO  : 'con' command is executed.
+14:04:28 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB3100A"} -index 0
+con
+----------------End of Script----------------
+
+14:04:28 INFO  : Launch script is exported to file 'D:\Vivado_Projects\Arithmetic\Arithmetic.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_arith_soft.elf_on_local.tcl'
+14:05:59 INFO  : Disconnected from the channel tcfchan#18.
+14:06:00 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB3100A" && level==0} -index 0' command is executed.
+14:06:00 INFO  : 'fpga -state' command is executed.
+14:06:00 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:06:00 INFO  : Jtag cable 'Digilent Nexys A7 -100T 210292BB3100A' is selected.
+14:06:00 INFO  : 'jtag frequency' command is executed.
+14:06:00 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+14:06:00 INFO  : Context for processor 'microblaze_0' is selected.
+14:06:01 INFO  : Processor reset is completed for 'microblaze_0'.
+14:06:01 INFO  : Context for processor 'microblaze_0' is selected.
+14:06:01 INFO  : The application 'D:/Vivado_Projects/Arithmetic/Arithmetic.sdk/arith_soft/Debug/arith_soft.elf' is downloaded to processor 'microblaze_0'.
+14:06:01 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB3100A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB3100A"} -index 0
+dow D:/Vivado_Projects/Arithmetic/Arithmetic.sdk/arith_soft/Debug/arith_soft.elf
+----------------End of Script----------------
+
+14:06:01 INFO  : Memory regions updated for context PA
+14:06:01 INFO  : Memory regions updated for context PA
+14:06:01 INFO  : Context for processor 'microblaze_0' is selected.
+14:06:01 INFO  : 'con' command is executed.
+14:06:01 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB3100A"} -index 0
+con
+----------------End of Script----------------
+
+14:06:01 INFO  : Launch script is exported to file 'D:\Vivado_Projects\Arithmetic\Arithmetic.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_arith_soft.elf_on_local.tcl'
+14:08:17 INFO  : Disconnected from the channel tcfchan#19.
+14:08:18 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB3100A" && level==0} -index 0' command is executed.
+14:08:18 INFO  : 'fpga -state' command is executed.
+14:08:18 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:08:18 INFO  : Jtag cable 'Digilent Nexys A7 -100T 210292BB3100A' is selected.
+14:08:19 INFO  : 'jtag frequency' command is executed.
+14:08:19 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+14:08:19 INFO  : Context for processor 'microblaze_0' is selected.
+14:08:19 INFO  : Processor reset is completed for 'microblaze_0'.
+14:08:19 INFO  : Context for processor 'microblaze_0' is selected.
+14:08:19 INFO  : The application 'D:/Vivado_Projects/Arithmetic/Arithmetic.sdk/arith_soft/Debug/arith_soft.elf' is downloaded to processor 'microblaze_0'.
+14:08:19 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB3100A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB3100A"} -index 0
+dow D:/Vivado_Projects/Arithmetic/Arithmetic.sdk/arith_soft/Debug/arith_soft.elf
+----------------End of Script----------------
+
+14:08:19 INFO  : Memory regions updated for context PA
+14:08:19 INFO  : Memory regions updated for context PA
+14:08:19 INFO  : Context for processor 'microblaze_0' is selected.
+14:08:19 INFO  : 'con' command is executed.
+14:08:19 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB3100A"} -index 0
+con
+----------------End of Script----------------
+
+14:08:19 INFO  : Launch script is exported to file 'D:\Vivado_Projects\Arithmetic\Arithmetic.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_arith_soft.elf_on_local.tcl'
+14:12:33 INFO  : Disconnected from the channel tcfchan#20.
+14:12:34 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB3100A" && level==0} -index 0' command is executed.
+14:12:34 INFO  : 'fpga -state' command is executed.
+14:12:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:12:34 INFO  : Jtag cable 'Digilent Nexys A7 -100T 210292BB3100A' is selected.
+14:12:34 INFO  : 'jtag frequency' command is executed.
+14:12:34 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+14:12:34 INFO  : Context for processor 'microblaze_0' is selected.
+14:12:35 INFO  : Processor reset is completed for 'microblaze_0'.
+14:12:35 INFO  : Context for processor 'microblaze_0' is selected.
+14:12:35 INFO  : The application 'D:/Vivado_Projects/Arithmetic/Arithmetic.sdk/arith_soft/Debug/arith_soft.elf' is downloaded to processor 'microblaze_0'.
+14:12:35 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB3100A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB3100A"} -index 0
+dow D:/Vivado_Projects/Arithmetic/Arithmetic.sdk/arith_soft/Debug/arith_soft.elf
+----------------End of Script----------------
+
+14:12:35 INFO  : Memory regions updated for context PA
+14:12:35 INFO  : Memory regions updated for context PA
+14:12:35 INFO  : Context for processor 'microblaze_0' is selected.
+14:12:35 INFO  : 'con' command is executed.
+14:12:35 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB3100A"} -index 0
+con
+----------------End of Script----------------
+
+14:12:35 INFO  : Launch script is exported to file 'D:\Vivado_Projects\Arithmetic\Arithmetic.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_arith_soft.elf_on_local.tcl'
+14:13:14 INFO  : Disconnected from the channel tcfchan#21.
+14:13:15 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB3100A" && level==0} -index 0' command is executed.
+14:13:15 INFO  : 'fpga -state' command is executed.
+14:13:15 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:13:15 INFO  : Jtag cable 'Digilent Nexys A7 -100T 210292BB3100A' is selected.
+14:13:15 INFO  : 'jtag frequency' command is executed.
+14:13:15 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+14:13:15 INFO  : Context for processor 'microblaze_0' is selected.
+14:13:15 INFO  : Processor reset is completed for 'microblaze_0'.
+14:13:15 INFO  : Context for processor 'microblaze_0' is selected.
+14:13:16 INFO  : The application 'D:/Vivado_Projects/Arithmetic/Arithmetic.sdk/arith_soft/Debug/arith_soft.elf' is downloaded to processor 'microblaze_0'.
+14:13:16 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB3100A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB3100A"} -index 0
+dow D:/Vivado_Projects/Arithmetic/Arithmetic.sdk/arith_soft/Debug/arith_soft.elf
+----------------End of Script----------------
+
+14:13:16 INFO  : Memory regions updated for context PA
+14:13:16 INFO  : Memory regions updated for context PA
+14:13:16 INFO  : Context for processor 'microblaze_0' is selected.
+14:13:16 INFO  : 'con' command is executed.
+14:13:16 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB3100A"} -index 0
+con
+----------------End of Script----------------
+
+14:13:16 INFO  : Launch script is exported to file 'D:\Vivado_Projects\Arithmetic\Arithmetic.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_arith_soft.elf_on_local.tcl'
+15:49:17 INFO  : Disconnected from the channel tcfchan#22.

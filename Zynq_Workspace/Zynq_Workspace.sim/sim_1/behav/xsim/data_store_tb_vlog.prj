@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../Zynq_Workspace.srcs/sources_1/bd/fifo_design_1/ipshared/c923" \
+"../../../../Zynq_Workspace.ip_user_files/bd/fifo_design_1/ip/fifo_design_1_fifo_generator_0_0/sim/fifo_design_1_fifo_generator_0_0.v" \
+"../../../../Zynq_Workspace.ip_user_files/bd/fifo_design_1/ip/fifo_design_1_clk_wiz_0/fifo_design_1_clk_wiz_0_clk_wiz.v" \
+"../../../../Zynq_Workspace.ip_user_files/bd/fifo_design_1/ip/fifo_design_1_clk_wiz_0/fifo_design_1_clk_wiz_0.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

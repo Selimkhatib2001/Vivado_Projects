@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Zynq_Workspace.srcs/sources_1/new/timer.vhd" \
+"../../../../Zynq_Workspace.srcs/sim_1/new/timer_tb.vhd" \
+
+# Do not sort compile order
+nosort

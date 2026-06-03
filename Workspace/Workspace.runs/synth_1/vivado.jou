@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.1.2 (64-bit)
+# SW Build 5164865 on Thu Sep  5 14:37:11 MDT 2024
+# IP Build 5164407 on Fri Sep  6 08:18:11 MDT 2024
+# SharedData Build 5164864 on Thu Sep 05 13:09:09 MDT 2024
+# Start of session at: Sun Apr 19 14:36:53 2026
+# Process ID: 28884
+# Current directory: C:/Vivado_Project/Workspace/Workspace.runs/synth_1
+# Command line: vivado.exe -log design_1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
+# Log file: C:/Vivado_Project/Workspace/Workspace.runs/synth_1/design_1_wrapper.vds
+# Journal file: C:/Vivado_Project/Workspace/Workspace.runs/synth_1\vivado.jou
+# Running On        :Mango
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :26200
+# Processor Detail  :12th Gen Intel(R) Core(TM) i7-12700H
+# CPU Frequency     :2688 MHz
+# CPU Physical cores:14
+# CPU Logical cores :20
+# Host memory       :16780 MB
+# Swap memory       :12371 MB
+# Total Virtual     :29152 MB
+# Available Virtual :3674 MB
+#-----------------------------------------------------------
+source design_1_wrapper.tcl -notrace

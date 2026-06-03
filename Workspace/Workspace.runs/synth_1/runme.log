@@ -1,0 +1,507 @@
+
+*** Running vivado
+    with args -log design_1_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
+
+
+
+****** Vivado v2024.1.2 (64-bit)
+  **** SW Build 5164865 on Thu Sep  5 14:37:11 MDT 2024
+  **** IP Build 5164407 on Fri Sep  6 08:18:11 MDT 2024
+  **** SharedData Build 5164864 on Thu Sep 05 13:09:09 MDT 2024
+  **** Start of session at: Sun Apr 19 14:33:33 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source design_1_wrapper.tcl -notrace
+create_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 555.547 ; gain = 169.512
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.1/data/ip'.
+Command: read_checkpoint -auto_incremental -incremental C:/Vivado_Project/Workspace/Workspace.srcs/utils_1/imports/synth_1/data_generator.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Vivado_Project/Workspace/Workspace.srcs/utils_1/imports/synth_1/data_generator.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top design_1_wrapper -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Device 21-9227] Part: xc7a35tcpg236-1 does not have CEAM library.
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 29996
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1441.422 ; gain = 448.430
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_1_wrapper' [C:/Vivado_Project/Workspace/Workspace.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:38]
+INFO: [Synth 8-3491] module 'design_1' declared at 'c:/Vivado_Project/Workspace/Workspace.gen/sources_1/bd/design_1/synth/design_1.vhd:15' bound to instance 'design_1_i' of component 'design_1' [C:/Vivado_Project/Workspace/Workspace.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:62]
+INFO: [Synth 8-638] synthesizing module 'design_1' [c:/Vivado_Project/Workspace/Workspace.gen/sources_1/bd/design_1/synth/design_1.vhd:42]
+INFO: [Synth 8-3491] module 'design_1_clk_wiz_0_0' declared at 'C:/Vivado_Project/Workspace/Workspace.runs/synth_1/.Xil/Vivado-32004-Mango/realtime/design_1_clk_wiz_0_0_stub.vhdl:6' bound to instance 'clk_wiz_0' of component 'design_1_clk_wiz_0_0' [c:/Vivado_Project/Workspace/Workspace.gen/sources_1/bd/design_1/synth/design_1.vhd:193]
+INFO: [Synth 8-638] synthesizing module 'design_1_clk_wiz_0_0' [C:/Vivado_Project/Workspace/Workspace.runs/synth_1/.Xil/Vivado-32004-Mango/realtime/design_1_clk_wiz_0_0_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'design_1_data_generator_0_0' declared at 'C:/Vivado_Project/Workspace/Workspace.runs/synth_1/.Xil/Vivado-32004-Mango/realtime/design_1_data_generator_0_0_stub.vhdl:6' bound to instance 'data_generator_0' of component 'design_1_data_generator_0_0' [c:/Vivado_Project/Workspace/Workspace.gen/sources_1/bd/design_1/synth/design_1.vhd:199]
+INFO: [Synth 8-638] synthesizing module 'design_1_data_generator_0_0' [C:/Vivado_Project/Workspace/Workspace.runs/synth_1/.Xil/Vivado-32004-Mango/realtime/design_1_data_generator_0_0_stub.vhdl:19]
+INFO: [Synth 8-3491] module 'design_1_ila_0_0' declared at 'C:/Vivado_Project/Workspace/Workspace.runs/synth_1/.Xil/Vivado-32004-Mango/realtime/design_1_ila_0_0_stub.vhdl:6' bound to instance 'ila_0' of component 'design_1_ila_0_0' [c:/Vivado_Project/Workspace/Workspace.gen/sources_1/bd/design_1/synth/design_1.vhd:209]
+INFO: [Synth 8-638] synthesizing module 'design_1_ila_0_0' [C:/Vivado_Project/Workspace/Workspace.runs/synth_1/.Xil/Vivado-32004-Mango/realtime/design_1_ila_0_0_stub.vhdl:22]
+INFO: [Synth 8-3491] module 'design_1_rst_clk_wiz_0_100M_0' declared at 'C:/Vivado_Project/Workspace/Workspace.runs/synth_1/.Xil/Vivado-32004-Mango/realtime/design_1_rst_clk_wiz_0_100M_0_stub.vhdl:6' bound to instance 'rst_clk_wiz_0_100M' of component 'design_1_rst_clk_wiz_0_100M_0' [c:/Vivado_Project/Workspace/Workspace.gen/sources_1/bd/design_1/synth/design_1.vhd:222]
+INFO: [Synth 8-638] synthesizing module 'design_1_rst_clk_wiz_0_100M_0' [C:/Vivado_Project/Workspace/Workspace.runs/synth_1/.Xil/Vivado-32004-Mango/realtime/design_1_rst_clk_wiz_0_100M_0_stub.vhdl:22]
+INFO: [Synth 8-3491] module 'design_1_top_0_0' declared at 'C:/Vivado_Project/Workspace/Workspace.runs/synth_1/.Xil/Vivado-32004-Mango/realtime/design_1_top_0_0_stub.vhdl:6' bound to instance 'top_0' of component 'design_1_top_0_0' [c:/Vivado_Project/Workspace/Workspace.gen/sources_1/bd/design_1/synth/design_1.vhd:235]
+INFO: [Synth 8-638] synthesizing module 'design_1_top_0_0' [C:/Vivado_Project/Workspace/Workspace.runs/synth_1/.Xil/Vivado-32004-Mango/realtime/design_1_top_0_0_stub.vhdl:18]
+INFO: [Synth 8-3491] module 'design_1_xadc_wiz_0_1' declared at 'C:/Vivado_Project/Workspace/Workspace.runs/synth_1/.Xil/Vivado-32004-Mango/realtime/design_1_xadc_wiz_0_1_stub.vhdl:6' bound to instance 'xadc_wiz_0' of component 'design_1_xadc_wiz_0_1' [c:/Vivado_Project/Workspace/Workspace.gen/sources_1/bd/design_1/synth/design_1.vhd:244]
+INFO: [Synth 8-638] synthesizing module 'design_1_xadc_wiz_0_1' [C:/Vivado_Project/Workspace/Workspace.runs/synth_1/.Xil/Vivado-32004-Mango/realtime/design_1_xadc_wiz_0_1_stub.vhdl:30]
+INFO: [Synth 8-3491] module 'design_1_xlconstant_0_0' declared at 'c:/Vivado_Project/Workspace/Workspace.gen/sources_1/bd/design_1/ip/design_1_xlconstant_0_0/synth/design_1_xlconstant_0_0.v:53' bound to instance 'xlconstant_0' of component 'design_1_xlconstant_0_0' [c:/Vivado_Project/Workspace/Workspace.gen/sources_1/bd/design_1/synth/design_1.vhd:265]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlconstant_0_0' [c:/Vivado_Project/Workspace/Workspace.gen/sources_1/bd/design_1/ip/design_1_xlconstant_0_0/synth/design_1_xlconstant_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_9_xlconstant' [c:/Vivado_Project/Workspace/Workspace.gen/sources_1/bd/design_1/ipshared/e2d2/hdl/xlconstant_v1_1_vl_rfs.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_9_xlconstant' (0#1) [c:/Vivado_Project/Workspace/Workspace.gen/sources_1/bd/design_1/ipshared/e2d2/hdl/xlconstant_v1_1_vl_rfs.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlconstant_0_0' (0#1) [c:/Vivado_Project/Workspace/Workspace.gen/sources_1/bd/design_1/ip/design_1_xlconstant_0_0/synth/design_1_xlconstant_0_0.v:53]
+INFO: [Synth 8-256] done synthesizing module 'design_1' (0#1) [c:/Vivado_Project/Workspace/Workspace.gen/sources_1/bd/design_1/synth/design_1.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'design_1_wrapper' (0#1) [C:/Vivado_Project/Workspace/Workspace.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:38]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1555.102 ; gain = 562.109
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1555.102 ; gain = 562.109
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1555.102 ; gain = 562.109
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1558.180 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Vivado_Project/Workspace/Workspace.gen/sources_1/bd/design_1/ip/design_1_data_generator_0_0/design_1_data_generator_0_0/design_1_data_generator_0_0_in_context.xdc] for cell 'design_1_i/data_generator_0'
+Finished Parsing XDC File [c:/Vivado_Project/Workspace/Workspace.gen/sources_1/bd/design_1/ip/design_1_data_generator_0_0/design_1_data_generator_0_0/design_1_data_generator_0_0_in_context.xdc] for cell 'design_1_i/data_generator_0'
+Parsing XDC File [c:/Vivado_Project/Workspace/Workspace.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_in_context.xdc] for cell 'design_1_i/clk_wiz_0'
+Finished Parsing XDC File [c:/Vivado_Project/Workspace/Workspace.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_in_context.xdc] for cell 'design_1_i/clk_wiz_0'
+Parsing XDC File [c:/Vivado_Project/Workspace/Workspace.gen/sources_1/bd/design_1/ip/design_1_top_0_0/design_1_top_0_0/design_1_top_0_0_in_context.xdc] for cell 'design_1_i/top_0'
+Finished Parsing XDC File [c:/Vivado_Project/Workspace/Workspace.gen/sources_1/bd/design_1/ip/design_1_top_0_0/design_1_top_0_0/design_1_top_0_0_in_context.xdc] for cell 'design_1_i/top_0'
+Parsing XDC File [c:/Vivado_Project/Workspace/Workspace.gen/sources_1/bd/design_1/ip/design_1_xadc_wiz_0_1/design_1_xadc_wiz_0_1/design_1_xadc_wiz_0_1_in_context.xdc] for cell 'design_1_i/xadc_wiz_0'
+Finished Parsing XDC File [c:/Vivado_Project/Workspace/Workspace.gen/sources_1/bd/design_1/ip/design_1_xadc_wiz_0_1/design_1_xadc_wiz_0_1/design_1_xadc_wiz_0_1_in_context.xdc] for cell 'design_1_i/xadc_wiz_0'
+Parsing XDC File [c:/Vivado_Project/Workspace/Workspace.gen/sources_1/bd/design_1/ip/design_1_ila_0_0/design_1_ila_0_0/design_1_ila_0_0_in_context.xdc] for cell 'design_1_i/ila_0'
+Finished Parsing XDC File [c:/Vivado_Project/Workspace/Workspace.gen/sources_1/bd/design_1/ip/design_1_ila_0_0/design_1_ila_0_0/design_1_ila_0_0_in_context.xdc] for cell 'design_1_i/ila_0'
+Parsing XDC File [c:/Vivado_Project/Workspace/Workspace.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_0_100M_0/design_1_rst_clk_wiz_0_100M_0/design_1_rst_clk_wiz_0_100M_0_in_context.xdc] for cell 'design_1_i/rst_clk_wiz_0_100M'
+Finished Parsing XDC File [c:/Vivado_Project/Workspace/Workspace.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_0_100M_0/design_1_rst_clk_wiz_0_100M_0/design_1_rst_clk_wiz_0_100M_0_in_context.xdc] for cell 'design_1_i/rst_clk_wiz_0_100M'
+Parsing XDC File [C:/Vivado_Project/Workspace/Workspace.srcs/constrs_1/new/config.xdc]
+Finished Parsing XDC File [C:/Vivado_Project/Workspace/Workspace.srcs/constrs_1/new/config.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Vivado_Project/Workspace/Workspace.srcs/constrs_1/new/config.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Vivado_Project/Workspace/Workspace.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Vivado_Project/Workspace/Workspace.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1628.520 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1628.520 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1628.520 ; gain = 635.527
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1628.520 ; gain = 635.527
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for generator_lvds_clk_n_0. (constraint file  c:/Vivado_Project/Workspace/Workspace.gen/sources_1/bd/design_1/ip/design_1_data_generator_0_0/design_1_data_generator_0_0/design_1_data_generator_0_0_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for generator_lvds_clk_n_0. (constraint file  c:/Vivado_Project/Workspace/Workspace.gen/sources_1/bd/design_1/ip/design_1_data_generator_0_0/design_1_data_generator_0_0/design_1_data_generator_0_0_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for generator_lvds_clk_p_0. (constraint file  c:/Vivado_Project/Workspace/Workspace.gen/sources_1/bd/design_1/ip/design_1_data_generator_0_0/design_1_data_generator_0_0/design_1_data_generator_0_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for generator_lvds_clk_p_0. (constraint file  c:/Vivado_Project/Workspace/Workspace.gen/sources_1/bd/design_1/ip/design_1_data_generator_0_0/design_1_data_generator_0_0/design_1_data_generator_0_0_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for generator_lvds_data_n_0. (constraint file  c:/Vivado_Project/Workspace/Workspace.gen/sources_1/bd/design_1/ip/design_1_data_generator_0_0/design_1_data_generator_0_0/design_1_data_generator_0_0_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for generator_lvds_data_n_0. (constraint file  c:/Vivado_Project/Workspace/Workspace.gen/sources_1/bd/design_1/ip/design_1_data_generator_0_0/design_1_data_generator_0_0/design_1_data_generator_0_0_in_context.xdc, line 6).
+Applied set_property IO_BUFFER_TYPE = NONE for generator_lvds_data_p_0. (constraint file  c:/Vivado_Project/Workspace/Workspace.gen/sources_1/bd/design_1/ip/design_1_data_generator_0_0/design_1_data_generator_0_0/design_1_data_generator_0_0_in_context.xdc, line 7).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for generator_lvds_data_p_0. (constraint file  c:/Vivado_Project/Workspace/Workspace.gen/sources_1/bd/design_1/ip/design_1_data_generator_0_0/design_1_data_generator_0_0/design_1_data_generator_0_0_in_context.xdc, line 8).
+Applied set_property IO_BUFFER_TYPE = NONE for generator_lvds_valid_n_0. (constraint file  c:/Vivado_Project/Workspace/Workspace.gen/sources_1/bd/design_1/ip/design_1_data_generator_0_0/design_1_data_generator_0_0/design_1_data_generator_0_0_in_context.xdc, line 9).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for generator_lvds_valid_n_0. (constraint file  c:/Vivado_Project/Workspace/Workspace.gen/sources_1/bd/design_1/ip/design_1_data_generator_0_0/design_1_data_generator_0_0/design_1_data_generator_0_0_in_context.xdc, line 10).
+Applied set_property IO_BUFFER_TYPE = NONE for generator_lvds_valid_p_0. (constraint file  c:/Vivado_Project/Workspace/Workspace.gen/sources_1/bd/design_1/ip/design_1_data_generator_0_0/design_1_data_generator_0_0/design_1_data_generator_0_0_in_context.xdc, line 11).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for generator_lvds_valid_p_0. (constraint file  c:/Vivado_Project/Workspace/Workspace.gen/sources_1/bd/design_1/ip/design_1_data_generator_0_0/design_1_data_generator_0_0/design_1_data_generator_0_0_in_context.xdc, line 12).
+Applied set_property IO_BUFFER_TYPE = NONE for clk_in1_0. (constraint file  c:/Vivado_Project/Workspace/Workspace.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk_in1_0. (constraint file  c:/Vivado_Project/Workspace/Workspace.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_in_context.xdc, line 5).
+Applied set_property IO_BUFFER_TYPE = NONE for ext_clk_i_n_0. (constraint file  c:/Vivado_Project/Workspace/Workspace.gen/sources_1/bd/design_1/ip/design_1_top_0_0/design_1_top_0_0/design_1_top_0_0_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ext_clk_i_n_0. (constraint file  c:/Vivado_Project/Workspace/Workspace.gen/sources_1/bd/design_1/ip/design_1_top_0_0/design_1_top_0_0/design_1_top_0_0_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for ext_clk_i_p_0. (constraint file  c:/Vivado_Project/Workspace/Workspace.gen/sources_1/bd/design_1/ip/design_1_top_0_0/design_1_top_0_0/design_1_top_0_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ext_clk_i_p_0. (constraint file  c:/Vivado_Project/Workspace/Workspace.gen/sources_1/bd/design_1/ip/design_1_top_0_0/design_1_top_0_0/design_1_top_0_0_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for lvds_n_i_0. (constraint file  c:/Vivado_Project/Workspace/Workspace.gen/sources_1/bd/design_1/ip/design_1_top_0_0/design_1_top_0_0/design_1_top_0_0_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for lvds_n_i_0. (constraint file  c:/Vivado_Project/Workspace/Workspace.gen/sources_1/bd/design_1/ip/design_1_top_0_0/design_1_top_0_0/design_1_top_0_0_in_context.xdc, line 6).
+Applied set_property IO_BUFFER_TYPE = NONE for lvds_p_i_0. (constraint file  c:/Vivado_Project/Workspace/Workspace.gen/sources_1/bd/design_1/ip/design_1_top_0_0/design_1_top_0_0/design_1_top_0_0_in_context.xdc, line 7).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for lvds_p_i_0. (constraint file  c:/Vivado_Project/Workspace/Workspace.gen/sources_1/bd/design_1/ip/design_1_top_0_0/design_1_top_0_0/design_1_top_0_0_in_context.xdc, line 8).
+Applied set_property IO_BUFFER_TYPE = NONE for valid_n_i_0. (constraint file  c:/Vivado_Project/Workspace/Workspace.gen/sources_1/bd/design_1/ip/design_1_top_0_0/design_1_top_0_0/design_1_top_0_0_in_context.xdc, line 9).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for valid_n_i_0. (constraint file  c:/Vivado_Project/Workspace/Workspace.gen/sources_1/bd/design_1/ip/design_1_top_0_0/design_1_top_0_0/design_1_top_0_0_in_context.xdc, line 10).
+Applied set_property IO_BUFFER_TYPE = NONE for valid_p_i_0. (constraint file  c:/Vivado_Project/Workspace/Workspace.gen/sources_1/bd/design_1/ip/design_1_top_0_0/design_1_top_0_0/design_1_top_0_0_in_context.xdc, line 11).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for valid_p_i_0. (constraint file  c:/Vivado_Project/Workspace/Workspace.gen/sources_1/bd/design_1/ip/design_1_top_0_0/design_1_top_0_0/design_1_top_0_0_in_context.xdc, line 12).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/data_generator_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/clk_wiz_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/top_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/xadc_wiz_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/ila_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/rst_clk_wiz_0_100M. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/xlconstant_0. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1628.520 ; gain = 635.527
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1628.520 ; gain = 635.527
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1628.520 ; gain = 635.527
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1628.520 ; gain = 635.527
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1628.520 ; gain = 635.527
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1628.520 ; gain = 635.527
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+
+*** Running vivado
+    with args -log design_1_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
+
+
+
+****** Vivado v2024.1.2 (64-bit)
+  **** SW Build 5164865 on Thu Sep  5 14:37:11 MDT 2024
+  **** IP Build 5164407 on Fri Sep  6 08:18:11 MDT 2024
+  **** SharedData Build 5164864 on Thu Sep 05 13:09:09 MDT 2024
+  **** Start of session at: Sun Apr 19 14:36:53 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source design_1_wrapper.tcl -notrace
+create_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 555.410 ; gain = 170.094
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.1/data/ip'.
+Command: read_checkpoint -auto_incremental -incremental C:/Vivado_Project/Workspace/Workspace.srcs/utils_1/imports/synth_1/data_generator.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Vivado_Project/Workspace/Workspace.srcs/utils_1/imports/synth_1/data_generator.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top design_1_wrapper -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Device 21-9227] Part: xc7a35tcpg236-1 does not have CEAM library.
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 33976
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1441.832 ; gain = 449.465
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_1_wrapper' [C:/Vivado_Project/Workspace/Workspace.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:36]
+INFO: [Synth 8-3491] module 'design_1' declared at 'c:/Vivado_Project/Workspace/Workspace.gen/sources_1/bd/design_1/synth/design_1.vhd:15' bound to instance 'design_1_i' of component 'design_1' [C:/Vivado_Project/Workspace/Workspace.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:58]
+INFO: [Synth 8-638] synthesizing module 'design_1' [c:/Vivado_Project/Workspace/Workspace.gen/sources_1/bd/design_1/synth/design_1.vhd:40]
+INFO: [Synth 8-3491] module 'design_1_clk_wiz_0_0' declared at 'C:/Vivado_Project/Workspace/Workspace.runs/synth_1/.Xil/Vivado-28884-Mango/realtime/design_1_clk_wiz_0_0_stub.vhdl:6' bound to instance 'clk_wiz_0' of component 'design_1_clk_wiz_0_0' [c:/Vivado_Project/Workspace/Workspace.gen/sources_1/bd/design_1/synth/design_1.vhd:183]
+INFO: [Synth 8-638] synthesizing module 'design_1_clk_wiz_0_0' [C:/Vivado_Project/Workspace/Workspace.runs/synth_1/.Xil/Vivado-28884-Mango/realtime/design_1_clk_wiz_0_0_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'design_1_data_generator_0_0' declared at 'C:/Vivado_Project/Workspace/Workspace.runs/synth_1/.Xil/Vivado-28884-Mango/realtime/design_1_data_generator_0_0_stub.vhdl:6' bound to instance 'data_generator_0' of component 'design_1_data_generator_0_0' [c:/Vivado_Project/Workspace/Workspace.gen/sources_1/bd/design_1/synth/design_1.vhd:189]
+INFO: [Synth 8-638] synthesizing module 'design_1_data_generator_0_0' [C:/Vivado_Project/Workspace/Workspace.runs/synth_1/.Xil/Vivado-28884-Mango/realtime/design_1_data_generator_0_0_stub.vhdl:19]
+INFO: [Synth 8-3491] module 'design_1_ila_0_0' declared at 'C:/Vivado_Project/Workspace/Workspace.runs/synth_1/.Xil/Vivado-28884-Mango/realtime/design_1_ila_0_0_stub.vhdl:6' bound to instance 'ila_0' of component 'design_1_ila_0_0' [c:/Vivado_Project/Workspace/Workspace.gen/sources_1/bd/design_1/synth/design_1.vhd:199]
+INFO: [Synth 8-638] synthesizing module 'design_1_ila_0_0' [C:/Vivado_Project/Workspace/Workspace.runs/synth_1/.Xil/Vivado-28884-Mango/realtime/design_1_ila_0_0_stub.vhdl:22]
+INFO: [Synth 8-3491] module 'design_1_rst_clk_wiz_0_100M_0' declared at 'C:/Vivado_Project/Workspace/Workspace.runs/synth_1/.Xil/Vivado-28884-Mango/realtime/design_1_rst_clk_wiz_0_100M_0_stub.vhdl:6' bound to instance 'rst_clk_wiz_0_100M' of component 'design_1_rst_clk_wiz_0_100M_0' [c:/Vivado_Project/Workspace/Workspace.gen/sources_1/bd/design_1/synth/design_1.vhd:212]
+INFO: [Synth 8-638] synthesizing module 'design_1_rst_clk_wiz_0_100M_0' [C:/Vivado_Project/Workspace/Workspace.runs/synth_1/.Xil/Vivado-28884-Mango/realtime/design_1_rst_clk_wiz_0_100M_0_stub.vhdl:22]
+INFO: [Synth 8-3491] module 'design_1_top_0_0' declared at 'C:/Vivado_Project/Workspace/Workspace.runs/synth_1/.Xil/Vivado-28884-Mango/realtime/design_1_top_0_0_stub.vhdl:6' bound to instance 'top_0' of component 'design_1_top_0_0' [c:/Vivado_Project/Workspace/Workspace.gen/sources_1/bd/design_1/synth/design_1.vhd:225]
+INFO: [Synth 8-638] synthesizing module 'design_1_top_0_0' [C:/Vivado_Project/Workspace/Workspace.runs/synth_1/.Xil/Vivado-28884-Mango/realtime/design_1_top_0_0_stub.vhdl:18]
+INFO: [Synth 8-3491] module 'design_1_xadc_wiz_0_1' declared at 'C:/Vivado_Project/Workspace/Workspace.runs/synth_1/.Xil/Vivado-28884-Mango/realtime/design_1_xadc_wiz_0_1_stub.vhdl:6' bound to instance 'xadc_wiz_0' of component 'design_1_xadc_wiz_0_1' [c:/Vivado_Project/Workspace/Workspace.gen/sources_1/bd/design_1/synth/design_1.vhd:234]
+INFO: [Synth 8-638] synthesizing module 'design_1_xadc_wiz_0_1' [C:/Vivado_Project/Workspace/Workspace.runs/synth_1/.Xil/Vivado-28884-Mango/realtime/design_1_xadc_wiz_0_1_stub.vhdl:28]
+INFO: [Synth 8-3491] module 'design_1_xlconstant_0_0' declared at 'c:/Vivado_Project/Workspace/Workspace.gen/sources_1/bd/design_1/ip/design_1_xlconstant_0_0/synth/design_1_xlconstant_0_0.v:53' bound to instance 'xlconstant_0' of component 'design_1_xlconstant_0_0' [c:/Vivado_Project/Workspace/Workspace.gen/sources_1/bd/design_1/synth/design_1.vhd:253]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlconstant_0_0' [c:/Vivado_Project/Workspace/Workspace.gen/sources_1/bd/design_1/ip/design_1_xlconstant_0_0/synth/design_1_xlconstant_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_9_xlconstant' [c:/Vivado_Project/Workspace/Workspace.gen/sources_1/bd/design_1/ipshared/e2d2/hdl/xlconstant_v1_1_vl_rfs.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_9_xlconstant' (0#1) [c:/Vivado_Project/Workspace/Workspace.gen/sources_1/bd/design_1/ipshared/e2d2/hdl/xlconstant_v1_1_vl_rfs.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlconstant_0_0' (0#1) [c:/Vivado_Project/Workspace/Workspace.gen/sources_1/bd/design_1/ip/design_1_xlconstant_0_0/synth/design_1_xlconstant_0_0.v:53]
+INFO: [Synth 8-256] done synthesizing module 'design_1' (0#1) [c:/Vivado_Project/Workspace/Workspace.gen/sources_1/bd/design_1/synth/design_1.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'design_1_wrapper' (0#1) [C:/Vivado_Project/Workspace/Workspace.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:36]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1555.980 ; gain = 563.613
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1555.980 ; gain = 563.613
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1555.980 ; gain = 563.613
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1555.980 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Vivado_Project/Workspace/Workspace.gen/sources_1/bd/design_1/ip/design_1_data_generator_0_0/design_1_data_generator_0_0/design_1_data_generator_0_0_in_context.xdc] for cell 'design_1_i/data_generator_0'
+Finished Parsing XDC File [c:/Vivado_Project/Workspace/Workspace.gen/sources_1/bd/design_1/ip/design_1_data_generator_0_0/design_1_data_generator_0_0/design_1_data_generator_0_0_in_context.xdc] for cell 'design_1_i/data_generator_0'
+Parsing XDC File [c:/Vivado_Project/Workspace/Workspace.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_in_context.xdc] for cell 'design_1_i/clk_wiz_0'
+Finished Parsing XDC File [c:/Vivado_Project/Workspace/Workspace.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_in_context.xdc] for cell 'design_1_i/clk_wiz_0'
+Parsing XDC File [c:/Vivado_Project/Workspace/Workspace.gen/sources_1/bd/design_1/ip/design_1_top_0_0/design_1_top_0_0/design_1_top_0_0_in_context.xdc] for cell 'design_1_i/top_0'
+Finished Parsing XDC File [c:/Vivado_Project/Workspace/Workspace.gen/sources_1/bd/design_1/ip/design_1_top_0_0/design_1_top_0_0/design_1_top_0_0_in_context.xdc] for cell 'design_1_i/top_0'
+Parsing XDC File [c:/Vivado_Project/Workspace/Workspace.gen/sources_1/bd/design_1/ip/design_1_xadc_wiz_0_1/design_1_xadc_wiz_0_1/design_1_xadc_wiz_0_1_in_context.xdc] for cell 'design_1_i/xadc_wiz_0'
+Finished Parsing XDC File [c:/Vivado_Project/Workspace/Workspace.gen/sources_1/bd/design_1/ip/design_1_xadc_wiz_0_1/design_1_xadc_wiz_0_1/design_1_xadc_wiz_0_1_in_context.xdc] for cell 'design_1_i/xadc_wiz_0'
+Parsing XDC File [c:/Vivado_Project/Workspace/Workspace.gen/sources_1/bd/design_1/ip/design_1_ila_0_0/design_1_ila_0_0/design_1_ila_0_0_in_context.xdc] for cell 'design_1_i/ila_0'
+Finished Parsing XDC File [c:/Vivado_Project/Workspace/Workspace.gen/sources_1/bd/design_1/ip/design_1_ila_0_0/design_1_ila_0_0/design_1_ila_0_0_in_context.xdc] for cell 'design_1_i/ila_0'
+Parsing XDC File [c:/Vivado_Project/Workspace/Workspace.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_0_100M_0/design_1_rst_clk_wiz_0_100M_0/design_1_rst_clk_wiz_0_100M_0_in_context.xdc] for cell 'design_1_i/rst_clk_wiz_0_100M'
+Finished Parsing XDC File [c:/Vivado_Project/Workspace/Workspace.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_0_100M_0/design_1_rst_clk_wiz_0_100M_0/design_1_rst_clk_wiz_0_100M_0_in_context.xdc] for cell 'design_1_i/rst_clk_wiz_0_100M'
+Parsing XDC File [C:/Vivado_Project/Workspace/Workspace.srcs/constrs_1/new/config.xdc]
+Finished Parsing XDC File [C:/Vivado_Project/Workspace/Workspace.srcs/constrs_1/new/config.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Vivado_Project/Workspace/Workspace.srcs/constrs_1/new/config.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Vivado_Project/Workspace/Workspace.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Vivado_Project/Workspace/Workspace.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1614.020 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1614.020 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1614.020 ; gain = 621.652
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1614.020 ; gain = 621.652
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for generator_lvds_clk_n_0. (constraint file  c:/Vivado_Project/Workspace/Workspace.gen/sources_1/bd/design_1/ip/design_1_data_generator_0_0/design_1_data_generator_0_0/design_1_data_generator_0_0_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for generator_lvds_clk_n_0. (constraint file  c:/Vivado_Project/Workspace/Workspace.gen/sources_1/bd/design_1/ip/design_1_data_generator_0_0/design_1_data_generator_0_0/design_1_data_generator_0_0_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for generator_lvds_clk_p_0. (constraint file  c:/Vivado_Project/Workspace/Workspace.gen/sources_1/bd/design_1/ip/design_1_data_generator_0_0/design_1_data_generator_0_0/design_1_data_generator_0_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for generator_lvds_clk_p_0. (constraint file  c:/Vivado_Project/Workspace/Workspace.gen/sources_1/bd/design_1/ip/design_1_data_generator_0_0/design_1_data_generator_0_0/design_1_data_generator_0_0_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for generator_lvds_data_n_0. (constraint file  c:/Vivado_Project/Workspace/Workspace.gen/sources_1/bd/design_1/ip/design_1_data_generator_0_0/design_1_data_generator_0_0/design_1_data_generator_0_0_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for generator_lvds_data_n_0. (constraint file  c:/Vivado_Project/Workspace/Workspace.gen/sources_1/bd/design_1/ip/design_1_data_generator_0_0/design_1_data_generator_0_0/design_1_data_generator_0_0_in_context.xdc, line 6).
+Applied set_property IO_BUFFER_TYPE = NONE for generator_lvds_data_p_0. (constraint file  c:/Vivado_Project/Workspace/Workspace.gen/sources_1/bd/design_1/ip/design_1_data_generator_0_0/design_1_data_generator_0_0/design_1_data_generator_0_0_in_context.xdc, line 7).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for generator_lvds_data_p_0. (constraint file  c:/Vivado_Project/Workspace/Workspace.gen/sources_1/bd/design_1/ip/design_1_data_generator_0_0/design_1_data_generator_0_0/design_1_data_generator_0_0_in_context.xdc, line 8).
+Applied set_property IO_BUFFER_TYPE = NONE for generator_lvds_valid_n_0. (constraint file  c:/Vivado_Project/Workspace/Workspace.gen/sources_1/bd/design_1/ip/design_1_data_generator_0_0/design_1_data_generator_0_0/design_1_data_generator_0_0_in_context.xdc, line 9).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for generator_lvds_valid_n_0. (constraint file  c:/Vivado_Project/Workspace/Workspace.gen/sources_1/bd/design_1/ip/design_1_data_generator_0_0/design_1_data_generator_0_0/design_1_data_generator_0_0_in_context.xdc, line 10).
+Applied set_property IO_BUFFER_TYPE = NONE for generator_lvds_valid_p_0. (constraint file  c:/Vivado_Project/Workspace/Workspace.gen/sources_1/bd/design_1/ip/design_1_data_generator_0_0/design_1_data_generator_0_0/design_1_data_generator_0_0_in_context.xdc, line 11).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for generator_lvds_valid_p_0. (constraint file  c:/Vivado_Project/Workspace/Workspace.gen/sources_1/bd/design_1/ip/design_1_data_generator_0_0/design_1_data_generator_0_0/design_1_data_generator_0_0_in_context.xdc, line 12).
+Applied set_property IO_BUFFER_TYPE = NONE for clk_in1_0. (constraint file  c:/Vivado_Project/Workspace/Workspace.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk_in1_0. (constraint file  c:/Vivado_Project/Workspace/Workspace.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_in_context.xdc, line 5).
+Applied set_property IO_BUFFER_TYPE = NONE for ext_clk_i_n_0. (constraint file  c:/Vivado_Project/Workspace/Workspace.gen/sources_1/bd/design_1/ip/design_1_top_0_0/design_1_top_0_0/design_1_top_0_0_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ext_clk_i_n_0. (constraint file  c:/Vivado_Project/Workspace/Workspace.gen/sources_1/bd/design_1/ip/design_1_top_0_0/design_1_top_0_0/design_1_top_0_0_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for ext_clk_i_p_0. (constraint file  c:/Vivado_Project/Workspace/Workspace.gen/sources_1/bd/design_1/ip/design_1_top_0_0/design_1_top_0_0/design_1_top_0_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ext_clk_i_p_0. (constraint file  c:/Vivado_Project/Workspace/Workspace.gen/sources_1/bd/design_1/ip/design_1_top_0_0/design_1_top_0_0/design_1_top_0_0_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for lvds_n_i_0. (constraint file  c:/Vivado_Project/Workspace/Workspace.gen/sources_1/bd/design_1/ip/design_1_top_0_0/design_1_top_0_0/design_1_top_0_0_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for lvds_n_i_0. (constraint file  c:/Vivado_Project/Workspace/Workspace.gen/sources_1/bd/design_1/ip/design_1_top_0_0/design_1_top_0_0/design_1_top_0_0_in_context.xdc, line 6).
+Applied set_property IO_BUFFER_TYPE = NONE for lvds_p_i_0. (constraint file  c:/Vivado_Project/Workspace/Workspace.gen/sources_1/bd/design_1/ip/design_1_top_0_0/design_1_top_0_0/design_1_top_0_0_in_context.xdc, line 7).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for lvds_p_i_0. (constraint file  c:/Vivado_Project/Workspace/Workspace.gen/sources_1/bd/design_1/ip/design_1_top_0_0/design_1_top_0_0/design_1_top_0_0_in_context.xdc, line 8).
+Applied set_property IO_BUFFER_TYPE = NONE for valid_n_i_0. (constraint file  c:/Vivado_Project/Workspace/Workspace.gen/sources_1/bd/design_1/ip/design_1_top_0_0/design_1_top_0_0/design_1_top_0_0_in_context.xdc, line 9).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for valid_n_i_0. (constraint file  c:/Vivado_Project/Workspace/Workspace.gen/sources_1/bd/design_1/ip/design_1_top_0_0/design_1_top_0_0/design_1_top_0_0_in_context.xdc, line 10).
+Applied set_property IO_BUFFER_TYPE = NONE for valid_p_i_0. (constraint file  c:/Vivado_Project/Workspace/Workspace.gen/sources_1/bd/design_1/ip/design_1_top_0_0/design_1_top_0_0/design_1_top_0_0_in_context.xdc, line 11).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for valid_p_i_0. (constraint file  c:/Vivado_Project/Workspace/Workspace.gen/sources_1/bd/design_1/ip/design_1_top_0_0/design_1_top_0_0/design_1_top_0_0_in_context.xdc, line 12).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/data_generator_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/clk_wiz_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/top_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/xadc_wiz_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/ila_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/rst_clk_wiz_0_100M. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/xlconstant_0. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1614.020 ; gain = 621.652
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1614.020 ; gain = 621.652
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1614.020 ; gain = 621.652
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1614.020 ; gain = 621.652
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1614.020 ; gain = 621.652
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1614.020 ; gain = 621.652
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1614.020 ; gain = 621.652
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1614.020 ; gain = 621.652
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1614.020 ; gain = 621.652
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1614.020 ; gain = 621.652
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1614.020 ; gain = 621.652
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1614.020 ; gain = 621.652
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+------------------------------+----------+
+|      |BlackBox name                 |Instances |
++------+------------------------------+----------+
+|1     |design_1_clk_wiz_0_0          |         1|
+|2     |design_1_data_generator_0_0   |         1|
+|3     |design_1_ila_0_0              |         1|
+|4     |design_1_rst_clk_wiz_0_100M_0 |         1|
+|5     |design_1_top_0_0              |         1|
+|6     |design_1_xadc_wiz_0_1         |         1|
++------+------------------------------+----------+
+
+Report Cell Usage: 
++------+-----------------------------------+------+
+|      |Cell                               |Count |
++------+-----------------------------------+------+
+|1     |design_1_clk_wiz_0_0_bbox          |     1|
+|2     |design_1_data_generator_0_0_bbox   |     1|
+|3     |design_1_ila_0_0_bbox              |     1|
+|4     |design_1_rst_clk_wiz_0_100M_0_bbox |     1|
+|5     |design_1_top_0_0_bbox              |     1|
+|6     |design_1_xadc_wiz_0_1_bbox         |     1|
+|7     |LUT1                               |     8|
+|8     |IBUF                               |     3|
++------+-----------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1614.020 ; gain = 621.652
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:23 . Memory (MB): peak = 1614.020 ; gain = 563.613
+Synthesis Optimization Complete : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1614.020 ; gain = 621.652
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1614.020 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1614.020 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 692a5e1a
+INFO: [Common 17-83] Releasing license: Synthesis
+45 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 1614.020 ; gain = 1012.844
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1614.020 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Vivado_Project/Workspace/Workspace.runs/synth_1/design_1_wrapper.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Apr 19 14:37:39 2026...

@@ -1,0 +1,65 @@
+{
+   "ExpandedHierarchyInLayout":"",
+   "PinnedBlocks":"/axi_dma_0|/processing_system7_0|/ps7_0_axi_periph|/rst_ps7_0_100M|/xlconcat_0|/axi_smc|",
+   "PinnedPorts":"DDR|FIXED_IO|",
+   "guistr":"# # String gsaved with Nlview 7.0.19  2019-03-26 bk=1.5019 VDI=41 GEI=35 GUI=JA:9.0 non-TLS-threadsafe
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -lvl 6 -x 1950 -y 210 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 6 -x 1950 -y 240 -defaultsOSRD
+preplace port ext_clk_i_p_0 -pg 1 -lvl 6 -x 1950 -y 550 -defaultsOSRD
+preplace port valid_p_i_0 -pg 1 -lvl 6 -x 1950 -y 460 -defaultsOSRD
+preplace port lvds_n_i_0 -pg 1 -lvl 6 -x 1950 -y 490 -defaultsOSRD
+preplace port valid_n_i_0 -pg 1 -lvl 6 -x 1950 -y 430 -defaultsOSRD
+preplace port lvds_p_i_0 -pg 1 -lvl 6 -x 1950 -y 520 -defaultsOSRD
+preplace port ext_clk_i_n_0 -pg 1 -lvl 6 -x 1950 -y 580 -defaultsOSRD
+preplace port generator_lvds_clk_n_0 -pg 1 -lvl 6 -x 1950 -y 770 -defaultsOSRD
+preplace port generator_lvds_clk_p_0 -pg 1 -lvl 6 -x 1950 -y 740 -defaultsOSRD
+preplace port generator_lvds_data_n_0 -pg 1 -lvl 6 -x 1950 -y 650 -defaultsOSRD
+preplace port generator_lvds_data_p_0 -pg 1 -lvl 6 -x 1950 -y 620 -defaultsOSRD
+preplace port generator_lvds_valid_n_0 -pg 1 -lvl 6 -x 1950 -y 710 -defaultsOSRD
+preplace port generator_lvds_valid_p_0 -pg 1 -lvl 6 -x 1950 -y 680 -defaultsOSRD
+preplace inst axi_dma_0 -pg 1 -lvl 3 -x 900 -y 130 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 5 -x 1680 -y 260 -defaultsOSRD
+preplace inst ps7_0_axi_periph -pg 1 -lvl 2 -x 550 -y 100 -defaultsOSRD
+preplace inst rst_ps7_0_100M -pg 1 -lvl 1 -x 160 -y 360 -defaultsOSRD
+preplace inst xlconcat_0 -pg 1 -lvl 4 -x 1290 -y 300 -defaultsOSRD
+preplace inst axi_smc -pg 1 -lvl 4 -x 1290 -y 80 -defaultsOSRD
+preplace inst data_generator_0 -pg 1 -lvl 5 -x 1680 -y 700 -defaultsOSRD
+preplace inst ila_0 -pg 1 -lvl 4 -x 1290 -y 530 -defaultsOSRD
+preplace inst lvds_axis_0 -pg 1 -lvl 5 -x 1680 -y 490 -defaultsOSRD
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 6 -10 260 330 260 690 260 1090 170 1460 120 1910
+preplace netloc rst_ps7_0_100M_peripheral_aresetn 1 1 4 340 250 700 250 1070 230 1420
+preplace netloc xlconcat_0_dout 1 4 1 N 300
+preplace netloc axi_dma_0_s2mm_introut 1 3 1 1080 150n
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 6 -20 240 NJ 240 NJ 240 1100J 220 1430J 130 1900
+preplace netloc Net6 1 5 1 1910J 750n
+preplace netloc Net7 1 5 1 1910J 730n
+preplace netloc Net8 1 5 1 1920J 650n
+preplace netloc Net9 1 5 1 1900J 620n
+preplace netloc Net10 1 5 1 NJ 710
+preplace netloc Net11 1 5 1 1910J 680n
+preplace netloc processing_system7_0_FCLK_CLK1 1 4 2 1470 370 1890
+preplace netloc Net 1 5 1 1920 530n
+preplace netloc Net1 1 5 1 1900J 550n
+preplace netloc Net3 1 5 1 1910J 510n
+preplace netloc Net4 1 5 1 N 490
+preplace netloc Net5 1 5 1 1910J 460n
+preplace netloc Net12 1 5 1 1930J 430n
+preplace netloc processing_system7_0_FIXED_IO 1 5 1 1930J 230n
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 5 350 270 NJ 270 1110J 210 1470J 150 1890
+preplace netloc axi_smc_M00_AXI 1 4 1 1440 80n
+preplace netloc processing_system7_0_DDR 1 5 1 NJ 210
+preplace netloc ps7_0_axi_periph_M00_AXI 1 2 1 N 90
+preplace netloc axi_dma_0_M_AXI_S2MM 1 3 1 1060 60n
+preplace netloc ps7_0_axi_periph_M01_AXI 1 2 3 690 0 N 0 1450
+preplace netloc lvds_axis_0_M00_AXIS 1 2 4 710 230 1060J 160 1420J 140 1920
+levelinfo -pg 1 -40 160 550 900 1290 1680 1950
+pagesize -pg 1 -db -bbox -sgen -40 -220 2160 1140
+"
+}
+{
+   "da_axi4_cnt":"8",
+   "da_board_cnt":"6",
+   "da_clkrst_cnt":"3",
+   "da_ps7_cnt":"1"
+}

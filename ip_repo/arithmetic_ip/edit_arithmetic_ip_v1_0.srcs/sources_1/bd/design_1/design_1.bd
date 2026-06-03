@@ -1,0 +1,162 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xFE7CB57ECA4F2443",
+      "device": "xc7a100tcsg324-1",
+      "name": "design_1",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2019.1"
+    },
+    "design_tree": {
+      "div_gen_0": ""
+    },
+    "interface_ports": {
+      "M_AXIS_DOUT_0": {
+        "mode": "Master",
+        "vlnv": "xilinx.com:interface:axis_rtl:1.0",
+        "parameters": {
+          "FREQ_HZ": {
+            "value": "1000000"
+          }
+        }
+      },
+      "S_AXIS_DIVIDEND_0": {
+        "mode": "Slave",
+        "vlnv": "xilinx.com:interface:axis_rtl:1.0",
+        "parameters": {
+          "FREQ_HZ": {
+            "value": "1000000"
+          },
+          "HAS_TKEEP": {
+            "value": "0"
+          },
+          "HAS_TLAST": {
+            "value": "0"
+          },
+          "HAS_TREADY": {
+            "value": "0"
+          },
+          "HAS_TSTRB": {
+            "value": "0"
+          },
+          "LAYERED_METADATA": {
+            "value": "undef"
+          },
+          "TDATA_NUM_BYTES": {
+            "value": "2"
+          },
+          "TDEST_WIDTH": {
+            "value": "0"
+          },
+          "TID_WIDTH": {
+            "value": "0"
+          },
+          "TUSER_WIDTH": {
+            "value": "0"
+          }
+        }
+      },
+      "S_AXIS_DIVISOR_0": {
+        "mode": "Slave",
+        "vlnv": "xilinx.com:interface:axis_rtl:1.0",
+        "parameters": {
+          "FREQ_HZ": {
+            "value": "1000000"
+          },
+          "HAS_TKEEP": {
+            "value": "0"
+          },
+          "HAS_TLAST": {
+            "value": "0"
+          },
+          "HAS_TREADY": {
+            "value": "0"
+          },
+          "HAS_TSTRB": {
+            "value": "0"
+          },
+          "LAYERED_METADATA": {
+            "value": "undef"
+          },
+          "TDATA_NUM_BYTES": {
+            "value": "2"
+          },
+          "TDEST_WIDTH": {
+            "value": "0"
+          },
+          "TID_WIDTH": {
+            "value": "0"
+          },
+          "TUSER_WIDTH": {
+            "value": "0"
+          }
+        }
+      }
+    },
+    "ports": {
+      "aclk_0": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "FREQ_HZ": {
+            "value": "1000000"
+          }
+        }
+      }
+    },
+    "components": {
+      "div_gen_0": {
+        "vlnv": "xilinx.com:ip:div_gen:5.1",
+        "xci_name": "design_1_div_gen_0_0",
+        "parameters": {
+          "algorithm_type": {
+            "value": "Radix2"
+          },
+          "dividend_and_quotient_width": {
+            "value": "16"
+          },
+          "divisor_width": {
+            "value": "16"
+          },
+          "fractional_width": {
+            "value": "16"
+          },
+          "latency": {
+            "value": "20"
+          },
+          "remainder_type": {
+            "value": "Remainder"
+          }
+        }
+      }
+    },
+    "interface_nets": {
+      "S_AXIS_DIVISOR_0_1": {
+        "interface_ports": [
+          "S_AXIS_DIVISOR_0",
+          "div_gen_0/S_AXIS_DIVISOR"
+        ]
+      },
+      "div_gen_0_M_AXIS_DOUT": {
+        "interface_ports": [
+          "M_AXIS_DOUT_0",
+          "div_gen_0/M_AXIS_DOUT"
+        ]
+      },
+      "S_AXIS_DIVIDEND_0_1": {
+        "interface_ports": [
+          "S_AXIS_DIVIDEND_0",
+          "div_gen_0/S_AXIS_DIVIDEND"
+        ]
+      }
+    },
+    "nets": {
+      "aclk_0_1": {
+        "ports": [
+          "aclk_0",
+          "div_gen_0/aclk"
+        ]
+      }
+    }
+  }
+}

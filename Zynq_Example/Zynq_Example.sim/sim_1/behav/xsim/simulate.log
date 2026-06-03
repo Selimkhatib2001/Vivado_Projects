@@ -1,0 +1,5 @@
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+Failure: SIM DONE
+Time: 2000100 ns  Iteration: 0  Process: /top_tb/stim_proc  File: D:/Vivado_Projects/Zynq_Example/Zynq_Example.srcs/sim_1/new/top_tb.vhd
+$finish called at time : 2000100 ns : File "D:/Vivado_Projects/Zynq_Example/Zynq_Example.srcs/sim_1/new/top_tb.vhd" Line 61

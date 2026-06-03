@@ -1,0 +1,845 @@
+#-----------------------------------------------------------
+# Vivado v2024.1.2 (64-bit)
+# SW Build 5164865 on Thu Sep  5 14:37:11 MDT 2024
+# IP Build 5164407 on Fri Sep  6 08:18:11 MDT 2024
+# SharedData Build 5164864 on Thu Sep 05 13:09:09 MDT 2024
+# Start of session at: Thu Apr 16 15:32:00 2026
+# Process ID: 15392
+# Current directory: C:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.runs/design_1_ilmb_bram_if_cntlr_3_synth_1
+# Command line: vivado.exe -log design_1_ilmb_bram_if_cntlr_3.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_ilmb_bram_if_cntlr_3.tcl
+# Log file: C:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.runs/design_1_ilmb_bram_if_cntlr_3_synth_1/design_1_ilmb_bram_if_cntlr_3.vds
+# Journal file: C:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.runs/design_1_ilmb_bram_if_cntlr_3_synth_1\vivado.jou
+# Running On        :Mango
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :26200
+# Processor Detail  :12th Gen Intel(R) Core(TM) i7-12700H
+# CPU Frequency     :2688 MHz
+# CPU Physical cores:14
+# CPU Logical cores :20
+# Host memory       :16780 MB
+# Swap memory       :19042 MB
+# Total Virtual     :35823 MB
+# Available Virtual :7261 MB
+#-----------------------------------------------------------
+source design_1_ilmb_bram_if_cntlr_3.tcl -notrace
+create_project: Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 554.383 ; gain = 150.824
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Vivado_Project/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.1/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_ilmb_bram_if_cntlr_3
+Command: synth_design -top design_1_ilmb_bram_if_cntlr_3 -part xc7a35tcpg236-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Device 21-9227] Part: xc7a35tcpg236-1 does not have CEAM library.
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 35112
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1414.164 ; gain = 448.258
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_1_ilmb_bram_if_cntlr_3' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_ilmb_bram_if_cntlr_3/synth/design_1_ilmb_bram_if_cntlr_3.vhd:86]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_HIGHADDR bound to: 64'b0000000000000000000000000000000000000000000000001111111111111111 
+	Parameter C_BASEADDR bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_NUM_LMB bound to: 1 - type: integer 
+	Parameter C_MASK bound to: 64'b0000000000000000000000000000000001000000000000000000000000000000 
+	Parameter C_MASK1 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
+	Parameter C_MASK2 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
+	Parameter C_MASK3 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
+	Parameter C_MASK4 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
+	Parameter C_MASK5 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
+	Parameter C_MASK6 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
+	Parameter C_MASK7 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
+	Parameter C_LMB_AWIDTH bound to: 32 - type: integer 
+	Parameter C_LMB_DWIDTH bound to: 32 - type: integer 
+	Parameter C_LMB_PROTOCOL bound to: 0 - type: integer 
+	Parameter C_ARBITRATION bound to: 0 - type: integer 
+	Parameter C_ECC bound to: 1 - type: integer 
+	Parameter C_INTERCONNECT bound to: 0 - type: integer 
+	Parameter C_FAULT_INJECT bound to: 0 - type: integer 
+	Parameter C_CE_FAILING_REGISTERS bound to: 0 - type: integer 
+	Parameter C_UE_FAILING_REGISTERS bound to: 0 - type: integer 
+	Parameter C_ECC_STATUS_REGISTERS bound to: 0 - type: integer 
+	Parameter C_ECC_ONOFF_REGISTER bound to: 0 - type: integer 
+	Parameter C_ECC_ONOFF_RESET_VALUE bound to: 1 - type: integer 
+	Parameter C_CE_COUNTER_WIDTH bound to: 0 - type: integer 
+	Parameter C_WRITE_ACCESS bound to: 2 - type: integer 
+	Parameter C_BRAM_AWIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_CTRL_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_CTRL_DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'lmb_bram_if_cntlr' declared at 'c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:5037' bound to instance 'U0' of component 'lmb_bram_if_cntlr' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_ilmb_bram_if_cntlr_3/synth/design_1_ilmb_bram_if_cntlr_3.vhd:277]
+INFO: [Synth 8-638] synthesizing module 'lmb_bram_if_cntlr' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:5219]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_BASEADDR bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_MASK bound to: 64'b0000000000000000000000000000000001000000000000000000000000000000 
+	Parameter C_MASK1 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
+	Parameter C_MASK2 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
+	Parameter C_MASK3 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
+	Parameter C_MASK4 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
+	Parameter C_MASK5 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
+	Parameter C_MASK6 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
+	Parameter C_MASK7 bound to: 64'b0000000000000000000000000000000000000000100000000000000000000000 
+	Parameter C_LMB_AWIDTH bound to: 32 - type: integer 
+	Parameter C_LMB_DWIDTH bound to: 32 - type: integer 
+	Parameter C_ECC_WIDTH bound to: 7 - type: integer 
+	Parameter C_ECC bound to: 1 - type: integer 
+	Parameter C_NUM_LMB bound to: 1 - type: integer 
+	Parameter C_LMB_PROTOCOL bound to: 0 - type: integer 
+	Parameter C_ARBITRATION bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'lmb_mux' declared at 'c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:4143' bound to instance 'lmb_mux_I' of component 'lmb_mux' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:5545]
+INFO: [Synth 8-638] synthesizing module 'lmb_mux' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:4288]
+	Parameter C_AW bound to: 32 - type: integer 
+	Parameter C_BAR bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_MASK bound to: 64'b0000000000000000000000000000000001000000000000000000000000000000 
+INFO: [Synth 8-3491] module 'pselect_mask' declared at 'c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3467' bound to instance 'pselect_mask_lmb' of component 'pselect_mask' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:4401]
+INFO: [Synth 8-638] synthesizing module 'pselect_mask' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3482]
+INFO: [Synth 8-256] done synthesizing module 'pselect_mask' (0#1) [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3482]
+INFO: [Synth 8-256] done synthesizing module 'lmb_mux' (0#1) [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:4288]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_WIDTH bound to: 32 - type: integer 
+	Parameter C_ECC_WIDTH bound to: 7 - type: integer 
+	Parameter C_ENCODE bound to: 0 - type: bool 
+INFO: [Synth 8-3491] module 'checkbit_handler' declared at 'c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:1426' bound to instance 'checkbit_handler_I1' of component 'checkbit_handler' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:5827]
+INFO: [Synth 8-638] synthesizing module 'checkbit_handler' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:1445]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_SIZE bound to: 6 - type: integer 
+INFO: [Synth 8-3491] module 'Parity' declared at 'c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:911' bound to instance 'Parity_chk0_1' of component 'Parity' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:1632]
+INFO: [Synth 8-638] synthesizing module 'Parity' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:922]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter INIT bound to: 64'b0110100110010110100101100110100110010110011010010110100110010110 
+INFO: [Synth 8-3491] module 'MB_LUT6' declared at 'c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:297' bound to instance 'XOR6_LUT' of component 'MB_LUT6' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:992]
+INFO: [Synth 8-638] synthesizing module 'MB_LUT6' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:316]
+	Parameter INIT bound to: 64'b0110100110010110100101100110100110010110011010010110100110010110 
+INFO: [Synth 8-113] binding component instance 'Native' to cell 'LUT6' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:340]
+INFO: [Synth 8-256] done synthesizing module 'MB_LUT6' (0#1) [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:316]
+INFO: [Synth 8-256] done synthesizing module 'Parity' (0#1) [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:922]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_SIZE bound to: 6 - type: integer 
+INFO: [Synth 8-3491] module 'Parity' declared at 'c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:911' bound to instance 'Parity_chk0_2' of component 'Parity' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:1637]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_SIZE bound to: 6 - type: integer 
+INFO: [Synth 8-3491] module 'Parity' declared at 'c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:911' bound to instance 'Parity_chk0_3' of component 'Parity' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:1642]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_SIZE bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'ParityEnable' declared at 'c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:1256' bound to instance 'Parity_chk0_4' of component 'ParityEnable' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:1647]
+INFO: [Synth 8-638] synthesizing module 'ParityEnable' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:1268]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter INIT bound to: 64'b1001011001101001011010011001011000000000000000000000000000000000 
+INFO: [Synth 8-3491] module 'MB_LUT6' declared at 'c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:297' bound to instance 'XOR6_LUT' of component 'MB_LUT6' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:1314]
+INFO: [Synth 8-638] synthesizing module 'MB_LUT6__parameterized1' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:316]
+	Parameter INIT bound to: 64'b1001011001101001011010011001011000000000000000000000000000000000 
+INFO: [Synth 8-113] binding component instance 'Native' to cell 'LUT6' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:340]
+INFO: [Synth 8-256] done synthesizing module 'MB_LUT6__parameterized1' (0#1) [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:316]
+INFO: [Synth 8-256] done synthesizing module 'ParityEnable' (0#1) [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:1268]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_SIZE bound to: 6 - type: integer 
+INFO: [Synth 8-3491] module 'Parity' declared at 'c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:911' bound to instance 'Parity_chk1_1' of component 'Parity' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:1658]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_SIZE bound to: 6 - type: integer 
+INFO: [Synth 8-3491] module 'Parity' declared at 'c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:911' bound to instance 'Parity_chk1_2' of component 'Parity' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:1663]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_SIZE bound to: 6 - type: integer 
+INFO: [Synth 8-3491] module 'Parity' declared at 'c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:911' bound to instance 'Parity_chk1_3' of component 'Parity' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:1668]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_SIZE bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'ParityEnable' declared at 'c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:1256' bound to instance 'Parity_chk1_4' of component 'ParityEnable' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:1673]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_SIZE bound to: 6 - type: integer 
+INFO: [Synth 8-3491] module 'Parity' declared at 'c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:911' bound to instance 'Parity_chk2_1' of component 'Parity' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:1684]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_SIZE bound to: 6 - type: integer 
+INFO: [Synth 8-3491] module 'Parity' declared at 'c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:911' bound to instance 'Parity_chk2_2' of component 'Parity' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:1689]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_SIZE bound to: 6 - type: integer 
+INFO: [Synth 8-3491] module 'Parity' declared at 'c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:911' bound to instance 'Parity_chk2_3' of component 'Parity' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:1694]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_SIZE bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'ParityEnable' declared at 'c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:1256' bound to instance 'Parity_chk2_4' of component 'ParityEnable' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:1699]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_SIZE bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'Parity' declared at 'c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:911' bound to instance 'Parity_chk3_1' of component 'Parity' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:1710]
+INFO: [Synth 8-638] synthesizing module 'Parity__parameterized2' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:922]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter INIT bound to: 64'b0110100110010110100101100110100110010110011010010110100110010110 
+INFO: [Synth 8-3491] module 'MB_LUT6' declared at 'c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:297' bound to instance 'XOR6_LUT1' of component 'MB_LUT6' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:1076]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter INIT bound to: 64'b1001011001101001011010011001011001101001100101101001011001101001 
+INFO: [Synth 8-3491] module 'MB_LUT6' declared at 'c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:297' bound to instance 'XOR6_LUT2_N' of component 'MB_LUT6' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:1089]
+INFO: [Synth 8-638] synthesizing module 'MB_LUT6__parameterized4' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:316]
+	Parameter INIT bound to: 64'b1001011001101001011010011001011001101001100101101001011001101001 
+INFO: [Synth 8-113] binding component instance 'Native' to cell 'LUT6' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:340]
+INFO: [Synth 8-256] done synthesizing module 'MB_LUT6__parameterized4' (0#1) [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:316]
+	Parameter C_TARGET bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'MB_MUXF7' declared at 'c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:448' bound to instance 'MUXF7_LUT1' of component 'MB_MUXF7' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:1102]
+INFO: [Synth 8-638] synthesizing module 'MB_MUXF7' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:463]
+INFO: [Synth 8-113] binding component instance 'Native' to cell 'MUXF7' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:473]
+INFO: [Synth 8-256] done synthesizing module 'MB_MUXF7' (0#1) [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:463]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter INIT bound to: 64'b0110100110010110100101100110100110010110011010010110100110010110 
+INFO: [Synth 8-3491] module 'MB_LUT6' declared at 'c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:297' bound to instance 'XOR6_LUT3' of component 'MB_LUT6' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:1111]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter INIT bound to: 64'b1001011001101001011010011001011001101001100101101001011001101001 
+INFO: [Synth 8-3491] module 'MB_LUT6' declared at 'c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:297' bound to instance 'XOR6_LUT4_N' of component 'MB_LUT6' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:1124]
+	Parameter C_TARGET bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'MB_MUXF7' declared at 'c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:448' bound to instance 'MUXF7_LUT2' of component 'MB_MUXF7' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:1137]
+	Parameter C_TARGET bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'MB_MUXF8' declared at 'c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:491' bound to instance 'MUXF8_LUT' of component 'MB_MUXF8' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:1146]
+INFO: [Synth 8-638] synthesizing module 'MB_MUXF8' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:506]
+INFO: [Synth 8-113] binding component instance 'Native' to cell 'MUXF8' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:516]
+INFO: [Synth 8-256] done synthesizing module 'MB_MUXF8' (0#1) [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:506]
+INFO: [Synth 8-256] done synthesizing module 'Parity__parameterized2' (0#1) [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:922]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_SIZE bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'Parity' declared at 'c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:911' bound to instance 'Parity_chk3_2' of component 'Parity' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:1715]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_SIZE bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'ParityEnable' declared at 'c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:1256' bound to instance 'Parity_chk3_3' of component 'ParityEnable' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:1720]
+INFO: [Synth 8-638] synthesizing module 'ParityEnable__parameterized2' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:1268]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter INIT bound to: 64'b1001011001101001011010011001011000000000000000000000000000000000 
+INFO: [Synth 8-3491] module 'MB_LUT6' declared at 'c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:297' bound to instance 'XOR6_LUT' of component 'MB_LUT6' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:1314]
+INFO: [Synth 8-256] done synthesizing module 'ParityEnable__parameterized2' (0#1) [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:1268]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_SIZE bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'Parity' declared at 'c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:911' bound to instance 'Parity_chk4_1' of component 'Parity' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:1731]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_SIZE bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'Parity' declared at 'c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:911' bound to instance 'Parity_chk4_2' of component 'Parity' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:1736]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_SIZE bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'Parity' declared at 'c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:911' bound to instance 'Parity_chk4_3' of component 'Parity' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:1741]
+INFO: [Synth 8-638] synthesizing module 'Parity__parameterized4' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:922]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter INIT bound to: 64'b0110100110010110100101100110100110010110011010010110100110010110 
+INFO: [Synth 8-3491] module 'MB_LUT6' declared at 'c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:297' bound to instance 'XOR6_LUT' of component 'MB_LUT6' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:992]
+INFO: [Synth 8-256] done synthesizing module 'Parity__parameterized4' (0#1) [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:922]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_SIZE bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'Parity' declared at 'c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:911' bound to instance 'Parity_chk5_1' of component 'Parity' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:1752]
+INFO: [Synth 8-638] synthesizing module 'Parity__parameterized6' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:922]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter INIT bound to: 64'b0110100110010110100101100110100110010110011010010110100110010110 
+INFO: [Synth 8-3491] module 'MB_LUT6' declared at 'c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:297' bound to instance 'XOR6_LUT' of component 'MB_LUT6' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:1021]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter INIT bound to: 64'b1001011001101001011010011001011001101001100101101001011001101001 
+INFO: [Synth 8-3491] module 'MB_LUT6' declared at 'c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:297' bound to instance 'XOR6_LUT_N' of component 'MB_LUT6' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:1034]
+	Parameter C_TARGET bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'MB_MUXF7' declared at 'c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:448' bound to instance 'MUXF7_LUT' of component 'MB_MUXF7' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:1047]
+INFO: [Synth 8-256] done synthesizing module 'Parity__parameterized6' (0#1) [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:922]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_SIZE bound to: 6 - type: integer 
+INFO: [Synth 8-3491] module 'Parity' declared at 'c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:911' bound to instance 'Parity_chk6_1' of component 'Parity' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:1767]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_SIZE bound to: 6 - type: integer 
+INFO: [Synth 8-3491] module 'Parity' declared at 'c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:911' bound to instance 'Parity_chk6_2' of component 'Parity' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:1772]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_SIZE bound to: 6 - type: integer 
+INFO: [Synth 8-3491] module 'Parity' declared at 'c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:911' bound to instance 'Parity_chk6_3' of component 'Parity' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:1777]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_SIZE bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'Parity' declared at 'c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:911' bound to instance 'Parity_chk6_4' of component 'Parity' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:1782]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_SIZE bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'Parity' declared at 'c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:911' bound to instance 'Parity_chk6_5' of component 'Parity' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:1787]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_SIZE bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'Parity' declared at 'c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:911' bound to instance 'Parity_chk6_6' of component 'Parity' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:1792]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_SIZE bound to: 6 - type: integer 
+INFO: [Synth 8-3491] module 'Parity' declared at 'c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:911' bound to instance 'Parity_chk6_7' of component 'Parity' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:1797]
+	Parameter C_TARGET bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'MB_MUXF7' declared at 'c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:448' bound to instance 'UE_MUXF7' of component 'MB_MUXF7' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:1823]
+INFO: [Synth 8-256] done synthesizing module 'checkbit_handler' (0#1) [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:1445]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter Correct_Value bound to: 7'b1100001 
+INFO: [Synth 8-3491] module 'Correct_One_Bit' declared at 'c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3109' bound to instance 'Correct_One_Bit_I' of component 'Correct_One_Bit' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:5898]
+INFO: [Synth 8-638] synthesizing module 'Correct_One_Bit' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3119]
+	Parameter C_TARGET bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'MB_MUXCY' declared at 'c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:364' bound to instance 'Corr_MUXCY' of component 'MB_MUXCY' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3182]
+INFO: [Synth 8-638] synthesizing module 'MB_MUXCY' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:379]
+INFO: [Synth 8-113] binding component instance 'Native' to cell 'MUXCY_L' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:389]
+INFO: [Synth 8-256] done synthesizing module 'MB_MUXCY' (0#1) [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:379]
+	Parameter C_TARGET bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'MB_XORCY' declared at 'c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:407' bound to instance 'Corr_XORCY' of component 'MB_XORCY' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3191]
+INFO: [Synth 8-638] synthesizing module 'MB_XORCY' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:421]
+INFO: [Synth 8-113] binding component instance 'Native' to cell 'XORCY' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:431]
+INFO: [Synth 8-256] done synthesizing module 'MB_XORCY' (0#1) [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:421]
+INFO: [Synth 8-256] done synthesizing module 'Correct_One_Bit' (0#1) [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3119]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter Correct_Value bound to: 7'b1010001 
+INFO: [Synth 8-3491] module 'Correct_One_Bit' declared at 'c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3109' bound to instance 'Correct_One_Bit_I' of component 'Correct_One_Bit' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:5898]
+INFO: [Synth 8-638] synthesizing module 'Correct_One_Bit__parameterized1' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3119]
+	Parameter C_TARGET bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'MB_MUXCY' declared at 'c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:364' bound to instance 'Corr_MUXCY' of component 'MB_MUXCY' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3182]
+	Parameter C_TARGET bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'MB_XORCY' declared at 'c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:407' bound to instance 'Corr_XORCY' of component 'MB_XORCY' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3191]
+INFO: [Synth 8-256] done synthesizing module 'Correct_One_Bit__parameterized1' (0#1) [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3119]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter Correct_Value bound to: 7'b0110001 
+INFO: [Synth 8-3491] module 'Correct_One_Bit' declared at 'c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3109' bound to instance 'Correct_One_Bit_I' of component 'Correct_One_Bit' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:5898]
+INFO: [Synth 8-638] synthesizing module 'Correct_One_Bit__parameterized3' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3119]
+	Parameter C_TARGET bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'MB_MUXCY' declared at 'c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:364' bound to instance 'Corr_MUXCY' of component 'MB_MUXCY' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3182]
+	Parameter C_TARGET bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'MB_XORCY' declared at 'c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:407' bound to instance 'Corr_XORCY' of component 'MB_XORCY' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3191]
+INFO: [Synth 8-256] done synthesizing module 'Correct_One_Bit__parameterized3' (0#1) [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3119]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter Correct_Value bound to: 7'b1110001 
+INFO: [Synth 8-3491] module 'Correct_One_Bit' declared at 'c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3109' bound to instance 'Correct_One_Bit_I' of component 'Correct_One_Bit' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:5898]
+INFO: [Synth 8-638] synthesizing module 'Correct_One_Bit__parameterized5' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3119]
+	Parameter C_TARGET bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'MB_MUXCY' declared at 'c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:364' bound to instance 'Corr_MUXCY' of component 'MB_MUXCY' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3182]
+	Parameter C_TARGET bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'MB_XORCY' declared at 'c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:407' bound to instance 'Corr_XORCY' of component 'MB_XORCY' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3191]
+INFO: [Synth 8-256] done synthesizing module 'Correct_One_Bit__parameterized5' (0#1) [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3119]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter Correct_Value bound to: 7'b1001001 
+INFO: [Synth 8-3491] module 'Correct_One_Bit' declared at 'c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3109' bound to instance 'Correct_One_Bit_I' of component 'Correct_One_Bit' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:5898]
+INFO: [Synth 8-638] synthesizing module 'Correct_One_Bit__parameterized7' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3119]
+	Parameter C_TARGET bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'MB_MUXCY' declared at 'c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:364' bound to instance 'Corr_MUXCY' of component 'MB_MUXCY' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3182]
+	Parameter C_TARGET bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'MB_XORCY' declared at 'c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:407' bound to instance 'Corr_XORCY' of component 'MB_XORCY' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3191]
+INFO: [Synth 8-256] done synthesizing module 'Correct_One_Bit__parameterized7' (0#1) [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3119]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter Correct_Value bound to: 7'b0101001 
+INFO: [Synth 8-3491] module 'Correct_One_Bit' declared at 'c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3109' bound to instance 'Correct_One_Bit_I' of component 'Correct_One_Bit' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:5898]
+INFO: [Synth 8-638] synthesizing module 'Correct_One_Bit__parameterized9' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3119]
+	Parameter C_TARGET bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'MB_MUXCY' declared at 'c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:364' bound to instance 'Corr_MUXCY' of component 'MB_MUXCY' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3182]
+	Parameter C_TARGET bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'MB_XORCY' declared at 'c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:407' bound to instance 'Corr_XORCY' of component 'MB_XORCY' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3191]
+INFO: [Synth 8-256] done synthesizing module 'Correct_One_Bit__parameterized9' (0#1) [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3119]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter Correct_Value bound to: 7'b1101001 
+INFO: [Synth 8-3491] module 'Correct_One_Bit' declared at 'c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3109' bound to instance 'Correct_One_Bit_I' of component 'Correct_One_Bit' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:5898]
+INFO: [Synth 8-638] synthesizing module 'Correct_One_Bit__parameterized11' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3119]
+	Parameter C_TARGET bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'MB_MUXCY' declared at 'c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:364' bound to instance 'Corr_MUXCY' of component 'MB_MUXCY' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3182]
+	Parameter C_TARGET bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'MB_XORCY' declared at 'c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:407' bound to instance 'Corr_XORCY' of component 'MB_XORCY' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3191]
+INFO: [Synth 8-256] done synthesizing module 'Correct_One_Bit__parameterized11' (0#1) [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3119]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter Correct_Value bound to: 7'b0011001 
+INFO: [Synth 8-3491] module 'Correct_One_Bit' declared at 'c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3109' bound to instance 'Correct_One_Bit_I' of component 'Correct_One_Bit' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:5898]
+INFO: [Synth 8-638] synthesizing module 'Correct_One_Bit__parameterized13' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3119]
+	Parameter C_TARGET bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'MB_MUXCY' declared at 'c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:364' bound to instance 'Corr_MUXCY' of component 'MB_MUXCY' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3182]
+	Parameter C_TARGET bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'MB_XORCY' declared at 'c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:407' bound to instance 'Corr_XORCY' of component 'MB_XORCY' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3191]
+INFO: [Synth 8-256] done synthesizing module 'Correct_One_Bit__parameterized13' (0#1) [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3119]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter Correct_Value bound to: 7'b1011001 
+INFO: [Synth 8-3491] module 'Correct_One_Bit' declared at 'c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3109' bound to instance 'Correct_One_Bit_I' of component 'Correct_One_Bit' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:5898]
+INFO: [Synth 8-638] synthesizing module 'Correct_One_Bit__parameterized15' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3119]
+	Parameter C_TARGET bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'MB_MUXCY' declared at 'c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:364' bound to instance 'Corr_MUXCY' of component 'MB_MUXCY' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3182]
+	Parameter C_TARGET bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'MB_XORCY' declared at 'c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:407' bound to instance 'Corr_XORCY' of component 'MB_XORCY' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3191]
+INFO: [Synth 8-256] done synthesizing module 'Correct_One_Bit__parameterized15' (0#1) [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3119]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter Correct_Value bound to: 7'b0111001 
+INFO: [Synth 8-3491] module 'Correct_One_Bit' declared at 'c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3109' bound to instance 'Correct_One_Bit_I' of component 'Correct_One_Bit' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:5898]
+INFO: [Synth 8-638] synthesizing module 'Correct_One_Bit__parameterized17' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3119]
+	Parameter C_TARGET bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'MB_MUXCY' declared at 'c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:364' bound to instance 'Corr_MUXCY' of component 'MB_MUXCY' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3182]
+	Parameter C_TARGET bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'MB_XORCY' declared at 'c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:407' bound to instance 'Corr_XORCY' of component 'MB_XORCY' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3191]
+INFO: [Synth 8-256] done synthesizing module 'Correct_One_Bit__parameterized17' (0#1) [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3119]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter Correct_Value bound to: 7'b1111001 
+INFO: [Synth 8-3491] module 'Correct_One_Bit' declared at 'c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3109' bound to instance 'Correct_One_Bit_I' of component 'Correct_One_Bit' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:5898]
+INFO: [Synth 8-638] synthesizing module 'Correct_One_Bit__parameterized19' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3119]
+	Parameter C_TARGET bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'MB_MUXCY' declared at 'c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:364' bound to instance 'Corr_MUXCY' of component 'MB_MUXCY' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3182]
+	Parameter C_TARGET bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'MB_XORCY' declared at 'c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:407' bound to instance 'Corr_XORCY' of component 'MB_XORCY' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3191]
+INFO: [Synth 8-256] done synthesizing module 'Correct_One_Bit__parameterized19' (0#1) [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3119]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter Correct_Value bound to: 7'b1000101 
+INFO: [Synth 8-3491] module 'Correct_One_Bit' declared at 'c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3109' bound to instance 'Correct_One_Bit_I' of component 'Correct_One_Bit' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:5898]
+INFO: [Synth 8-638] synthesizing module 'Correct_One_Bit__parameterized21' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3119]
+	Parameter C_TARGET bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'MB_MUXCY' declared at 'c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:364' bound to instance 'Corr_MUXCY' of component 'MB_MUXCY' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3182]
+	Parameter C_TARGET bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'MB_XORCY' declared at 'c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:407' bound to instance 'Corr_XORCY' of component 'MB_XORCY' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3191]
+INFO: [Synth 8-256] done synthesizing module 'Correct_One_Bit__parameterized21' (0#1) [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3119]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter Correct_Value bound to: 7'b0100101 
+INFO: [Synth 8-3491] module 'Correct_One_Bit' declared at 'c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3109' bound to instance 'Correct_One_Bit_I' of component 'Correct_One_Bit' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:5898]
+INFO: [Synth 8-638] synthesizing module 'Correct_One_Bit__parameterized23' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3119]
+	Parameter C_TARGET bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'MB_MUXCY' declared at 'c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:364' bound to instance 'Corr_MUXCY' of component 'MB_MUXCY' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3182]
+	Parameter C_TARGET bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'MB_XORCY' declared at 'c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:407' bound to instance 'Corr_XORCY' of component 'MB_XORCY' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3191]
+INFO: [Synth 8-256] done synthesizing module 'Correct_One_Bit__parameterized23' (0#1) [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3119]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter Correct_Value bound to: 7'b1100101 
+INFO: [Synth 8-3491] module 'Correct_One_Bit' declared at 'c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3109' bound to instance 'Correct_One_Bit_I' of component 'Correct_One_Bit' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:5898]
+INFO: [Synth 8-638] synthesizing module 'Correct_One_Bit__parameterized25' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3119]
+	Parameter C_TARGET bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'MB_MUXCY' declared at 'c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:364' bound to instance 'Corr_MUXCY' of component 'MB_MUXCY' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3182]
+	Parameter C_TARGET bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'MB_XORCY' declared at 'c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:407' bound to instance 'Corr_XORCY' of component 'MB_XORCY' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3191]
+INFO: [Synth 8-256] done synthesizing module 'Correct_One_Bit__parameterized25' (0#1) [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3119]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter Correct_Value bound to: 7'b0010101 
+INFO: [Synth 8-3491] module 'Correct_One_Bit' declared at 'c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3109' bound to instance 'Correct_One_Bit_I' of component 'Correct_One_Bit' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:5898]
+INFO: [Synth 8-638] synthesizing module 'Correct_One_Bit__parameterized27' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3119]
+	Parameter C_TARGET bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'MB_MUXCY' declared at 'c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:364' bound to instance 'Corr_MUXCY' of component 'MB_MUXCY' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3182]
+	Parameter C_TARGET bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'MB_XORCY' declared at 'c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:407' bound to instance 'Corr_XORCY' of component 'MB_XORCY' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3191]
+INFO: [Synth 8-256] done synthesizing module 'Correct_One_Bit__parameterized27' (0#1) [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3119]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter Correct_Value bound to: 7'b1010101 
+INFO: [Synth 8-3491] module 'Correct_One_Bit' declared at 'c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3109' bound to instance 'Correct_One_Bit_I' of component 'Correct_One_Bit' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:5898]
+INFO: [Synth 8-638] synthesizing module 'Correct_One_Bit__parameterized29' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3119]
+	Parameter C_TARGET bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'MB_MUXCY' declared at 'c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:364' bound to instance 'Corr_MUXCY' of component 'MB_MUXCY' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3182]
+	Parameter C_TARGET bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'MB_XORCY' declared at 'c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:407' bound to instance 'Corr_XORCY' of component 'MB_XORCY' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3191]
+INFO: [Synth 8-256] done synthesizing module 'Correct_One_Bit__parameterized29' (0#1) [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3119]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter Correct_Value bound to: 7'b0110101 
+INFO: [Synth 8-3491] module 'Correct_One_Bit' declared at 'c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3109' bound to instance 'Correct_One_Bit_I' of component 'Correct_One_Bit' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:5898]
+INFO: [Synth 8-638] synthesizing module 'Correct_One_Bit__parameterized31' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3119]
+	Parameter C_TARGET bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'MB_MUXCY' declared at 'c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:364' bound to instance 'Corr_MUXCY' of component 'MB_MUXCY' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3182]
+	Parameter C_TARGET bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'MB_XORCY' declared at 'c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:407' bound to instance 'Corr_XORCY' of component 'MB_XORCY' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3191]
+INFO: [Synth 8-256] done synthesizing module 'Correct_One_Bit__parameterized31' (0#1) [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3119]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter Correct_Value bound to: 7'b1110101 
+INFO: [Synth 8-3491] module 'Correct_One_Bit' declared at 'c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3109' bound to instance 'Correct_One_Bit_I' of component 'Correct_One_Bit' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:5898]
+INFO: [Synth 8-638] synthesizing module 'Correct_One_Bit__parameterized33' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3119]
+	Parameter C_TARGET bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'MB_MUXCY' declared at 'c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:364' bound to instance 'Corr_MUXCY' of component 'MB_MUXCY' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3182]
+	Parameter C_TARGET bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'MB_XORCY' declared at 'c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:407' bound to instance 'Corr_XORCY' of component 'MB_XORCY' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3191]
+INFO: [Synth 8-256] done synthesizing module 'Correct_One_Bit__parameterized33' (0#1) [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3119]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter Correct_Value bound to: 7'b0001101 
+INFO: [Synth 8-3491] module 'Correct_One_Bit' declared at 'c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3109' bound to instance 'Correct_One_Bit_I' of component 'Correct_One_Bit' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:5898]
+INFO: [Common 17-14] Message 'Synth 8-3491' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-638] synthesizing module 'Correct_One_Bit__parameterized35' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3119]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_TARGET bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Correct_One_Bit__parameterized35' (0#1) [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3119]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter Correct_Value bound to: 7'b1001101 
+INFO: [Synth 8-638] synthesizing module 'Correct_One_Bit__parameterized37' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3119]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_TARGET bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Correct_One_Bit__parameterized37' (0#1) [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3119]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter Correct_Value bound to: 7'b0101101 
+INFO: [Synth 8-638] synthesizing module 'Correct_One_Bit__parameterized39' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3119]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_TARGET bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Correct_One_Bit__parameterized39' (0#1) [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3119]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter Correct_Value bound to: 7'b1101101 
+INFO: [Synth 8-638] synthesizing module 'Correct_One_Bit__parameterized41' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3119]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_TARGET bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Correct_One_Bit__parameterized41' (0#1) [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3119]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter Correct_Value bound to: 7'b0011101 
+INFO: [Synth 8-638] synthesizing module 'Correct_One_Bit__parameterized43' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3119]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_TARGET bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Correct_One_Bit__parameterized43' (0#1) [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3119]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter Correct_Value bound to: 7'b1011101 
+INFO: [Synth 8-638] synthesizing module 'Correct_One_Bit__parameterized45' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3119]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_TARGET bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Correct_One_Bit__parameterized45' (0#1) [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3119]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter Correct_Value bound to: 7'b0111101 
+INFO: [Synth 8-638] synthesizing module 'Correct_One_Bit__parameterized47' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3119]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_TARGET bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Correct_One_Bit__parameterized47' (0#1) [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3119]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter Correct_Value bound to: 7'b1111101 
+INFO: [Synth 8-638] synthesizing module 'Correct_One_Bit__parameterized49' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3119]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_TARGET bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Correct_One_Bit__parameterized49' (0#1) [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3119]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter Correct_Value bound to: 7'b1000011 
+INFO: [Synth 8-638] synthesizing module 'Correct_One_Bit__parameterized51' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3119]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_TARGET bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Correct_One_Bit__parameterized51' (0#1) [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3119]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter Correct_Value bound to: 7'b0100011 
+INFO: [Synth 8-638] synthesizing module 'Correct_One_Bit__parameterized53' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3119]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_TARGET bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Correct_One_Bit__parameterized53' (0#1) [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3119]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter Correct_Value bound to: 7'b1100011 
+INFO: [Synth 8-638] synthesizing module 'Correct_One_Bit__parameterized55' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3119]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_TARGET bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Correct_One_Bit__parameterized55' (0#1) [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3119]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter Correct_Value bound to: 7'b0010011 
+INFO: [Synth 8-638] synthesizing module 'Correct_One_Bit__parameterized57' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3119]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_TARGET bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Correct_One_Bit__parameterized57' (0#1) [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3119]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter Correct_Value bound to: 7'b1010011 
+INFO: [Synth 8-638] synthesizing module 'Correct_One_Bit__parameterized59' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3119]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_TARGET bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Correct_One_Bit__parameterized59' (0#1) [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3119]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter Correct_Value bound to: 7'b0110011 
+INFO: [Synth 8-638] synthesizing module 'Correct_One_Bit__parameterized61' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3119]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_TARGET bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Correct_One_Bit__parameterized61' (0#1) [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:3119]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_WIDTH bound to: 32 - type: integer 
+	Parameter C_ECC_WIDTH bound to: 7 - type: integer 
+	Parameter C_ENCODE bound to: 1 - type: bool 
+INFO: [Synth 8-638] synthesizing module 'checkbit_handler__parameterized1' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:1445]
+	Parameter C_TARGET bound to: 2 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'XOR18' [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:693]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter INIT bound to: 64'b0110100110010110100101100110100110010110011010010110100110010110 
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter INIT bound to: 64'b0110100110010110100101100110100110010110011010010110100110010110 
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter INIT bound to: 64'b0110100110010110100101100110100110010110011010010110100110010110 
+	Parameter C_TARGET bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'XOR18' (0#1) [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:693]
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_TARGET bound to: 2 - type: integer 
+	Parameter C_SIZE bound to: 6 - type: integer 
+	Parameter C_TARGET bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'checkbit_handler__parameterized1' (0#1) [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:1445]
+INFO: [Synth 8-256] done synthesizing module 'lmb_bram_if_cntlr' (0#1) [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:5219]
+INFO: [Synth 8-256] done synthesizing module 'design_1_ilmb_bram_if_cntlr_3' (0#1) [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_ilmb_bram_if_cntlr_3/synth/design_1_ilmb_bram_if_cntlr_3.vhd:86]
+WARNING: [Synth 8-6014] Unused sequential element ECC.write_access_reg was removed.  [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ipshared/3eb2/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd:5918]
+WARNING: [Synth 8-7129] Port CheckIn[0] in module checkbit_handler__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CheckIn[1] in module checkbit_handler__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CheckIn[2] in module checkbit_handler__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CheckIn[3] in module checkbit_handler__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CheckIn[4] in module checkbit_handler__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CheckIn[5] in module checkbit_handler__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CheckIn[6] in module checkbit_handler__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Enable_ECC in module checkbit_handler__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port UE_Q in module checkbit_handler__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE_Q in module checkbit_handler__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[0] in module pselect_mask is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[2] in module pselect_mask is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[3] in module pselect_mask is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[4] in module pselect_mask is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[5] in module pselect_mask is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[6] in module pselect_mask is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[7] in module pselect_mask is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[8] in module pselect_mask is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[9] in module pselect_mask is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[10] in module pselect_mask is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[11] in module pselect_mask is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[12] in module pselect_mask is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[13] in module pselect_mask is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[14] in module pselect_mask is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[15] in module pselect_mask is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[16] in module pselect_mask is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[17] in module pselect_mask is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[18] in module pselect_mask is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[19] in module pselect_mask is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[20] in module pselect_mask is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[21] in module pselect_mask is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[22] in module pselect_mask is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[23] in module pselect_mask is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[24] in module pselect_mask is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[25] in module pselect_mask is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[26] in module pselect_mask is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[27] in module pselect_mask is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[28] in module pselect_mask is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[29] in module pselect_mask is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[30] in module pselect_mask is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[31] in module pselect_mask is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB_Clk in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB_Rst in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_ABus[0] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_ABus[1] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_ABus[2] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_ABus[3] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_ABus[4] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_ABus[5] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_ABus[6] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_ABus[7] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_ABus[8] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_ABus[9] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_ABus[10] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_ABus[11] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_ABus[12] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_ABus[13] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_ABus[14] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_ABus[15] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_ABus[16] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_ABus[17] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_ABus[18] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_ABus[19] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_ABus[20] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_ABus[21] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_ABus[22] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_ABus[23] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_ABus[24] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_ABus[25] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_ABus[26] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_ABus[27] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_ABus[28] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_ABus[29] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_ABus[30] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_ABus[31] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_WriteDBus[0] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_WriteDBus[1] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_WriteDBus[2] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_WriteDBus[3] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_WriteDBus[4] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_WriteDBus[5] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_WriteDBus[6] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_WriteDBus[7] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_WriteDBus[8] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_WriteDBus[9] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_WriteDBus[10] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_WriteDBus[11] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_WriteDBus[12] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_WriteDBus[13] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_WriteDBus[14] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_WriteDBus[15] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_WriteDBus[16] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_WriteDBus[17] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_WriteDBus[18] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_WriteDBus[19] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_WriteDBus[20] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_WriteDBus[21] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_WriteDBus[22] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_WriteDBus[23] in module lmb_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LMB1_WriteDBus[24] in module lmb_mux is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:17 ; elapsed = 00:00:23 . Memory (MB): peak = 1538.227 ; gain = 572.320
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:23 . Memory (MB): peak = 1538.227 ; gain = 572.320
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:23 . Memory (MB): peak = 1538.227 ; gain = 572.320
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 1538.227 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 99 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_ilmb_bram_if_cntlr_3/design_1_ilmb_bram_if_cntlr_3_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_ilmb_bram_if_cntlr_3/design_1_ilmb_bram_if_cntlr_3_ooc.xdc] for cell 'U0'
+Parsing XDC File [C:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.runs/design_1_ilmb_bram_if_cntlr_3_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.runs/design_1_ilmb_bram_if_cntlr_3_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1638.574 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 44 instances were transformed.
+  MUXCY_L => MUXCY: 44 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.071 . Memory (MB): peak = 1638.887 ; gain = 0.312
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:38 ; elapsed = 00:00:47 . Memory (MB): peak = 1638.887 ; gain = 672.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:38 ; elapsed = 00:00:47 . Memory (MB): peak = 1638.887 ; gain = 672.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  C:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.runs/design_1_ilmb_bram_if_cntlr_3_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:38 ; elapsed = 00:00:47 . Memory (MB): peak = 1638.887 ; gain = 672.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:39 ; elapsed = 00:00:48 . Memory (MB): peak = 1638.887 ; gain = 672.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	               32 Bit    Registers := 3     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 2     
+	   2 Input    8 Bit        Muxes := 4     
+	   2 Input    5 Bit        Muxes := 2     
+	   3 Input    5 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 37    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:44 ; elapsed = 00:00:53 . Memory (MB): peak = 1638.887 ; gain = 672.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:56 ; elapsed = 00:01:06 . Memory (MB): peak = 1638.887 ; gain = 672.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:57 ; elapsed = 00:01:07 . Memory (MB): peak = 1638.887 ; gain = 672.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:57 ; elapsed = 00:01:07 . Memory (MB): peak = 1638.887 ; gain = 672.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:07 ; elapsed = 00:01:17 . Memory (MB): peak = 1638.887 ; gain = 672.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:07 ; elapsed = 00:01:17 . Memory (MB): peak = 1638.887 ; gain = 672.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:07 ; elapsed = 00:01:17 . Memory (MB): peak = 1638.887 ; gain = 672.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:07 ; elapsed = 00:01:17 . Memory (MB): peak = 1638.887 ; gain = 672.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:07 ; elapsed = 00:01:17 . Memory (MB): peak = 1638.887 ; gain = 672.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:07 ; elapsed = 00:01:17 . Memory (MB): peak = 1638.887 ; gain = 672.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |LUT2    |     5|
+|2     |LUT3    |    32|
+|3     |LUT4    |     1|
+|4     |LUT5    |     7|
+|5     |LUT6    |   131|
+|6     |MUXCY_L |    44|
+|7     |MUXF7   |    13|
+|8     |MUXF8   |     4|
+|9     |XORCY   |    38|
+|10    |FDRE    |   108|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:07 ; elapsed = 00:01:17 . Memory (MB): peak = 1638.887 ; gain = 672.980
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 606 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:46 ; elapsed = 00:01:13 . Memory (MB): peak = 1638.887 ; gain = 572.320
+Synthesis Optimization Complete : Time (s): cpu = 00:01:07 ; elapsed = 00:01:18 . Memory (MB): peak = 1638.887 ; gain = 672.980
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 1638.887 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 99 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1638.887 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 38 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 38 instances
+
+Synth Design complete | Checksum: 925f50a8
+INFO: [Common 17-83] Releasing license: Synthesis
+235 Infos, 102 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:18 ; elapsed = 00:01:33 . Memory (MB): peak = 1638.887 ; gain = 1071.762
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1638.887 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.runs/design_1_ilmb_bram_if_cntlr_3_synth_1/design_1_ilmb_bram_if_cntlr_3.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_ilmb_bram_if_cntlr_3, cache-ID = ace68491020e51bf
+INFO: [Coretcl 2-1174] Renamed 228 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1638.887 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.runs/design_1_ilmb_bram_if_cntlr_3_synth_1/design_1_ilmb_bram_if_cntlr_3.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file design_1_ilmb_bram_if_cntlr_3_utilization_synth.rpt -pb design_1_ilmb_bram_if_cntlr_3_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Apr 16 15:34:12 2026...

@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../edit_lvds_axis_v1_0.ip_user_files/ipstatic/hdl" \
+"../../../../lvds_axis_1_0/src/axis_data_fifo_0/sim/axis_data_fifo_0.v" \
+"../../../../lvds_axis_1_0/src/fifo_generator_0/sim/fifo_generator_0.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,146 @@
+
+#include "xiic.h"
+#include "xiic_l.h"
+#include "xil_printf.h"
+#include "xparameters.h"
+
+#include "platform.h"
+#include "xil_exception.h"
+#include "xil_types.h"
+#include "xintc.h"
+#include "xstatus.h"
+#include "xuartlite.h"
+
+#define IIC_DEVICE_ID XPAR_IIC_0_DEVICE_ID
+#define MCP4706_ADDR 0x40 /* I2C Address of MCP4706 */
+
+#define UARTLITE_DEVICE_ID XPAR_AXI_UARTLITE_0_DEVICE_ID
+#define INTC_DEVICE_ID XPAR_INTC_0_DEVICE_ID
+#define INTC_UARTLITE_INTERRUPT_ID XPAR_INTC_0_UARTLITE_0_VEC_ID
+#define INTC_HANDLER XIntc_InterruptHandler
+#define BUFFER_SIZE 64
+
+XIntc Intc;
+XUartLite Uartlite;
+
+static volatile u32 IntrFlag;
+static volatile u32 TxDone;
+static volatile u32 count = 0;
+u8 RecvChar;
+u8 LineBuffer[BUFFER_SIZE];
+u32 LineIndex = 0;
+u8 SendBuffer[BUFFER_SIZE];
+
+u8 RxDigits[2][BUFFER_SIZE];
+volatile u8 operation = 0;
+
+static void UartLiteSendHandler(void *CallBackRef, unsigned int EventData);
+static void UartLiteRecvHandler(void *CallBackRef, unsigned int EventData);
+
+int main(void) {
+	int Status;
+	u8 WriteBuffer[2];
+	XIic_Config *ConfigPtr;
+	UINTPTR BaseAddress;
+
+	ConfigPtr = XIic_LookupConfig(IIC_DEVICE_ID);
+	if (ConfigPtr == NULL) {
+		return XST_FAILURE;
+	}
+	BaseAddress = ConfigPtr->BaseAddress;
+
+	XIic_WriteReg(BaseAddress, XIIC_RESETR_OFFSET, XIIC_RESET_MASK);
+
+	init_platform();
+
+	if (XUartLite_Initialize(&Uartlite, UARTLITE_DEVICE_ID) != XST_SUCCESS)
+		return XST_FAILURE;
+
+	if (XUartLite_SelfTest(&Uartlite) != XST_SUCCESS)
+		return XST_FAILURE;
+
+	XUartLite_SetSendHandler(&Uartlite, UartLiteSendHandler, &Uartlite);
+	XUartLite_SetRecvHandler(&Uartlite, UartLiteRecvHandler, &Uartlite);
+
+	if (XIntc_Initialize(&Intc, INTC_DEVICE_ID) != XST_SUCCESS)
+		return XST_FAILURE;
+
+	if (XIntc_Connect(&Intc, INTC_UARTLITE_INTERRUPT_ID,
+			(XInterruptHandler)XUartLite_InterruptHandler,
+			&Uartlite) != XST_SUCCESS)
+		return XST_FAILURE;
+
+	if (XIntc_Start(&Intc, XIN_REAL_MODE) != XST_SUCCESS)
+		return XST_FAILURE;
+
+	XIntc_Enable(&Intc, INTC_UARTLITE_INTERRUPT_ID);
+
+	Xil_ExceptionInit();
+	Xil_ExceptionRegisterHandler(XIL_EXCEPTION_ID_INT,
+			(Xil_ExceptionHandler)INTC_HANDLER, &Intc);
+	Xil_ExceptionEnable();
+
+	XUartLite_EnableInterrupt(&Uartlite);
+	xil_printf("UARTLite + AXI-Lite IP demo\r\n");
+	xil_printf("Enter 4 digit: A(2 digit) + B(2 digit).\r\n");
+	XUartLite_Recv(&Uartlite, &RecvChar, 1);
+
+	u8 c = 0;
+	u8 tens = 1;
+	u8 case_flag = 0;
+	while (1) {
+		if(case_flag == 0){
+			case_flag = 1;
+			WriteBuffer[0] = 0x06;
+			WriteBuffer[1] = 0x00;
+			if(XIic_WaitBusFree(BaseAddress) == XST_SUCCESS) {
+				XIic_Send(BaseAddress, ADDR, WriteBuffer, 2, XIIC_STOP);
+			}
+		}else {
+
+			if (IntrFlag) {
+
+
+				if (RecvChar == 0x0D || RecvChar == 0x0A) {
+					IntrFlag = 0;
+					c = 0;
+					if (LineIndex > 0) {
+
+						for (int i = 0; i <= LineIndex -1 ; i++) {
+							c = (c * 10) + (LineBuffer[i] - '0');
+						}
+						WriteBuffer[0] = 0x02;
+						WriteBuffer[1] = c;
+						LineIndex = 0; // Reset buffer
+					}
+				} else {
+					if (LineIndex < BUFFER_SIZE - 1) {
+						LineBuffer[LineIndex++] = RecvChar;
+					}
+				}
+				XUartLite_Recv(&Uartlite, &RecvChar, 1);
+			}
+			//		xil_printf("num=%d " , c);
+			case_flag = 1;
+
+			//			WriteBuffer[1] = (DATA >> 2) | (DATA << 6);
+			if(XIic_WaitBusFree(BaseAddress) == XST_SUCCESS) {
+				XIic_Send(BaseAddress, ADDR, WriteBuffer, 2, XIIC_STOP);
+
+
+			}
+		}
+	}
+	return 0;
+}
+
+
+static void UartLiteSendHandler(void *CallBackRef, unsigned int EventData) {
+	TxDone = 1;
+}
+
+static void UartLiteRecvHandler(void *CallBackRef, unsigned int EventData) {
+	IntrFlag = 1;
+	count++;
+
+}

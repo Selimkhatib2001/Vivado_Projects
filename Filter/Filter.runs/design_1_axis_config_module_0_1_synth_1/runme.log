@@ -1,0 +1,222 @@
+
+*** Running vivado
+    with args -log design_1_axis_config_module_0_1.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_axis_config_module_0_1.tcl
+
+
+
+****** Vivado v2024.1.2 (64-bit)
+  **** SW Build 5164865 on Thu Sep  5 14:37:11 MDT 2024
+  **** IP Build 5164407 on Fri Sep  6 08:18:11 MDT 2024
+  **** SharedData Build 5164864 on Thu Sep 05 13:09:09 MDT 2024
+  **** Start of session at: Fri May 22 12:20:24 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source design_1_axis_config_module_0_1.tcl -notrace
+create_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:21 . Memory (MB): peak = 554.719 ; gain = 171.172
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.1/data/ip'.
+Command: synth_design -top design_1_axis_config_module_0_1 -part xc7a35tcpg236-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 34620
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 1021.980 ; gain = 446.859
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_1_axis_config_module_0_1' [c:/Vivado_Project/Filter/Filter.gen/sources_1/bd/design_1/ip/design_1_axis_config_module_0_1/synth/design_1_axis_config_module_0_1.vhd:64]
+	Parameter message_freq bound to: 125000 - type: integer 
+INFO: [Synth 8-3491] module 'axis_config_module' declared at 'C:/Vivado_Project/Filter/Filter.srcs/sources_1/new/axis_config_module.vhd:8' bound to instance 'U0' of component 'axis_config_module' [c:/Vivado_Project/Filter/Filter.gen/sources_1/bd/design_1/ip/design_1_axis_config_module_0_1/synth/design_1_axis_config_module_0_1.vhd:93]
+INFO: [Synth 8-638] synthesizing module 'axis_config_module' [C:/Vivado_Project/Filter/Filter.srcs/sources_1/new/axis_config_module.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'axis_config_module' (0#1) [C:/Vivado_Project/Filter/Filter.srcs/sources_1/new/axis_config_module.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'design_1_axis_config_module_0_1' (0#1) [c:/Vivado_Project/Filter/Filter.gen/sources_1/bd/design_1/ip/design_1_axis_config_module_0_1/synth/design_1_axis_config_module_0_1.vhd:64]
+WARNING: [Synth 8-7129] Port clk_i in module axis_config_module is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 1131.195 ; gain = 556.074
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 1131.195 ; gain = 556.074
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 1131.195 ; gain = 556.074
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 1131.195 ; gain = 556.074
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+INFO: [Device 21-9227] Part: xc7a35tcpg236-1 does not have CEAM library.
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3330] design design_1_axis_config_module_0_1 has an empty top module
+INFO: [Synth 8-3917] design design_1_axis_config_module_0_1 has port s_axis_config_tdata[31] driven by constant 0
+INFO: [Synth 8-3917] design design_1_axis_config_module_0_1 has port s_axis_config_tdata[30] driven by constant 0
+INFO: [Synth 8-3917] design design_1_axis_config_module_0_1 has port s_axis_config_tdata[29] driven by constant 0
+INFO: [Synth 8-3917] design design_1_axis_config_module_0_1 has port s_axis_config_tdata[28] driven by constant 0
+INFO: [Synth 8-3917] design design_1_axis_config_module_0_1 has port s_axis_config_tdata[27] driven by constant 0
+INFO: [Synth 8-3917] design design_1_axis_config_module_0_1 has port s_axis_config_tdata[26] driven by constant 0
+INFO: [Synth 8-3917] design design_1_axis_config_module_0_1 has port s_axis_config_tdata[25] driven by constant 0
+INFO: [Synth 8-3917] design design_1_axis_config_module_0_1 has port s_axis_config_tdata[24] driven by constant 0
+INFO: [Synth 8-3917] design design_1_axis_config_module_0_1 has port s_axis_config_tdata[23] driven by constant 0
+INFO: [Synth 8-3917] design design_1_axis_config_module_0_1 has port s_axis_config_tdata[22] driven by constant 1
+INFO: [Synth 8-3917] design design_1_axis_config_module_0_1 has port s_axis_config_tdata[21] driven by constant 0
+INFO: [Synth 8-3917] design design_1_axis_config_module_0_1 has port s_axis_config_tdata[20] driven by constant 1
+INFO: [Synth 8-3917] design design_1_axis_config_module_0_1 has port s_axis_config_tdata[19] driven by constant 0
+INFO: [Synth 8-3917] design design_1_axis_config_module_0_1 has port s_axis_config_tdata[18] driven by constant 0
+INFO: [Synth 8-3917] design design_1_axis_config_module_0_1 has port s_axis_config_tdata[17] driven by constant 1
+INFO: [Synth 8-3917] design design_1_axis_config_module_0_1 has port s_axis_config_tdata[16] driven by constant 0
+INFO: [Synth 8-3917] design design_1_axis_config_module_0_1 has port s_axis_config_tdata[15] driven by constant 0
+INFO: [Synth 8-3917] design design_1_axis_config_module_0_1 has port s_axis_config_tdata[14] driven by constant 0
+INFO: [Synth 8-3917] design design_1_axis_config_module_0_1 has port s_axis_config_tdata[13] driven by constant 0
+INFO: [Synth 8-3917] design design_1_axis_config_module_0_1 has port s_axis_config_tdata[12] driven by constant 0
+INFO: [Synth 8-3917] design design_1_axis_config_module_0_1 has port s_axis_config_tdata[11] driven by constant 0
+INFO: [Synth 8-3917] design design_1_axis_config_module_0_1 has port s_axis_config_tdata[10] driven by constant 1
+INFO: [Synth 8-3917] design design_1_axis_config_module_0_1 has port s_axis_config_tdata[9] driven by constant 0
+INFO: [Synth 8-3917] design design_1_axis_config_module_0_1 has port s_axis_config_tdata[8] driven by constant 0
+INFO: [Synth 8-3917] design design_1_axis_config_module_0_1 has port s_axis_config_tdata[7] driven by constant 0
+INFO: [Synth 8-3917] design design_1_axis_config_module_0_1 has port s_axis_config_tdata[6] driven by constant 0
+INFO: [Synth 8-3917] design design_1_axis_config_module_0_1 has port s_axis_config_tdata[5] driven by constant 0
+INFO: [Synth 8-3917] design design_1_axis_config_module_0_1 has port s_axis_config_tdata[4] driven by constant 1
+INFO: [Synth 8-3917] design design_1_axis_config_module_0_1 has port s_axis_config_tdata[3] driven by constant 1
+INFO: [Synth 8-3917] design design_1_axis_config_module_0_1 has port s_axis_config_tdata[2] driven by constant 0
+INFO: [Synth 8-3917] design design_1_axis_config_module_0_1 has port s_axis_config_tdata[1] driven by constant 0
+INFO: [Synth 8-3917] design design_1_axis_config_module_0_1 has port s_axis_config_tdata[0] driven by constant 0
+INFO: [Synth 8-3917] design design_1_axis_config_module_0_1 has port s_axis_config_tvalid driven by constant 1
+WARNING: [Synth 8-7129] Port clk_i in module design_1_axis_config_module_0_1 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:27 . Memory (MB): peak = 1309.164 ; gain = 734.043
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:27 . Memory (MB): peak = 1309.164 ; gain = 734.043
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:27 . Memory (MB): peak = 1309.164 ; gain = 734.043
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:36 . Memory (MB): peak = 1309.164 ; gain = 734.043
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:36 . Memory (MB): peak = 1309.164 ; gain = 734.043
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:36 . Memory (MB): peak = 1309.164 ; gain = 734.043
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:00:36 . Memory (MB): peak = 1309.164 ; gain = 734.043
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:36 . Memory (MB): peak = 1309.164 ; gain = 734.043
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:29 ; elapsed = 00:00:36 . Memory (MB): peak = 1309.164 ; gain = 734.043
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++-+-----+------+
+| |Cell |Count |
++-+-----+------+
++-+-----+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |     0|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:36 . Memory (MB): peak = 1309.164 ; gain = 734.043
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 4 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:29 ; elapsed = 00:00:36 . Memory (MB): peak = 1309.164 ; gain = 734.043
+Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:36 . Memory (MB): peak = 1309.164 ; gain = 734.043
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1309.164 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1408.289 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: d8e359c
+INFO: [Common 17-83] Releasing license: Synthesis
+53 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:41 . Memory (MB): peak = 1413.270 ; gain = 845.660
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Common 17-1381] The checkpoint 'C:/Vivado_Project/Filter/Filter.runs/design_1_axis_config_module_0_1_synth_1/design_1_axis_config_module_0_1.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1635.723 ; gain = 222.453
+INFO: [Vivado 12-24828] Executing command : report_utilization -file design_1_axis_config_module_0_1_utilization_synth.rpt -pb design_1_axis_config_module_0_1_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri May 22 12:21:43 2026...

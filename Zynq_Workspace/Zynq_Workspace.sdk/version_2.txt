@@ -1,0 +1,98 @@
+#include <stdio.h>
+#include "platform.h"
+#include "sleep.h"
+#include "xgpio.h"
+#include "xil_printf.h"
+#include "xparameters.h"
+
+
+#include "xuartps.h"
+
+#include <stdlib.h>
+
+#define BTN 1
+#define DIFF_OUT 2
+
+#define GPIO_EXAMPLE_DEVICE_ID XPAR_GPIO_0_DEVICE_ID
+#define PCLK_FREQ_HZ		XPAR_XTTCPS_0_CLOCK_HZ /* Input freq */
+#define TTC_B
+XGpio Gpio;      /* The Instance of the GPIO Driver */
+XUartPs Uart_Ps; /* The instance of the UART Driver */
+
+u8 uart_val;
+u8 Reciever_Buffer[32];
+
+int main() {
+	int Status;
+	init_platform();
+	xil_printf("--------------------------------\r\n");
+	xil_printf("\r\n--- Zynq UART LVDS ---\r\n");
+	xil_printf("--- Enter Frequency --- \r\n");
+	xil_printf("--------------------------------\r\n");
+
+
+	Status = XGpio_Initialize(&Gpio, GPIO_EXAMPLE_DEVICE_ID);
+	if (Status != XST_SUCCESS) {
+		xil_printf("Gpio Initialization Failed\r\n");
+		return XST_FAILURE;
+	}
+
+	XGpio_SetDataDirection(&Gpio, BTN, 1);
+	XGpio_SetDataDirection(&Gpio, DIFF_OUT, 0);
+
+	u8 toggle_active = 0;
+	u8 last_btn_status = 1;
+	u8 current_toggle_state = 0;
+
+
+	char c;
+
+	int idx;
+
+	u8 uart_flag = 0;
+	int num_rec = 0;
+	while (1) {
+		int btn_status = XGpio_DiscreteRead(&Gpio, BTN);
+
+		if ((last_btn_status == 1) && (btn_status == 0)) {
+			toggle_active = !toggle_active; /* Toggle the action */
+		}
+		last_btn_status = (u8)btn_status;
+
+		if (toggle_active == 1) {
+			uart_flag = 0;
+			current_toggle_state = !current_toggle_state;
+			XGpio_DiscreteWrite(&Gpio, DIFF_OUT, current_toggle_state);
+			usleep(5);
+		} else {
+			
+			XGpio_DiscreteWrite(&Gpio, DIFF_OUT, 0);
+			current_toggle_state = 0;
+
+			c = inbyte();
+			if (c== 13 || c == 10) {
+				uart_flag = 1;
+				u8 i;
+				for(i = 0; i<32; i++){
+					if(Reciever_Buffer[i] > 0){
+						num_rec = num_rec*10 + (Reciever_Buffer[i] - '0');
+					}
+				}
+				
+				uart_flag = 0;
+			} else if ((uart_flag == 0)) {
+				Reciever_Buffer[idx++] = c;
+			}
+		}
+
+
+
+
+
+	}
+
+	cleanup_platform();
+	return 0;
+}
+
+

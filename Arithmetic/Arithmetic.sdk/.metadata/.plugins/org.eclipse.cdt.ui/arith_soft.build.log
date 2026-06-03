@@ -1,0 +1,28 @@
+14:14:23 **** Auto Build of configuration Debug for project arith_soft ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../arith_soft_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:2:
+../../arith_soft_bsp/microblaze_0/include/xbasic_types.h:120:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^~~~~~~
+../../arith_soft_bsp/microblaze_0/include/xbasic_types.h:121:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: arith_soft.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../arith_soft_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "arith_soft.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: arith_soft.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size arith_soft.elf  |tee "arith_soft.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  18772	    336	   3620	  22728	   58c8	arith_soft.elf
+'Finished building: arith_soft.elf.size'
+' '
+
+14:14:25 Build Finished (took 1s.507ms)
+

@@ -1,0 +1,6 @@
+Time resolution is 1 ps
+Error: Assertion violation
+Time: 2 ms  Iteration: 0  Process: /tb_custom_fir/stim_proc  File: C:/Vivado_Project/Filter/Filter.srcs/sim_1/new/tb_custom_fir.vhd
+Failure: SIM DONE
+Time: 2 ms  Iteration: 0  Process: /tb_custom_fir/stim_proc  File: C:/Vivado_Project/Filter/Filter.srcs/sim_1/new/tb_custom_fir.vhd
+$finish called at time : 2 ms : File "C:/Vivado_Project/Filter/Filter.srcs/sim_1/new/tb_custom_fir.vhd" Line 94

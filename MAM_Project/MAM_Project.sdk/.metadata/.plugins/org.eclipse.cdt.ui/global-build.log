@@ -1,0 +1,2499 @@
+09:59:41 **** Build of project mam_ps_bsp ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/axidma_v9_9/src"
+make -C ps7_cortexa9_0/libsrc/axidma_v9_9/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_5/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_9/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_9/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/lwip211_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/lwip211_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_6/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v4_0/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v4_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v7_0/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v7_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make libs in ps7_cortexa9_0/libsrc/axidma_v9_9/src"
+make -C ps7_cortexa9_0/libsrc/axidma_v9_9/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling axidma"
+arm-none-eabi-ar: creating ../../../lib/libxil.a
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_5/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling coresightps_dcc"
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling ddrps"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_9/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_9/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling emacps"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling gpiops"
+"Running Make libs in ps7_cortexa9_0/libsrc/lwip211_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/lwip211_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling lwip src and adapter files"
+lwip-2.1.1/src/core/tcp.c: In function 'tcp_recved':
+lwip-2.1.1/src/core/tcp.c:992:22: warning: comparison is always true due to limited range of data type [-Wtype-limits]
+   } else if (rcv_wnd <= TCP_WND_MAX(pcb)) {
+                      ^~
+In file included from ../../../include/lwip/opt.h:52,
+                 from lwip-2.1.1/src/core/tcp.c:100:
+lwip-2.1.1/src/core/tcp.c:996:11: warning: comparison is always true due to limited range of data type [-Wtype-limits]
+   rcv_wnd <= TCP_WND_MAX(pcb));
+           ^~
+../../../include/lwip/debug.h:116:52: note: in definition of macro 'LWIP_ASSERT'
+ #define LWIP_ASSERT(message, assertion) do { if (!(assertion)) { \
+                                                    ^~~~~~~~~
+In file included from ../../../include/xemacps.h:349,
+                 from ../../../include/netif/xemacpsif.h:57,
+                 from contrib/ports/xilinx/netif/xemacpsif_dma.c:37:
+contrib/ports/xilinx/netif/xemacpsif_dma.c: In function 'init_dma':
+../../../include/xemacps_hw.h:611:23: warning: 'bdrxterminate' may be used uninitialized in this function [-Wmaybe-uninitialized]
+ #define XEmacPs_Out32 Xil_Out32
+                       ^~~~~~~~~
+contrib/ports/xilinx/netif/xemacpsif_dma.c:561:14: note: 'bdrxterminate' was declared here
+  XEmacPs_Bd *bdrxterminate;
+              ^~~~~~~~~~~~~
+In file included from ../../../include/xemacps.h:350,
+                 from ../../../include/netif/xemacpsif.h:57,
+                 from contrib/ports/xilinx/netif/xemacpsif_dma.c:37:
+../../../include/xemacps_bd.h:142:12: warning: 'bdtxterminate' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  (*(u32 *)((UINTPTR)((void*)(BaseAddress)) + (u32)(Offset)))
+            ^
+contrib/ports/xilinx/netif/xemacpsif_dma.c:560:14: note: 'bdtxterminate' was declared here
+  XEmacPs_Bd *bdtxterminate;
+              ^~~~~~~~~~~~~
+"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_6/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling qspips"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v4_0/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v4_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scugic"
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v7_0/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v7_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling standalone"
+In file included from usleep.c:56:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from xil_sleeptimer.c:51:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from xtime_l.c:49:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from sleep.c:53:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling xadcps"
+'Finished building libraries'
+10:00:25 **** Build of configuration Debug for project mam_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/i2c_access.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/i2c_access.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mam_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/i2c_access.d" -MT"src/i2c_access.o" -o "src/i2c_access.o" "../src/i2c_access.c"
+'Finished building: ../src/i2c_access.c'
+' '
+'Building file: ../src/iic_phyreset.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/iic_phyreset.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mam_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/iic_phyreset.d" -MT"src/iic_phyreset.o" -o "src/iic_phyreset.o" "../src/iic_phyreset.c"
+'Finished building: ../src/iic_phyreset.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mam_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mam_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building file: ../src/platform_mb.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform_mb.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mam_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform_mb.d" -MT"src/platform_mb.o" -o "src/platform_mb.o" "../src/platform_mb.c"
+'Finished building: ../src/platform_mb.c'
+' '
+'Building file: ../src/platform_zynq.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform_zynq.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mam_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform_zynq.d" -MT"src/platform_zynq.o" -o "src/platform_zynq.o" "../src/platform_zynq.c"
+In file included from ../src/platform_zynq.c:60:
+../../mam_ps_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+'Finished building: ../src/platform_zynq.c'
+' '
+'Building file: ../src/platform_zynqmp.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform_zynqmp.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mam_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform_zynqmp.d" -MT"src/platform_zynqmp.o" -o "src/platform_zynqmp.o" "../src/platform_zynqmp.c"
+'Finished building: ../src/platform_zynqmp.c'
+' '
+'Building file: ../src/sfp.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sfp.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mam_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sfp.d" -MT"src/sfp.o" -o "src/sfp.o" "../src/sfp.c"
+'Finished building: ../src/sfp.c'
+' '
+'Building file: ../src/si5324.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/si5324.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mam_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/si5324.d" -MT"src/si5324.o" -o "src/si5324.o" "../src/si5324.c"
+'Finished building: ../src/si5324.c'
+' '
+'Building file: ../src/tcp_perf_client.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/tcp_perf_client.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mam_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/tcp_perf_client.d" -MT"src/tcp_perf_client.o" -o "src/tcp_perf_client.o" "../src/tcp_perf_client.c"
+'Finished building: ../src/tcp_perf_client.c'
+' '
+'Building target: mam_ps.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../mam_ps_bsp/ps7_cortexa9_0/lib -o "mam_ps.elf"  ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o ./src/tcp_perf_client.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: mam_ps.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size mam_ps.elf  |tee "mam_ps.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 139484	   3432	31578400	31721316	1e40764	mam_ps.elf
+'Finished building: mam_ps.elf.size'
+' '
+10:02:40 **** Auto Build of configuration Debug for project mam_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lvds2dma.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lvds2dma.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mam_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lvds2dma.d" -MT"src/lvds2dma.o" -o "src/lvds2dma.o" "../src/lvds2dma.c"
+'Finished building: ../src/lvds2dma.c'
+' '
+'Building target: mam_ps.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../mam_ps_bsp/ps7_cortexa9_0/lib -o "mam_ps.elf"  ./src/i2c_access.o ./src/iic_phyreset.o ./src/lvds2dma.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o ./src/tcp_perf_client.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: mam_ps.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size mam_ps.elf  |tee "mam_ps.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 139484	   3432	31578400	31721316	1e40764	mam_ps.elf
+'Finished building: mam_ps.elf.size'
+' '
+10:02:56 **** Auto Build of configuration Debug for project mam_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lvds2dma.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lvds2dma.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mam_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lvds2dma.d" -MT"src/lvds2dma.o" -o "src/lvds2dma.o" "../src/lvds2dma.c"
+'Finished building: ../src/lvds2dma.c'
+' '
+'Building target: mam_ps.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../mam_ps_bsp/ps7_cortexa9_0/lib -o "mam_ps.elf"  ./src/i2c_access.o ./src/iic_phyreset.o ./src/lvds2dma.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o ./src/tcp_perf_client.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+d:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/bin/ld.exe: ./src/main.o: in function `main':
+D:\Vivado_Projects\MAM_Project\MAM_Project.sdk\mam_ps\Debug/../src/main.c:122: multiple definition of `main'; ./src/lvds2dma.o:D:\Vivado_Projects\MAM_Project\MAM_Project.sdk\mam_ps\Debug/../src/lvds2dma.c:46: first defined here
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:41: mam_ps.elf] Error 1
+10:03:19 **** Auto Build of configuration Debug for project mam_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mam_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:197:20: error: expected declaration specifiers or '...' before '&' token
+  print_ip_settings(&(netif->ip_addr), &(netif->netmask), &(netif->gw));
+                    ^
+../src/main.c:197:39: error: expected declaration specifiers or '...' before '&' token
+  print_ip_settings(&(netif->ip_addr), &(netif->netmask), &(netif->gw));
+                                       ^
+../src/main.c:197:58: error: expected declaration specifiers or '...' before '&' token
+  print_ip_settings(&(netif->ip_addr), &(netif->netmask), &(netif->gw));
+                                                          ^
+../src/main.c:199:13: error: expected declaration specifiers or '...' before string constant
+  xil_printf("\r\n");
+             ^~~~~~
+../src/main.c:202:2: warning: data definition has no type or storage class
+  print_app_header();
+  ^~~~~~~~~~~~~~~~
+../src/main.c:202:2: warning: type defaults to 'int' in declaration of 'print_app_header' [-Wimplicit-int]
+../src/main.c:202:2: error: conflicting types for 'print_app_header'
+../src/main.c:62:6: note: previous declaration of 'print_app_header' was here
+ void print_app_header(void);
+      ^~~~~~~~~~~~~~~~
+../src/main.c:205:2: warning: data definition has no type or storage class
+  start_application();
+  ^~~~~~~~~~~~~~~~~
+../src/main.c:205:2: warning: type defaults to 'int' in declaration of 'start_application' [-Wimplicit-int]
+../src/main.c:205:2: error: conflicting types for 'start_application'
+../src/main.c:60:6: note: previous declaration of 'start_application' was here
+ void start_application(void);
+      ^~~~~~~~~~~~~~~~~
+../src/main.c:206:13: error: expected declaration specifiers or '...' before string constant
+  xil_printf("\r\n");
+             ^~~~~~
+../src/main.c:208:2: error: expected identifier or '(' before 'while'
+  while (1) {
+  ^~~~~
+../src/main.c:222:2: warning: data definition has no type or storage class
+  cleanup_platform();
+  ^~~~~~~~~~~~~~~~
+../src/main.c:222:2: warning: type defaults to 'int' in declaration of 'cleanup_platform' [-Wimplicit-int]
+../src/main.c:222:2: error: conflicting types for 'cleanup_platform'
+In file included from ../src/main.c:32:
+../src/platform.h:33:6: note: previous declaration of 'cleanup_platform' was here
+ void cleanup_platform();
+      ^~~~~~~~~~~~~~~~
+../src/main.c:224:2: error: expected identifier or '(' before 'return'
+  return 0;
+  ^~~~~~
+../src/main.c:225:1: error: expected identifier or '(' before '}' token
+ }
+ ^
+../src/main.c:94:13: warning: 'print_ip_settings' defined but not used [-Wunused-function]
+ static void print_ip_settings(ip_addr_t *ip, ip_addr_t *mask, ip_addr_t *gw)
+             ^~~~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:53: src/main.o] Error 1
+10:03:24 **** Auto Build of configuration Debug for project mam_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mam_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: mam_ps.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../mam_ps_bsp/ps7_cortexa9_0/lib -o "mam_ps.elf"  ./src/i2c_access.o ./src/iic_phyreset.o ./src/lvds2dma.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o ./src/tcp_perf_client.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+d:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/bin/ld.exe: ./src/main.o: in function `main':
+D:\Vivado_Projects\MAM_Project\MAM_Project.sdk\mam_ps\Debug/../src/main.c:122: multiple definition of `main'; ./src/lvds2dma.o:D:\Vivado_Projects\MAM_Project\MAM_Project.sdk\mam_ps\Debug/../src/lvds2dma.c:46: first defined here
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:41: mam_ps.elf] Error 1
+10:03:50 **** Auto Build of configuration Debug for project mam_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lvds2dma.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lvds2dma.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mam_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lvds2dma.d" -MT"src/lvds2dma.o" -o "src/lvds2dma.o" "../src/lvds2dma.c"
+'Finished building: ../src/lvds2dma.c'
+' '
+'Building target: mam_ps.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../mam_ps_bsp/ps7_cortexa9_0/lib -o "mam_ps.elf"  ./src/i2c_access.o ./src/iic_phyreset.o ./src/lvds2dma.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o ./src/tcp_perf_client.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: mam_ps.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size mam_ps.elf  |tee "mam_ps.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 147092	   3496	31578400	31728988	1e4255c	mam_ps.elf
+'Finished building: mam_ps.elf.size'
+' '
+10:11:15 **** Auto Build of configuration Debug for project mam_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lvds2dma.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lvds2dma.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mam_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lvds2dma.d" -MT"src/lvds2dma.o" -o "src/lvds2dma.o" "../src/lvds2dma.c"
+'Finished building: ../src/lvds2dma.c'
+' '
+'Building target: mam_ps.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../mam_ps_bsp/ps7_cortexa9_0/lib -o "mam_ps.elf"  ./src/i2c_access.o ./src/iic_phyreset.o ./src/lvds2dma.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o ./src/tcp_perf_client.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: mam_ps.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size mam_ps.elf  |tee "mam_ps.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 147092	   3496	31578400	31728988	1e4255c	mam_ps.elf
+'Finished building: mam_ps.elf.size'
+' '
+13:31:40 **** Clean-only build of configuration Debug for project mam_ps ****
+make clean 
+rm -rf  ./src/i2c_access.o ./src/iic_phyreset.o ./src/lvds2dma.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o ./src/tcp_perf_client.o  ./src/i2c_access.d ./src/iic_phyreset.d ./src/lvds2dma.d ./src/main.d ./src/platform.d ./src/platform_mb.d ./src/platform_zynq.d ./src/platform_zynqmp.d ./src/sfp.d ./src/si5324.d ./src/tcp_perf_client.d  mam_ps.elf.size  mam_ps.elf
+' '
+13:31:41 **** Incremental Build of configuration Debug for project mam_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/i2c_access.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/i2c_access.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mam_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/i2c_access.d" -MT"src/i2c_access.o" -o "src/i2c_access.o" "../src/i2c_access.c"
+'Finished building: ../src/i2c_access.c'
+' '
+'Building file: ../src/iic_phyreset.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/iic_phyreset.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mam_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/iic_phyreset.d" -MT"src/iic_phyreset.o" -o "src/iic_phyreset.o" "../src/iic_phyreset.c"
+'Finished building: ../src/iic_phyreset.c'
+' '
+'Building file: ../src/lvds2dma.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lvds2dma.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mam_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lvds2dma.d" -MT"src/lvds2dma.o" -o "src/lvds2dma.o" "../src/lvds2dma.c"
+'Finished building: ../src/lvds2dma.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mam_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mam_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building file: ../src/platform_mb.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform_mb.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mam_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform_mb.d" -MT"src/platform_mb.o" -o "src/platform_mb.o" "../src/platform_mb.c"
+'Finished building: ../src/platform_mb.c'
+' '
+'Building file: ../src/platform_zynq.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform_zynq.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mam_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform_zynq.d" -MT"src/platform_zynq.o" -o "src/platform_zynq.o" "../src/platform_zynq.c"
+In file included from ../src/platform_zynq.c:60:
+../../mam_ps_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+'Finished building: ../src/platform_zynq.c'
+' '
+'Building file: ../src/platform_zynqmp.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform_zynqmp.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mam_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform_zynqmp.d" -MT"src/platform_zynqmp.o" -o "src/platform_zynqmp.o" "../src/platform_zynqmp.c"
+'Finished building: ../src/platform_zynqmp.c'
+' '
+'Building file: ../src/sfp.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sfp.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mam_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sfp.d" -MT"src/sfp.o" -o "src/sfp.o" "../src/sfp.c"
+'Finished building: ../src/sfp.c'
+' '
+'Building file: ../src/si5324.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/si5324.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mam_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/si5324.d" -MT"src/si5324.o" -o "src/si5324.o" "../src/si5324.c"
+'Finished building: ../src/si5324.c'
+' '
+'Building file: ../src/tcp_perf_client.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/tcp_perf_client.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mam_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/tcp_perf_client.d" -MT"src/tcp_perf_client.o" -o "src/tcp_perf_client.o" "../src/tcp_perf_client.c"
+'Finished building: ../src/tcp_perf_client.c'
+' '
+'Building target: mam_ps.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../mam_ps_bsp/ps7_cortexa9_0/lib -o "mam_ps.elf"  ./src/i2c_access.o ./src/iic_phyreset.o ./src/lvds2dma.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o ./src/tcp_perf_client.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: mam_ps.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size mam_ps.elf  |tee "mam_ps.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 147092	   3496	31578400	31728988	1e4255c	mam_ps.elf
+'Finished building: mam_ps.elf.size'
+' '
+13:32:03 **** Incremental Build of configuration Debug for project mam_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+13:32:10 **** Incremental Build of configuration Debug for project mam_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+14:53:57 **** Incremental Build of configuration Debug for project mam_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+15:41:28 **** Auto Build of configuration Debug for project mam_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lvds2dma.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lvds2dma.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mam_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lvds2dma.d" -MT"src/lvds2dma.o" -o "src/lvds2dma.o" "../src/lvds2dma.c"
+'Finished building: ../src/lvds2dma.c'
+' '
+'Building target: mam_ps.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../mam_ps_bsp/ps7_cortexa9_0/lib -o "mam_ps.elf"  ./src/i2c_access.o ./src/iic_phyreset.o ./src/lvds2dma.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o ./src/tcp_perf_client.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+d:/xilinx/sdk/2019.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/bin/ld.exe: ./src/main.o: in function `main':
+D:\Vivado_Projects\MAM_Project\MAM_Project.sdk\mam_ps\Debug/../src/main.c:122: multiple definition of `main'; ./src/lvds2dma.o:D:\Vivado_Projects\MAM_Project\MAM_Project.sdk\mam_ps\Debug/../src/lvds2dma.c:46: first defined here
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:41: mam_ps.elf] Error 1
+15:41:38 **** Auto Build of configuration Debug for project mam_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mam_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: mam_ps.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../mam_ps_bsp/ps7_cortexa9_0/lib -o "mam_ps.elf"  ./src/i2c_access.o ./src/iic_phyreset.o ./src/lvds2dma.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o ./src/tcp_perf_client.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: mam_ps.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size mam_ps.elf  |tee "mam_ps.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 147092	   3496	31578400	31728988	1e4255c	mam_ps.elf
+'Finished building: mam_ps.elf.size'
+' '
+15:41:51 **** Incremental Build of configuration Debug for project mam_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+15:42:14 **** Incremental Build of configuration Debug for project mam_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+16:24:10 **** Incremental Build of configuration Debug for project mam_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+09:32:23 **** Incremental Build of configuration Debug for project mam_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/i2c_access.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/i2c_access.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mam_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/i2c_access.d" -MT"src/i2c_access.o" -o "src/i2c_access.o" "../src/i2c_access.c"
+In file included from ../src/i2c_access.c:47:
+../../mam_ps_bsp/ps7_cortexa9_0/include/xparameters.h:19:10: fatal error: xparameters_ps.h: No such file or directory
+ #include "xparameters_ps.h"
+          ^~~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [src/subdir.mk:53: src/i2c_access.o] Error 1
+09:32:49 **** Auto Build of project mam_ps_bsp ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/axidma_v9_9/src"
+make -C ps7_cortexa9_0/libsrc/axidma_v9_9/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_5/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_9/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_9/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/lwip211_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/lwip211_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_6/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v4_0/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v4_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v7_0/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v7_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make libs in ps7_cortexa9_0/libsrc/axidma_v9_9/src"
+make -C ps7_cortexa9_0/libsrc/axidma_v9_9/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling axidma"
+arm-none-eabi-ar: creating ../../../lib/libxil.a
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_5/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling coresightps_dcc"
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling ddrps"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_9/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_9/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling emacps"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling gpiops"
+"Running Make libs in ps7_cortexa9_0/libsrc/lwip211_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/lwip211_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling lwip src and adapter files"
+lwip-2.1.1/src/core/tcp.c: In function 'tcp_recved':
+lwip-2.1.1/src/core/tcp.c:992:22: warning: comparison is always true due to limited range of data type [-Wtype-limits]
+   } else if (rcv_wnd <= TCP_WND_MAX(pcb)) {
+                      ^~
+In file included from ../../../include/lwip/opt.h:52,
+                 from lwip-2.1.1/src/core/tcp.c:100:
+lwip-2.1.1/src/core/tcp.c:996:11: warning: comparison is always true due to limited range of data type [-Wtype-limits]
+   rcv_wnd <= TCP_WND_MAX(pcb));
+           ^~
+../../../include/lwip/debug.h:116:52: note: in definition of macro 'LWIP_ASSERT'
+ #define LWIP_ASSERT(message, assertion) do { if (!(assertion)) { \
+                                                    ^~~~~~~~~
+In file included from ../../../include/xemacps.h:349,
+                 from ../../../include/netif/xemacpsif.h:57,
+                 from contrib/ports/xilinx/netif/xemacpsif_dma.c:37:
+contrib/ports/xilinx/netif/xemacpsif_dma.c: In function 'init_dma':
+../../../include/xemacps_hw.h:611:23: warning: 'bdrxterminate' may be used uninitialized in this function [-Wmaybe-uninitialized]
+ #define XEmacPs_Out32 Xil_Out32
+                       ^~~~~~~~~
+contrib/ports/xilinx/netif/xemacpsif_dma.c:561:14: note: 'bdrxterminate' was declared here
+  XEmacPs_Bd *bdrxterminate;
+              ^~~~~~~~~~~~~
+In file included from ../../../include/xemacps.h:350,
+                 from ../../../include/netif/xemacpsif.h:57,
+                 from contrib/ports/xilinx/netif/xemacpsif_dma.c:37:
+../../../include/xemacps_bd.h:142:12: warning: 'bdtxterminate' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  (*(u32 *)((UINTPTR)((void*)(BaseAddress)) + (u32)(Offset)))
+            ^
+contrib/ports/xilinx/netif/xemacpsif_dma.c:560:14: note: 'bdtxterminate' was declared here
+  XEmacPs_Bd *bdtxterminate;
+              ^~~~~~~~~~~~~
+"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_6/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling qspips"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v4_0/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v4_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scugic"
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v7_0/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v7_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling standalone"
+In file included from usleep.c:56:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from xil_sleeptimer.c:51:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from xtime_l.c:49:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from sleep.c:53:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling xadcps"
+'Finished building libraries'
+09:33:33 **** Auto Build of configuration Debug for project mam_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/i2c_access.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/i2c_access.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mam_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/i2c_access.d" -MT"src/i2c_access.o" -o "src/i2c_access.o" "../src/i2c_access.c"
+'Finished building: ../src/i2c_access.c'
+' '
+'Building file: ../src/iic_phyreset.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/iic_phyreset.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mam_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/iic_phyreset.d" -MT"src/iic_phyreset.o" -o "src/iic_phyreset.o" "../src/iic_phyreset.c"
+'Finished building: ../src/iic_phyreset.c'
+' '
+'Building file: ../src/lvds2dma.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lvds2dma.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mam_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lvds2dma.d" -MT"src/lvds2dma.o" -o "src/lvds2dma.o" "../src/lvds2dma.c"
+'Finished building: ../src/lvds2dma.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mam_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/platform_zynq.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform_zynq.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mam_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform_zynq.d" -MT"src/platform_zynq.o" -o "src/platform_zynq.o" "../src/platform_zynq.c"
+In file included from ../src/platform_zynq.c:60:
+../../mam_ps_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+'Finished building: ../src/platform_zynq.c'
+' '
+'Building file: ../src/sfp.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sfp.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mam_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sfp.d" -MT"src/sfp.o" -o "src/sfp.o" "../src/sfp.c"
+'Finished building: ../src/sfp.c'
+' '
+'Building file: ../src/si5324.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/si5324.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mam_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/si5324.d" -MT"src/si5324.o" -o "src/si5324.o" "../src/si5324.c"
+'Finished building: ../src/si5324.c'
+' '
+'Building file: ../src/tcp_perf_client.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/tcp_perf_client.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mam_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/tcp_perf_client.d" -MT"src/tcp_perf_client.o" -o "src/tcp_perf_client.o" "../src/tcp_perf_client.c"
+'Finished building: ../src/tcp_perf_client.c'
+' '
+'Building target: mam_ps.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../mam_ps_bsp/ps7_cortexa9_0/lib -o "mam_ps.elf"  ./src/i2c_access.o ./src/iic_phyreset.o ./src/lvds2dma.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o ./src/tcp_perf_client.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: mam_ps.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size mam_ps.elf  |tee "mam_ps.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 147092	   3496	31578400	31728988	1e4255c	mam_ps.elf
+'Finished building: mam_ps.elf.size'
+' '
+09:34:13 **** Incremental Build of configuration Debug for project mam_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+09:37:44 **** Incremental Build of configuration Debug for project mam_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+09:42:49 **** Incremental Build of configuration Debug for project mam_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+10:05:07 **** Incremental Build of configuration Debug for project mam_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/i2c_access.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/i2c_access.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mam_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/i2c_access.d" -MT"src/i2c_access.o" -o "src/i2c_access.o" "../src/i2c_access.c"
+In file included from ../src/i2c_access.c:47:
+../../mam_ps_bsp/ps7_cortexa9_0/include/xparameters.h:19:10: fatal error: xparameters_ps.h: No such file or directory
+ #include "xparameters_ps.h"
+          ^~~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [src/subdir.mk:53: src/i2c_access.o] Error 1
+10:05:23 **** Auto Build of project mam_ps_bsp ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/axidma_v9_9/src"
+make -C ps7_cortexa9_0/libsrc/axidma_v9_9/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_5/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_9/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_9/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/lwip211_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/lwip211_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_6/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v4_0/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v4_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v7_0/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v7_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make libs in ps7_cortexa9_0/libsrc/axidma_v9_9/src"
+make -C ps7_cortexa9_0/libsrc/axidma_v9_9/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling axidma"
+arm-none-eabi-ar: creating ../../../lib/libxil.a
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_5/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling coresightps_dcc"
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling ddrps"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_9/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_9/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling emacps"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling gpiops"
+"Running Make libs in ps7_cortexa9_0/libsrc/lwip211_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/lwip211_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling lwip src and adapter files"
+lwip-2.1.1/src/core/tcp.c: In function 'tcp_recved':
+lwip-2.1.1/src/core/tcp.c:992:22: warning: comparison is always true due to limited range of data type [-Wtype-limits]
+   } else if (rcv_wnd <= TCP_WND_MAX(pcb)) {
+                      ^~
+In file included from ../../../include/lwip/opt.h:52,
+                 from lwip-2.1.1/src/core/tcp.c:100:
+lwip-2.1.1/src/core/tcp.c:996:11: warning: comparison is always true due to limited range of data type [-Wtype-limits]
+   rcv_wnd <= TCP_WND_MAX(pcb));
+           ^~
+../../../include/lwip/debug.h:116:52: note: in definition of macro 'LWIP_ASSERT'
+ #define LWIP_ASSERT(message, assertion) do { if (!(assertion)) { \
+                                                    ^~~~~~~~~
+In file included from ../../../include/xemacps.h:349,
+                 from ../../../include/netif/xemacpsif.h:57,
+                 from contrib/ports/xilinx/netif/xemacpsif_dma.c:37:
+contrib/ports/xilinx/netif/xemacpsif_dma.c: In function 'init_dma':
+../../../include/xemacps_hw.h:611:23: warning: 'bdrxterminate' may be used uninitialized in this function [-Wmaybe-uninitialized]
+ #define XEmacPs_Out32 Xil_Out32
+                       ^~~~~~~~~
+contrib/ports/xilinx/netif/xemacpsif_dma.c:561:14: note: 'bdrxterminate' was declared here
+  XEmacPs_Bd *bdrxterminate;
+              ^~~~~~~~~~~~~
+In file included from ../../../include/xemacps.h:350,
+                 from ../../../include/netif/xemacpsif.h:57,
+                 from contrib/ports/xilinx/netif/xemacpsif_dma.c:37:
+../../../include/xemacps_bd.h:142:12: warning: 'bdtxterminate' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  (*(u32 *)((UINTPTR)((void*)(BaseAddress)) + (u32)(Offset)))
+            ^
+contrib/ports/xilinx/netif/xemacpsif_dma.c:560:14: note: 'bdtxterminate' was declared here
+  XEmacPs_Bd *bdtxterminate;
+              ^~~~~~~~~~~~~
+"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_6/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling qspips"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v4_0/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v4_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scugic"
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v7_0/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v7_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling standalone"
+In file included from usleep.c:56:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from xil_sleeptimer.c:51:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from xtime_l.c:49:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from sleep.c:53:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling xadcps"
+'Finished building libraries'
+10:06:09 **** Auto Build of configuration Debug for project mam_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/i2c_access.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/i2c_access.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mam_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/i2c_access.d" -MT"src/i2c_access.o" -o "src/i2c_access.o" "../src/i2c_access.c"
+'Finished building: ../src/i2c_access.c'
+' '
+'Building file: ../src/iic_phyreset.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/iic_phyreset.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mam_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/iic_phyreset.d" -MT"src/iic_phyreset.o" -o "src/iic_phyreset.o" "../src/iic_phyreset.c"
+'Finished building: ../src/iic_phyreset.c'
+' '
+'Building file: ../src/lvds2dma.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lvds2dma.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mam_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lvds2dma.d" -MT"src/lvds2dma.o" -o "src/lvds2dma.o" "../src/lvds2dma.c"
+'Finished building: ../src/lvds2dma.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mam_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/platform_zynq.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform_zynq.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mam_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform_zynq.d" -MT"src/platform_zynq.o" -o "src/platform_zynq.o" "../src/platform_zynq.c"
+In file included from ../src/platform_zynq.c:60:
+../../mam_ps_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+'Finished building: ../src/platform_zynq.c'
+' '
+'Building file: ../src/sfp.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sfp.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mam_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sfp.d" -MT"src/sfp.o" -o "src/sfp.o" "../src/sfp.c"
+'Finished building: ../src/sfp.c'
+' '
+'Building file: ../src/si5324.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/si5324.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mam_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/si5324.d" -MT"src/si5324.o" -o "src/si5324.o" "../src/si5324.c"
+'Finished building: ../src/si5324.c'
+' '
+'Building file: ../src/tcp_perf_client.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/tcp_perf_client.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mam_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/tcp_perf_client.d" -MT"src/tcp_perf_client.o" -o "src/tcp_perf_client.o" "../src/tcp_perf_client.c"
+'Finished building: ../src/tcp_perf_client.c'
+' '
+'Building target: mam_ps.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../mam_ps_bsp/ps7_cortexa9_0/lib -o "mam_ps.elf"  ./src/i2c_access.o ./src/iic_phyreset.o ./src/lvds2dma.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o ./src/tcp_perf_client.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: mam_ps.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size mam_ps.elf  |tee "mam_ps.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 147092	   3496	31578400	31728988	1e4255c	mam_ps.elf
+'Finished building: mam_ps.elf.size'
+' '
+10:06:38 **** Incremental Build of configuration Debug for project mam_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+10:11:37 **** Incremental Build of configuration Debug for project mam_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+10:11:41 **** Incremental Build of configuration Debug for project mam_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+10:18:09 **** Auto Build of configuration Debug for project mam_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lvds2dma.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lvds2dma.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mam_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lvds2dma.d" -MT"src/lvds2dma.o" -o "src/lvds2dma.o" "../src/lvds2dma.c"
+'Finished building: ../src/lvds2dma.c'
+' '
+'Building target: mam_ps.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../mam_ps_bsp/ps7_cortexa9_0/lib -o "mam_ps.elf"  ./src/i2c_access.o ./src/iic_phyreset.o ./src/lvds2dma.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o ./src/tcp_perf_client.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: mam_ps.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size mam_ps.elf  |tee "mam_ps.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 147092	   3496	31578400	31728988	1e4255c	mam_ps.elf
+'Finished building: mam_ps.elf.size'
+' '
+10:18:12 **** Incremental Build of configuration Debug for project mam_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+10:18:35 **** Incremental Build of configuration Debug for project mam_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+10:32:15 **** Incremental Build of configuration Debug for project mam_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+10:34:18 **** Incremental Build of configuration Debug for project mam_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+10:36:39 **** Incremental Build of configuration Debug for project mam_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+10:48:02 **** Incremental Build of configuration Debug for project mam_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+10:49:11 **** Auto Build of configuration Debug for project mam_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lvds2dma.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lvds2dma.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mam_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lvds2dma.d" -MT"src/lvds2dma.o" -o "src/lvds2dma.o" "../src/lvds2dma.c"
+../src/lvds2dma.c: In function 'XAxiDma_TransferExample':
+../src/lvds2dma.c:68:6: warning: variable 'RxBufferPtr' set but not used [-Wunused-but-set-variable]
+  u8 *RxBufferPtr;
+      ^~~~~~~~~~~
+'Finished building: ../src/lvds2dma.c'
+' '
+'Building target: mam_ps.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../mam_ps_bsp/ps7_cortexa9_0/lib -o "mam_ps.elf"  ./src/i2c_access.o ./src/iic_phyreset.o ./src/lvds2dma.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o ./src/tcp_perf_client.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: mam_ps.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size mam_ps.elf  |tee "mam_ps.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 146964	   3496	31578400	31728860	1e424dc	mam_ps.elf
+'Finished building: mam_ps.elf.size'
+' '
+10:49:45 **** Incremental Build of configuration Debug for project mam_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+10:54:13 **** Auto Build of configuration Debug for project mam_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lvds2dma.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lvds2dma.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mam_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lvds2dma.d" -MT"src/lvds2dma.o" -o "src/lvds2dma.o" "../src/lvds2dma.c"
+../src/lvds2dma.c: In function 'XAxiDma_TransferExample':
+../src/lvds2dma.c:68:6: warning: variable 'RxBufferPtr' set but not used [-Wunused-but-set-variable]
+  u8 *RxBufferPtr;
+      ^~~~~~~~~~~
+'Finished building: ../src/lvds2dma.c'
+' '
+'Building target: mam_ps.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../mam_ps_bsp/ps7_cortexa9_0/lib -o "mam_ps.elf"  ./src/i2c_access.o ./src/iic_phyreset.o ./src/lvds2dma.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o ./src/tcp_perf_client.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: mam_ps.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size mam_ps.elf  |tee "mam_ps.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 147028	   3496	31578400	31728924	1e4251c	mam_ps.elf
+'Finished building: mam_ps.elf.size'
+' '
+10:54:27 **** Incremental Build of configuration Debug for project mam_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+10:55:58 **** Incremental Build of configuration Debug for project mam_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+10:56:32 **** Auto Build of configuration Debug for project mam_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lvds2dma.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lvds2dma.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mam_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lvds2dma.d" -MT"src/lvds2dma.o" -o "src/lvds2dma.o" "../src/lvds2dma.c"
+../src/lvds2dma.c: In function 'XAxiDma_TransferExample':
+../src/lvds2dma.c:68:6: warning: variable 'RxBufferPtr' set but not used [-Wunused-but-set-variable]
+  u8 *RxBufferPtr;
+      ^~~~~~~~~~~
+'Finished building: ../src/lvds2dma.c'
+' '
+'Building target: mam_ps.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../mam_ps_bsp/ps7_cortexa9_0/lib -o "mam_ps.elf"  ./src/i2c_access.o ./src/iic_phyreset.o ./src/lvds2dma.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o ./src/tcp_perf_client.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: mam_ps.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size mam_ps.elf  |tee "mam_ps.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 147028	   3496	31578400	31728924	1e4251c	mam_ps.elf
+'Finished building: mam_ps.elf.size'
+' '
+10:56:43 **** Incremental Build of configuration Debug for project mam_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+10:56:45 **** Incremental Build of configuration Debug for project mam_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+11:03:27 **** Incremental Build of configuration Debug for project mam_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lvds2dma.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lvds2dma.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mam_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lvds2dma.d" -MT"src/lvds2dma.o" -o "src/lvds2dma.o" "../src/lvds2dma.c"
+'Finished building: ../src/lvds2dma.c'
+' '
+'Building target: mam_ps.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../mam_ps_bsp/ps7_cortexa9_0/lib -o "mam_ps.elf"  ./src/i2c_access.o ./src/iic_phyreset.o ./src/lvds2dma.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o ./src/tcp_perf_client.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: mam_ps.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size mam_ps.elf  |tee "mam_ps.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 147156	   3496	31578400	31729052	1e4259c	mam_ps.elf
+'Finished building: mam_ps.elf.size'
+' '
+11:12:23 **** Incremental Build of configuration Debug for project mam_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+11:16:17 **** Auto Build of configuration Debug for project mam_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lvds2dma.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lvds2dma.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mam_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lvds2dma.d" -MT"src/lvds2dma.o" -o "src/lvds2dma.o" "../src/lvds2dma.c"
+'Finished building: ../src/lvds2dma.c'
+' '
+'Building target: mam_ps.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../mam_ps_bsp/ps7_cortexa9_0/lib -o "mam_ps.elf"  ./src/i2c_access.o ./src/iic_phyreset.o ./src/lvds2dma.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o ./src/tcp_perf_client.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: mam_ps.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size mam_ps.elf  |tee "mam_ps.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 147156	   3496	31578400	31729052	1e4259c	mam_ps.elf
+'Finished building: mam_ps.elf.size'
+' '
+11:16:22 **** Incremental Build of configuration Debug for project mam_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+11:17:24 **** Auto Build of configuration Debug for project mam_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lvds2dma.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lvds2dma.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mam_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lvds2dma.d" -MT"src/lvds2dma.o" -o "src/lvds2dma.o" "../src/lvds2dma.c"
+'Finished building: ../src/lvds2dma.c'
+' '
+'Building target: mam_ps.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../mam_ps_bsp/ps7_cortexa9_0/lib -o "mam_ps.elf"  ./src/i2c_access.o ./src/iic_phyreset.o ./src/lvds2dma.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o ./src/tcp_perf_client.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: mam_ps.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size mam_ps.elf  |tee "mam_ps.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 147156	   3496	31578400	31729052	1e4259c	mam_ps.elf
+'Finished building: mam_ps.elf.size'
+' '
+11:17:29 **** Incremental Build of configuration Debug for project mam_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+11:18:42 **** Auto Build of configuration Debug for project mam_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lvds2dma.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lvds2dma.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mam_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lvds2dma.d" -MT"src/lvds2dma.o" -o "src/lvds2dma.o" "../src/lvds2dma.c"
+'Finished building: ../src/lvds2dma.c'
+' '
+'Building target: mam_ps.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../mam_ps_bsp/ps7_cortexa9_0/lib -o "mam_ps.elf"  ./src/i2c_access.o ./src/iic_phyreset.o ./src/lvds2dma.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o ./src/tcp_perf_client.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: mam_ps.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size mam_ps.elf  |tee "mam_ps.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 147156	   3496	31578400	31729052	1e4259c	mam_ps.elf
+'Finished building: mam_ps.elf.size'
+' '
+11:18:44 **** Auto Build of configuration Debug for project mam_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lvds2dma.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lvds2dma.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mam_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lvds2dma.d" -MT"src/lvds2dma.o" -o "src/lvds2dma.o" "../src/lvds2dma.c"
+'Finished building: ../src/lvds2dma.c'
+' '
+'Building target: mam_ps.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../mam_ps_bsp/ps7_cortexa9_0/lib -o "mam_ps.elf"  ./src/i2c_access.o ./src/iic_phyreset.o ./src/lvds2dma.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o ./src/tcp_perf_client.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: mam_ps.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size mam_ps.elf  |tee "mam_ps.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 147156	   3496	31578400	31729052	1e4259c	mam_ps.elf
+'Finished building: mam_ps.elf.size'
+' '
+11:20:29 **** Auto Build of configuration Debug for project mam_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lvds2dma.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lvds2dma.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mam_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lvds2dma.d" -MT"src/lvds2dma.o" -o "src/lvds2dma.o" "../src/lvds2dma.c"
+'Finished building: ../src/lvds2dma.c'
+' '
+'Building target: mam_ps.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../mam_ps_bsp/ps7_cortexa9_0/lib -o "mam_ps.elf"  ./src/i2c_access.o ./src/iic_phyreset.o ./src/lvds2dma.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o ./src/tcp_perf_client.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: mam_ps.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size mam_ps.elf  |tee "mam_ps.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 147156	   3496	31578400	31729052	1e4259c	mam_ps.elf
+'Finished building: mam_ps.elf.size'
+' '
+11:21:43 **** Auto Build of configuration Debug for project mam_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lvds2dma.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lvds2dma.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mam_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lvds2dma.d" -MT"src/lvds2dma.o" -o "src/lvds2dma.o" "../src/lvds2dma.c"
+../src/lvds2dma.c: In function 'XAxiDma_TransferExample':
+../src/lvds2dma.c:104:5: warning: unused variable 'test_interrupt' [-Wunused-variable]
+  u8 test_interrupt = 0;
+     ^~~~~~~~~~~~~~
+'Finished building: ../src/lvds2dma.c'
+' '
+'Building target: mam_ps.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../mam_ps_bsp/ps7_cortexa9_0/lib -o "mam_ps.elf"  ./src/i2c_access.o ./src/iic_phyreset.o ./src/lvds2dma.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o ./src/tcp_perf_client.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: mam_ps.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size mam_ps.elf  |tee "mam_ps.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 147156	   3496	31578400	31729052	1e4259c	mam_ps.elf
+'Finished building: mam_ps.elf.size'
+' '
+11:22:06 **** Auto Build of configuration Debug for project mam_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lvds2dma.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lvds2dma.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mam_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lvds2dma.d" -MT"src/lvds2dma.o" -o "src/lvds2dma.o" "../src/lvds2dma.c"
+'Finished building: ../src/lvds2dma.c'
+' '
+'Building target: mam_ps.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../mam_ps_bsp/ps7_cortexa9_0/lib -o "mam_ps.elf"  ./src/i2c_access.o ./src/iic_phyreset.o ./src/lvds2dma.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o ./src/tcp_perf_client.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: mam_ps.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size mam_ps.elf  |tee "mam_ps.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 147156	   3496	31578400	31729052	1e4259c	mam_ps.elf
+'Finished building: mam_ps.elf.size'
+' '
+11:22:29 **** Incremental Build of configuration Debug for project mam_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+11:24:14 **** Auto Build of configuration Debug for project mam_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lvds2dma.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lvds2dma.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mam_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lvds2dma.d" -MT"src/lvds2dma.o" -o "src/lvds2dma.o" "../src/lvds2dma.c"
+'Finished building: ../src/lvds2dma.c'
+' '
+'Building target: mam_ps.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../mam_ps_bsp/ps7_cortexa9_0/lib -o "mam_ps.elf"  ./src/i2c_access.o ./src/iic_phyreset.o ./src/lvds2dma.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o ./src/tcp_perf_client.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: mam_ps.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size mam_ps.elf  |tee "mam_ps.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 147092	   3496	31578400	31728988	1e4255c	mam_ps.elf
+'Finished building: mam_ps.elf.size'
+' '
+13:01:24 **** Auto Build of configuration Debug for project mam_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lvds2dma.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lvds2dma.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mam_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lvds2dma.d" -MT"src/lvds2dma.o" -o "src/lvds2dma.o" "../src/lvds2dma.c"
+../src/lvds2dma.c:107:2: warning: #warning CHECK FOR THE VALID DDR ADDRESS IN XPARAMETERS.H, DEFAULT SET TO 0x01000000 [-Wcpp]
+ #warning CHECK FOR THE VALID DDR ADDRESS IN XPARAMETERS.H, \
+  ^~~~~~~
+'Finished building: ../src/lvds2dma.c'
+' '
+'Building target: mam_ps.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../mam_ps_bsp/ps7_cortexa9_0/lib -o "mam_ps.elf"  ./src/i2c_access.o ./src/iic_phyreset.o ./src/lvds2dma.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o ./src/tcp_perf_client.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: mam_ps.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size mam_ps.elf  |tee "mam_ps.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 146540	   3496	31578400	31728436	1e42334	mam_ps.elf
+'Finished building: mam_ps.elf.size'
+' '
+13:04:05 **** Auto Build of configuration Debug for project mam_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lvds2dma.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lvds2dma.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mam_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lvds2dma.d" -MT"src/lvds2dma.o" -o "src/lvds2dma.o" "../src/lvds2dma.c"
+../src/lvds2dma.c:107:2: warning: #warning CHECK FOR THE VALID DDR ADDRESS IN XPARAMETERS.H, DEFAULT SET TO 0x01000000 [-Wcpp]
+ #warning CHECK FOR THE VALID DDR ADDRESS IN XPARAMETERS.H, \
+  ^~~~~~~
+'Finished building: ../src/lvds2dma.c'
+' '
+'Building target: mam_ps.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../mam_ps_bsp/ps7_cortexa9_0/lib -o "mam_ps.elf"  ./src/i2c_access.o ./src/iic_phyreset.o ./src/lvds2dma.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o ./src/tcp_perf_client.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: mam_ps.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size mam_ps.elf  |tee "mam_ps.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 146284	   3496	31578400	31728180	1e42234	mam_ps.elf
+'Finished building: mam_ps.elf.size'
+' '
+13:04:50 **** Auto Build of configuration Debug for project mam_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lvds2dma.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lvds2dma.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mam_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lvds2dma.d" -MT"src/lvds2dma.o" -o "src/lvds2dma.o" "../src/lvds2dma.c"
+../src/lvds2dma.c:28:2: warning: #warning CHECK FOR THE VALID DDR ADDRESS IN XPARAMETERS.H, DEFAULT SET TO 0x01000000 [-Wcpp]
+ #warning CHECK FOR THE VALID DDR ADDRESS IN XPARAMETERS.H, \
+  ^~~~~~~
+../src/lvds2dma.c: In function 'XAxiDma_SimplePollExample':
+../src/lvds2dma.c:149:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+../src/lvds2dma.c:148:6: warning: unused variable 'Tries' [-Wunused-variable]
+  int Tries = NUMBER_OF_TRANSFERS;
+      ^~~~~
+'Finished building: ../src/lvds2dma.c'
+' '
+'Building target: mam_ps.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../mam_ps_bsp/ps7_cortexa9_0/lib -o "mam_ps.elf"  ./src/i2c_access.o ./src/iic_phyreset.o ./src/lvds2dma.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o ./src/tcp_perf_client.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: mam_ps.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size mam_ps.elf  |tee "mam_ps.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 146220	   3496	31578400	31728116	1e421f4	mam_ps.elf
+'Finished building: mam_ps.elf.size'
+' '
+13:05:03 **** Incremental Build of configuration Debug for project mam_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+13:06:18 **** Incremental Build of configuration Debug for project mam_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+13:08:49 **** Auto Build of configuration Debug for project mam_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lvds2dma.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lvds2dma.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mam_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lvds2dma.d" -MT"src/lvds2dma.o" -o "src/lvds2dma.o" "../src/lvds2dma.c"
+../src/lvds2dma.c:28:2: warning: #warning CHECK FOR THE VALID DDR ADDRESS IN XPARAMETERS.H, DEFAULT SET TO 0x01000000 [-Wcpp]
+ #warning CHECK FOR THE VALID DDR ADDRESS IN XPARAMETERS.H, \
+  ^~~~~~~
+../src/lvds2dma.c: In function 'XAxiDma_SimplePollExample':
+../src/lvds2dma.c:149:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+../src/lvds2dma.c:148:6: warning: unused variable 'Tries' [-Wunused-variable]
+  int Tries = NUMBER_OF_TRANSFERS;
+      ^~~~~
+'Finished building: ../src/lvds2dma.c'
+' '
+'Building target: mam_ps.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../mam_ps_bsp/ps7_cortexa9_0/lib -o "mam_ps.elf"  ./src/i2c_access.o ./src/iic_phyreset.o ./src/lvds2dma.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o ./src/tcp_perf_client.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: mam_ps.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size mam_ps.elf  |tee "mam_ps.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 146220	   3496	31578400	31728116	1e421f4	mam_ps.elf
+'Finished building: mam_ps.elf.size'
+' '
+13:09:47 **** Incremental Build of configuration Debug for project mam_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lvds2dma.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lvds2dma.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mam_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lvds2dma.d" -MT"src/lvds2dma.o" -o "src/lvds2dma.o" "../src/lvds2dma.c"
+../src/lvds2dma.c:28:2: warning: #warning CHECK FOR THE VALID DDR ADDRESS IN XPARAMETERS.H, DEFAULT SET TO 0x01000000 [-Wcpp]
+ #warning CHECK FOR THE VALID DDR ADDRESS IN XPARAMETERS.H, \
+  ^~~~~~~
+../src/lvds2dma.c: In function 'XAxiDma_SimplePollExample':
+../src/lvds2dma.c:201:37: error: 'RxPacket' undeclared (first use in this function)
+  Xil_DCacheInvalidateRange((UINTPTR)RxPacket, MAX_PKT_LEN);
+                                     ^~~~~~~~
+../src/lvds2dma.c:201:37: note: each undeclared identifier is reported only once for each function it appears in
+../src/lvds2dma.c: At top level:
+../src/lvds2dma.c:57:12: warning: 'CheckData' used but never defined
+ static int CheckData(void);
+            ^~~~~~~~~
+make: *** [src/subdir.mk:53: src/lvds2dma.o] Error 1
+13:11:37 **** Incremental Build of configuration Debug for project mam_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lvds2dma.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lvds2dma.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mam_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lvds2dma.d" -MT"src/lvds2dma.o" -o "src/lvds2dma.o" "../src/lvds2dma.c"
+../src/lvds2dma.c:28:2: warning: #warning CHECK FOR THE VALID DDR ADDRESS IN XPARAMETERS.H, DEFAULT SET TO 0x01000000 [-Wcpp]
+ #warning CHECK FOR THE VALID DDR ADDRESS IN XPARAMETERS.H, \
+  ^~~~~~~
+../src/lvds2dma.c: In function 'XAxiDma_SimplePollExample':
+../src/lvds2dma.c:201:37: error: 'RxPacket' undeclared (first use in this function)
+  Xil_DCacheInvalidateRange((UINTPTR)RxPacket, MAX_PKT_LEN);
+                                     ^~~~~~~~
+../src/lvds2dma.c:201:37: note: each undeclared identifier is reported only once for each function it appears in
+../src/lvds2dma.c: At top level:
+../src/lvds2dma.c:57:12: warning: 'CheckData' used but never defined
+ static int CheckData(void);
+            ^~~~~~~~~
+make: *** [src/subdir.mk:53: src/lvds2dma.o] Error 1
+13:12:09 **** Auto Build of configuration Debug for project mam_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lvds2dma.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lvds2dma.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mam_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lvds2dma.d" -MT"src/lvds2dma.o" -o "src/lvds2dma.o" "../src/lvds2dma.c"
+../src/lvds2dma.c:28:2: warning: #warning CHECK FOR THE VALID DDR ADDRESS IN XPARAMETERS.H, DEFAULT SET TO 0x01000000 [-Wcpp]
+ #warning CHECK FOR THE VALID DDR ADDRESS IN XPARAMETERS.H, \
+  ^~~~~~~
+../src/lvds2dma.c: In function 'XAxiDma_SimplePollExample':
+../src/lvds2dma.c:193:12: warning: implicit declaration of function 'CheckData' [-Wimplicit-function-declaration]
+   Status = CheckData();
+            ^~~~~~~~~
+../src/lvds2dma.c:200:37: error: 'RxPacket' undeclared (first use in this function)
+  Xil_DCacheInvalidateRange((UINTPTR)RxPacket, MAX_PKT_LEN);
+                                     ^~~~~~~~
+../src/lvds2dma.c:200:37: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/subdir.mk:53: src/lvds2dma.o] Error 1
+13:12:18 **** Auto Build of configuration Debug for project mam_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lvds2dma.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lvds2dma.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mam_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lvds2dma.d" -MT"src/lvds2dma.o" -o "src/lvds2dma.o" "../src/lvds2dma.c"
+../src/lvds2dma.c:28:2: warning: #warning CHECK FOR THE VALID DDR ADDRESS IN XPARAMETERS.H, DEFAULT SET TO 0x01000000 [-Wcpp]
+ #warning CHECK FOR THE VALID DDR ADDRESS IN XPARAMETERS.H, \
+  ^~~~~~~
+../src/lvds2dma.c: In function 'XAxiDma_SimplePollExample':
+../src/lvds2dma.c:193:12: warning: implicit declaration of function 'CheckData' [-Wimplicit-function-declaration]
+   Status = CheckData();
+            ^~~~~~~~~
+../src/lvds2dma.c:200:37: error: 'RxPacket' undeclared (first use in this function)
+  Xil_DCacheInvalidateRange((UINTPTR)RxPacket, MAX_PKT_LEN);
+                                     ^~~~~~~~
+../src/lvds2dma.c:200:37: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/subdir.mk:53: src/lvds2dma.o] Error 1
+13:12:59 **** Auto Build of configuration Debug for project mam_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lvds2dma.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lvds2dma.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mam_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lvds2dma.d" -MT"src/lvds2dma.o" -o "src/lvds2dma.o" "../src/lvds2dma.c"
+../src/lvds2dma.c:28:2: warning: #warning CHECK FOR THE VALID DDR ADDRESS IN XPARAMETERS.H, DEFAULT SET TO 0x01000000 [-Wcpp]
+ #warning CHECK FOR THE VALID DDR ADDRESS IN XPARAMETERS.H, \
+  ^~~~~~~
+'Finished building: ../src/lvds2dma.c'
+' '
+'Building target: mam_ps.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../mam_ps_bsp/ps7_cortexa9_0/lib -o "mam_ps.elf"  ./src/i2c_access.o ./src/iic_phyreset.o ./src/lvds2dma.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o ./src/tcp_perf_client.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: mam_ps.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size mam_ps.elf  |tee "mam_ps.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 146004	   3496	31578400	31727900	1e4211c	mam_ps.elf
+'Finished building: mam_ps.elf.size'
+' '
+13:13:18 **** Incremental Build of configuration Debug for project mam_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+13:14:18 **** Incremental Build of configuration Debug for project mam_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+13:34:26 **** Incremental Build of configuration Debug for project mam_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+13:53:06 **** Auto Build of configuration Debug for project mam_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lvds2dma.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lvds2dma.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mam_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lvds2dma.d" -MT"src/lvds2dma.o" -o "src/lvds2dma.o" "../src/lvds2dma.c"
+../src/lvds2dma.c:28:2: warning: #warning CHECK FOR THE VALID DDR ADDRESS IN XPARAMETERS.H, DEFAULT SET TO 0x01000000 [-Wcpp]
+ #warning CHECK FOR THE VALID DDR ADDRESS IN XPARAMETERS.H, \
+  ^~~~~~~
+'Finished building: ../src/lvds2dma.c'
+' '
+'Building target: mam_ps.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../mam_ps_bsp/ps7_cortexa9_0/lib -o "mam_ps.elf"  ./src/i2c_access.o ./src/iic_phyreset.o ./src/lvds2dma.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o ./src/tcp_perf_client.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: mam_ps.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size mam_ps.elf  |tee "mam_ps.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 145940	   3496	31578400	31727836	1e420dc	mam_ps.elf
+'Finished building: mam_ps.elf.size'
+' '
+13:53:15 **** Incremental Build of configuration Debug for project mam_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+14:01:09 **** Clean-only build of project mam_ps_bsp ****
+make -k clean 
+make -C ps7_cortexa9_0/libsrc/axidma_v9_9/src -s clean 
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_5/src -s clean 
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src -s clean 
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s clean 
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s clean 
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_4/src -s clean 
+make -C ps7_cortexa9_0/libsrc/emacps_v3_9/src -s clean 
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_5/src -s clean 
+make -C ps7_cortexa9_0/libsrc/lwip211_v1_0/src -s clean 
+rm: `./*.o' durumlanamadý: Invalid argument
+make[1]: *** [Makefile:52: clean] Error 1
+make -C ps7_cortexa9_0/libsrc/qspips_v3_6/src -s clean 
+make: *** [Makefile:33: ps7_cortexa9_0/libsrc/lwip211_v1_0/src/make.clean] Error 2
+make -C ps7_cortexa9_0/libsrc/scugic_v4_0/src -s clean 
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s clean 
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s clean 
+make -C ps7_cortexa9_0/libsrc/standalone_v7_0/src -s clean 
+make -C ps7_cortexa9_0/libsrc/uartps_v3_7/src -s clean 
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s clean 
+make: Target 'clean' not remade because of errors.
+14:01:11 **** Clean-only build of configuration Debug for project mam_ps ****
+make clean 
+rm -rf  ./src/i2c_access.o ./src/iic_phyreset.o ./src/lvds2dma.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o ./src/tcp_perf_client.o  ./src/i2c_access.d ./src/iic_phyreset.d ./src/lvds2dma.d ./src/main.d ./src/platform.d ./src/platform_mb.d ./src/platform_zynq.d ./src/platform_zynqmp.d ./src/sfp.d ./src/si5324.d ./src/tcp_perf_client.d  mam_ps.elf.size  mam_ps.elf
+' '
+14:01:11 **** Build of project mam_ps_bsp ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/axidma_v9_9/src"
+make -C ps7_cortexa9_0/libsrc/axidma_v9_9/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_5/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_9/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_9/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/lwip211_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/lwip211_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_6/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v4_0/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v4_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v7_0/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v7_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make libs in ps7_cortexa9_0/libsrc/axidma_v9_9/src"
+make -C ps7_cortexa9_0/libsrc/axidma_v9_9/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling axidma"
+arm-none-eabi-ar: creating ../../../lib/libxil.a
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_5/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling coresightps_dcc"
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling ddrps"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_9/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_9/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling emacps"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling gpiops"
+"Running Make libs in ps7_cortexa9_0/libsrc/lwip211_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/lwip211_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling lwip src and adapter files"
+lwip-2.1.1/src/core/tcp.c: In function 'tcp_recved':
+lwip-2.1.1/src/core/tcp.c:992:22: warning: comparison is always true due to limited range of data type [-Wtype-limits]
+   } else if (rcv_wnd <= TCP_WND_MAX(pcb)) {
+                      ^~
+In file included from ../../../include/lwip/opt.h:52,
+                 from lwip-2.1.1/src/core/tcp.c:100:
+lwip-2.1.1/src/core/tcp.c:996:11: warning: comparison is always true due to limited range of data type [-Wtype-limits]
+   rcv_wnd <= TCP_WND_MAX(pcb));
+           ^~
+../../../include/lwip/debug.h:116:52: note: in definition of macro 'LWIP_ASSERT'
+ #define LWIP_ASSERT(message, assertion) do { if (!(assertion)) { \
+                                                    ^~~~~~~~~
+In file included from ../../../include/xemacps.h:349,
+                 from ../../../include/netif/xemacpsif.h:57,
+                 from contrib/ports/xilinx/netif/xemacpsif_dma.c:37:
+contrib/ports/xilinx/netif/xemacpsif_dma.c: In function 'init_dma':
+../../../include/xemacps_hw.h:611:23: warning: 'bdrxterminate' may be used uninitialized in this function [-Wmaybe-uninitialized]
+ #define XEmacPs_Out32 Xil_Out32
+                       ^~~~~~~~~
+contrib/ports/xilinx/netif/xemacpsif_dma.c:561:14: note: 'bdrxterminate' was declared here
+  XEmacPs_Bd *bdrxterminate;
+              ^~~~~~~~~~~~~
+In file included from ../../../include/xemacps.h:350,
+                 from ../../../include/netif/xemacpsif.h:57,
+                 from contrib/ports/xilinx/netif/xemacpsif_dma.c:37:
+../../../include/xemacps_bd.h:142:12: warning: 'bdtxterminate' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  (*(u32 *)((UINTPTR)((void*)(BaseAddress)) + (u32)(Offset)))
+            ^
+contrib/ports/xilinx/netif/xemacpsif_dma.c:560:14: note: 'bdtxterminate' was declared here
+  XEmacPs_Bd *bdtxterminate;
+              ^~~~~~~~~~~~~
+"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_6/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling qspips"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v4_0/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v4_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scugic"
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v7_0/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v7_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling standalone"
+In file included from usleep.c:56:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from xil_sleeptimer.c:51:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from xtime_l.c:49:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from sleep.c:53:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling xadcps"
+'Finished building libraries'
+14:01:53 **** Build of configuration Debug for project mam_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/i2c_access.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/i2c_access.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mam_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/i2c_access.d" -MT"src/i2c_access.o" -o "src/i2c_access.o" "../src/i2c_access.c"
+'Finished building: ../src/i2c_access.c'
+' '
+'Building file: ../src/iic_phyreset.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/iic_phyreset.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mam_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/iic_phyreset.d" -MT"src/iic_phyreset.o" -o "src/iic_phyreset.o" "../src/iic_phyreset.c"
+'Finished building: ../src/iic_phyreset.c'
+' '
+'Building file: ../src/lvds2dma.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lvds2dma.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mam_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lvds2dma.d" -MT"src/lvds2dma.o" -o "src/lvds2dma.o" "../src/lvds2dma.c"
+../src/lvds2dma.c:28:2: warning: #warning CHECK FOR THE VALID DDR ADDRESS IN XPARAMETERS.H, DEFAULT SET TO 0x01000000 [-Wcpp]
+ #warning CHECK FOR THE VALID DDR ADDRESS IN XPARAMETERS.H, \
+  ^~~~~~~
+'Finished building: ../src/lvds2dma.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mam_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mam_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building file: ../src/platform_mb.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform_mb.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mam_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform_mb.d" -MT"src/platform_mb.o" -o "src/platform_mb.o" "../src/platform_mb.c"
+'Finished building: ../src/platform_mb.c'
+' '
+'Building file: ../src/platform_zynq.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform_zynq.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mam_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform_zynq.d" -MT"src/platform_zynq.o" -o "src/platform_zynq.o" "../src/platform_zynq.c"
+In file included from ../src/platform_zynq.c:60:
+../../mam_ps_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+'Finished building: ../src/platform_zynq.c'
+' '
+'Building file: ../src/platform_zynqmp.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform_zynqmp.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mam_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform_zynqmp.d" -MT"src/platform_zynqmp.o" -o "src/platform_zynqmp.o" "../src/platform_zynqmp.c"
+'Finished building: ../src/platform_zynqmp.c'
+' '
+'Building file: ../src/sfp.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sfp.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mam_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sfp.d" -MT"src/sfp.o" -o "src/sfp.o" "../src/sfp.c"
+'Finished building: ../src/sfp.c'
+' '
+'Building file: ../src/si5324.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/si5324.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mam_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/si5324.d" -MT"src/si5324.o" -o "src/si5324.o" "../src/si5324.c"
+'Finished building: ../src/si5324.c'
+' '
+'Building file: ../src/tcp_perf_client.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/tcp_perf_client.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mam_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/tcp_perf_client.d" -MT"src/tcp_perf_client.o" -o "src/tcp_perf_client.o" "../src/tcp_perf_client.c"
+'Finished building: ../src/tcp_perf_client.c'
+' '
+'Building target: mam_ps.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../mam_ps_bsp/ps7_cortexa9_0/lib -o "mam_ps.elf"  ./src/i2c_access.o ./src/iic_phyreset.o ./src/lvds2dma.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o ./src/tcp_perf_client.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: mam_ps.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size mam_ps.elf  |tee "mam_ps.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 145940	   3496	31578400	31727836	1e420dc	mam_ps.elf
+'Finished building: mam_ps.elf.size'
+' '
+14:08:55 **** Auto Build of configuration Debug for project mam_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lvds2dma.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lvds2dma.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mam_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lvds2dma.d" -MT"src/lvds2dma.o" -o "src/lvds2dma.o" "../src/lvds2dma.c"
+'Finished building: ../src/lvds2dma.c'
+' '
+'Building target: mam_ps.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../mam_ps_bsp/ps7_cortexa9_0/lib -o "mam_ps.elf"  ./src/i2c_access.o ./src/iic_phyreset.o ./src/lvds2dma.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o ./src/tcp_perf_client.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: mam_ps.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size mam_ps.elf  |tee "mam_ps.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 147092	   3496	31578400	31728988	1e4255c	mam_ps.elf
+'Finished building: mam_ps.elf.size'
+' '
+14:09:28 **** Incremental Build of configuration Debug for project mam_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+14:21:35 **** Incremental Build of configuration Debug for project mam_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+14:22:49 **** Incremental Build of configuration Debug for project mam_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+14:23:41 **** Incremental Build of configuration Debug for project mam_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+14:52:52 **** Auto Build of configuration Debug for project mam_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lvds2dma.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lvds2dma.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mam_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lvds2dma.d" -MT"src/lvds2dma.o" -o "src/lvds2dma.o" "../src/lvds2dma.c"
+../src/lvds2dma.c: In function 'XAxiDma_TransferExample':
+../src/lvds2dma.c:101:2: error: 'RxPacket' undeclared (first use in this function)
+  RxPacket = (u8 *) RX_BUFFER_BASE;
+  ^~~~~~~~
+../src/lvds2dma.c:101:2: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/subdir.mk:53: src/lvds2dma.o] Error 1
+14:53:11 **** Auto Build of configuration Debug for project mam_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lvds2dma.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lvds2dma.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mam_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lvds2dma.d" -MT"src/lvds2dma.o" -o "src/lvds2dma.o" "../src/lvds2dma.c"
+'Finished building: ../src/lvds2dma.c'
+' '
+'Building target: mam_ps.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../mam_ps_bsp/ps7_cortexa9_0/lib -o "mam_ps.elf"  ./src/i2c_access.o ./src/iic_phyreset.o ./src/lvds2dma.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o ./src/tcp_perf_client.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: mam_ps.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size mam_ps.elf  |tee "mam_ps.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 147156	   3496	31578400	31729052	1e4259c	mam_ps.elf
+'Finished building: mam_ps.elf.size'
+' '
+14:53:20 **** Incremental Build of configuration Debug for project mam_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lvds2dma.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lvds2dma.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mam_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lvds2dma.d" -MT"src/lvds2dma.o" -o "src/lvds2dma.o" "../src/lvds2dma.c"
+'Finished building: ../src/lvds2dma.c'
+' '
+'Building target: mam_ps.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../mam_ps_bsp/ps7_cortexa9_0/lib -o "mam_ps.elf"  ./src/i2c_access.o ./src/iic_phyreset.o ./src/lvds2dma.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o ./src/tcp_perf_client.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: mam_ps.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size mam_ps.elf  |tee "mam_ps.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 147156	   3496	31578400	31729052	1e4259c	mam_ps.elf
+'Finished building: mam_ps.elf.size'
+' '
+14:54:25 **** Auto Build of configuration Debug for project mam_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lvds2dma.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lvds2dma.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mam_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lvds2dma.d" -MT"src/lvds2dma.o" -o "src/lvds2dma.o" "../src/lvds2dma.c"
+'Finished building: ../src/lvds2dma.c'
+' '
+'Building target: mam_ps.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../mam_ps_bsp/ps7_cortexa9_0/lib -o "mam_ps.elf"  ./src/i2c_access.o ./src/iic_phyreset.o ./src/lvds2dma.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o ./src/tcp_perf_client.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: mam_ps.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size mam_ps.elf  |tee "mam_ps.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 147156	   3496	31578400	31729052	1e4259c	mam_ps.elf
+'Finished building: mam_ps.elf.size'
+' '
+14:54:30 **** Incremental Build of configuration Debug for project mam_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+15:02:28 **** Incremental Build of configuration Debug for project mam_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+15:03:25 **** Auto Build of configuration Debug for project mam_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lvds2dma.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lvds2dma.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mam_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lvds2dma.d" -MT"src/lvds2dma.o" -o "src/lvds2dma.o" "../src/lvds2dma.c"
+'Finished building: ../src/lvds2dma.c'
+' '
+'Building target: mam_ps.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../mam_ps_bsp/ps7_cortexa9_0/lib -o "mam_ps.elf"  ./src/i2c_access.o ./src/iic_phyreset.o ./src/lvds2dma.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o ./src/tcp_perf_client.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: mam_ps.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size mam_ps.elf  |tee "mam_ps.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 147260	   3496	31578400	31729156	1e42604	mam_ps.elf
+'Finished building: mam_ps.elf.size'
+' '
+15:03:29 **** Incremental Build of configuration Debug for project mam_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+15:05:06 **** Auto Build of configuration Debug for project mam_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lvds2dma.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lvds2dma.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mam_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lvds2dma.d" -MT"src/lvds2dma.o" -o "src/lvds2dma.o" "../src/lvds2dma.c"
+'Finished building: ../src/lvds2dma.c'
+' '
+'Building target: mam_ps.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../mam_ps_bsp/ps7_cortexa9_0/lib -o "mam_ps.elf"  ./src/i2c_access.o ./src/iic_phyreset.o ./src/lvds2dma.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o ./src/tcp_perf_client.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: mam_ps.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size mam_ps.elf  |tee "mam_ps.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 147260	   3496	31578400	31729156	1e42604	mam_ps.elf
+'Finished building: mam_ps.elf.size'
+' '
+15:05:09 **** Incremental Build of configuration Debug for project mam_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+15:06:10 **** Auto Build of configuration Debug for project mam_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lvds2dma.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lvds2dma.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mam_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lvds2dma.d" -MT"src/lvds2dma.o" -o "src/lvds2dma.o" "../src/lvds2dma.c"
+'Finished building: ../src/lvds2dma.c'
+' '
+'Building target: mam_ps.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../mam_ps_bsp/ps7_cortexa9_0/lib -o "mam_ps.elf"  ./src/i2c_access.o ./src/iic_phyreset.o ./src/lvds2dma.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o ./src/tcp_perf_client.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: mam_ps.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size mam_ps.elf  |tee "mam_ps.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 147260	   3496	31578400	31729156	1e42604	mam_ps.elf
+'Finished building: mam_ps.elf.size'
+' '
+15:06:15 **** Incremental Build of configuration Debug for project mam_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+15:06:46 **** Incremental Build of configuration Debug for project mam_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+15:08:50 **** Auto Build of configuration Debug for project mam_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lvds2dma.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lvds2dma.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mam_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lvds2dma.d" -MT"src/lvds2dma.o" -o "src/lvds2dma.o" "../src/lvds2dma.c"
+'Finished building: ../src/lvds2dma.c'
+' '
+'Building target: mam_ps.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../mam_ps_bsp/ps7_cortexa9_0/lib -o "mam_ps.elf"  ./src/i2c_access.o ./src/iic_phyreset.o ./src/lvds2dma.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o ./src/tcp_perf_client.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: mam_ps.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size mam_ps.elf  |tee "mam_ps.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 147260	   3496	31578400	31729156	1e42604	mam_ps.elf
+'Finished building: mam_ps.elf.size'
+' '
+15:08:55 **** Incremental Build of configuration Debug for project mam_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+15:11:59 **** Auto Build of configuration Debug for project mam_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lvds2dma.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lvds2dma.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mam_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lvds2dma.d" -MT"src/lvds2dma.o" -o "src/lvds2dma.o" "../src/lvds2dma.c"
+'Finished building: ../src/lvds2dma.c'
+' '
+'Building target: mam_ps.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../mam_ps_bsp/ps7_cortexa9_0/lib -o "mam_ps.elf"  ./src/i2c_access.o ./src/iic_phyreset.o ./src/lvds2dma.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o ./src/tcp_perf_client.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: mam_ps.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size mam_ps.elf  |tee "mam_ps.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 147260	   3496	31578400	31729156	1e42604	mam_ps.elf
+'Finished building: mam_ps.elf.size'
+' '
+15:12:03 **** Incremental Build of configuration Debug for project mam_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+15:17:53 **** Auto Build of configuration Debug for project mam_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lvds2dma.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lvds2dma.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mam_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lvds2dma.d" -MT"src/lvds2dma.o" -o "src/lvds2dma.o" "../src/lvds2dma.c"
+'Finished building: ../src/lvds2dma.c'
+' '
+'Building target: mam_ps.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../mam_ps_bsp/ps7_cortexa9_0/lib -o "mam_ps.elf"  ./src/i2c_access.o ./src/iic_phyreset.o ./src/lvds2dma.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o ./src/tcp_perf_client.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: mam_ps.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size mam_ps.elf  |tee "mam_ps.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 147260	   3496	31578400	31729156	1e42604	mam_ps.elf
+'Finished building: mam_ps.elf.size'
+' '
+15:17:56 **** Incremental Build of configuration Debug for project mam_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+15:18:52 **** Auto Build of configuration Debug for project mam_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lvds2dma.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lvds2dma.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mam_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lvds2dma.d" -MT"src/lvds2dma.o" -o "src/lvds2dma.o" "../src/lvds2dma.c"
+'Finished building: ../src/lvds2dma.c'
+' '
+'Building target: mam_ps.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../mam_ps_bsp/ps7_cortexa9_0/lib -o "mam_ps.elf"  ./src/i2c_access.o ./src/iic_phyreset.o ./src/lvds2dma.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o ./src/tcp_perf_client.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: mam_ps.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size mam_ps.elf  |tee "mam_ps.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 147108	   3496	31578400	31729004	1e4256c	mam_ps.elf
+'Finished building: mam_ps.elf.size'
+' '
+15:19:07 **** Auto Build of configuration Debug for project mam_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lvds2dma.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lvds2dma.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mam_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lvds2dma.d" -MT"src/lvds2dma.o" -o "src/lvds2dma.o" "../src/lvds2dma.c"
+'Finished building: ../src/lvds2dma.c'
+' '
+'Building target: mam_ps.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../mam_ps_bsp/ps7_cortexa9_0/lib -o "mam_ps.elf"  ./src/i2c_access.o ./src/iic_phyreset.o ./src/lvds2dma.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o ./src/tcp_perf_client.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: mam_ps.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size mam_ps.elf  |tee "mam_ps.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 147108	   3496	31578400	31729004	1e4256c	mam_ps.elf
+'Finished building: mam_ps.elf.size'
+' '
+15:21:51 **** Auto Build of configuration Debug for project mam_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lvds2dma.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lvds2dma.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mam_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lvds2dma.d" -MT"src/lvds2dma.o" -o "src/lvds2dma.o" "../src/lvds2dma.c"
+'Finished building: ../src/lvds2dma.c'
+' '
+'Building target: mam_ps.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../mam_ps_bsp/ps7_cortexa9_0/lib -o "mam_ps.elf"  ./src/i2c_access.o ./src/iic_phyreset.o ./src/lvds2dma.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o ./src/tcp_perf_client.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: mam_ps.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size mam_ps.elf  |tee "mam_ps.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 147108	   3496	31578400	31729004	1e4256c	mam_ps.elf
+'Finished building: mam_ps.elf.size'
+' '
+15:21:53 **** Incremental Build of configuration Debug for project mam_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+15:21:59 **** Auto Build of configuration Debug for project mam_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lvds2dma.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lvds2dma.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mam_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lvds2dma.d" -MT"src/lvds2dma.o" -o "src/lvds2dma.o" "../src/lvds2dma.c"
+'Finished building: ../src/lvds2dma.c'
+' '
+'Building target: mam_ps.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../mam_ps_bsp/ps7_cortexa9_0/lib -o "mam_ps.elf"  ./src/i2c_access.o ./src/iic_phyreset.o ./src/lvds2dma.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o ./src/tcp_perf_client.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: mam_ps.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size mam_ps.elf  |tee "mam_ps.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 147108	   3496	31578400	31729004	1e4256c	mam_ps.elf
+'Finished building: mam_ps.elf.size'
+' '
+15:22:03 **** Incremental Build of configuration Debug for project mam_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+15:22:43 **** Incremental Build of configuration Debug for project mam_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+15:23:34 **** Incremental Build of configuration Debug for project mam_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lvds2dma.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lvds2dma.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mam_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lvds2dma.d" -MT"src/lvds2dma.o" -o "src/lvds2dma.o" "../src/lvds2dma.c"
+'Finished building: ../src/lvds2dma.c'
+' '
+'Building target: mam_ps.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../mam_ps_bsp/ps7_cortexa9_0/lib -o "mam_ps.elf"  ./src/i2c_access.o ./src/iic_phyreset.o ./src/lvds2dma.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o ./src/tcp_perf_client.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: mam_ps.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size mam_ps.elf  |tee "mam_ps.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 147108	   3496	31578400	31729004	1e4256c	mam_ps.elf
+'Finished building: mam_ps.elf.size'
+' '
+15:32:03 **** Auto Build of configuration Debug for project mam_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lvds2dma.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lvds2dma.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mam_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lvds2dma.d" -MT"src/lvds2dma.o" -o "src/lvds2dma.o" "../src/lvds2dma.c"
+../src/lvds2dma.c: In function 'XAxiDma_TransferExample':
+../src/lvds2dma.c:69:5: warning: unused variable 'RxBuffer' [-Wunused-variable]
+  u8 RxBuffer[TRANSFER_LEN];
+     ^~~~~~~~
+'Finished building: ../src/lvds2dma.c'
+' '
+'Building target: mam_ps.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../mam_ps_bsp/ps7_cortexa9_0/lib -o "mam_ps.elf"  ./src/i2c_access.o ./src/iic_phyreset.o ./src/lvds2dma.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o ./src/tcp_perf_client.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: mam_ps.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size mam_ps.elf  |tee "mam_ps.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 147108	   3496	31578400	31729004	1e4256c	mam_ps.elf
+'Finished building: mam_ps.elf.size'
+' '
+15:44:15 **** Auto Build of configuration Debug for project mam_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lvds2dma.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lvds2dma.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mam_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lvds2dma.d" -MT"src/lvds2dma.o" -o "src/lvds2dma.o" "../src/lvds2dma.c"
+../src/lvds2dma.c: In function 'XAxiDma_TransferExample':
+../src/lvds2dma.c:69:5: warning: unused variable 'RxBuffer' [-Wunused-variable]
+  u8 RxBuffer[TRANSFER_LEN];
+     ^~~~~~~~
+'Finished building: ../src/lvds2dma.c'
+' '
+'Building target: mam_ps.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../mam_ps_bsp/ps7_cortexa9_0/lib -o "mam_ps.elf"  ./src/i2c_access.o ./src/iic_phyreset.o ./src/lvds2dma.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o ./src/tcp_perf_client.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: mam_ps.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size mam_ps.elf  |tee "mam_ps.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 147108	   3496	31578400	31729004	1e4256c	mam_ps.elf
+'Finished building: mam_ps.elf.size'
+' '
+15:44:27 **** Incremental Build of configuration Debug for project mam_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+15:49:04 **** Incremental Build of configuration Debug for project mam_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+15:53:45 **** Incremental Build of configuration Debug for project mam_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+15:54:11 **** Incremental Build of configuration Debug for project mam_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+15:55:13 **** Incremental Build of configuration Debug for project mam_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+15:56:41 **** Incremental Build of configuration Debug for project mam_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+15:58:04 **** Incremental Build of configuration Debug for project mam_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+14:23:21 **** Auto Build of project mam_ps_bsp ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/axidma_v9_9/src"
+make -C ps7_cortexa9_0/libsrc/axidma_v9_9/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_5/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_9/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_9/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/lvds_axis_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/lvds_axis_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/lwip211_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/lwip211_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_6/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v4_0/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v4_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v7_0/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v7_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make libs in ps7_cortexa9_0/libsrc/axidma_v9_9/src"
+make -C ps7_cortexa9_0/libsrc/axidma_v9_9/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling axidma"
+arm-none-eabi-ar: creating ../../../lib/libxil.a
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_5/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling coresightps_dcc"
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling ddrps"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_9/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_9/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling emacps"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling gpiops"
+"Running Make libs in ps7_cortexa9_0/libsrc/lvds_axis_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/lvds_axis_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling lvds_axis..."
+lvds_axis_selftest.c: In function 'LVDS_AXIS_Reg_SelfTest':
+lvds_axis_selftest.c:52:58: warning: comparison of integer expressions of different signedness: 'u32' {aka 'long unsigned int'} and 'int' [-Wsign-compare]
+    if ( LVDS_AXIS_mReadReg (baseaddr, read_loop_index*4) != (read_loop_index+1)*READ_WRITE_MUL_FACTOR){
+                                                          ^~
+lvds_axis_selftest.c:36:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+"Running Make libs in ps7_cortexa9_0/libsrc/lwip211_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/lwip211_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling lwip src and adapter files"
+lwip-2.1.1/src/core/tcp.c: In function 'tcp_recved':
+lwip-2.1.1/src/core/tcp.c:992:22: warning: comparison is always true due to limited range of data type [-Wtype-limits]
+   } else if (rcv_wnd <= TCP_WND_MAX(pcb)) {
+                      ^~
+In file included from ../../../include/lwip/opt.h:52,
+                 from lwip-2.1.1/src/core/tcp.c:100:
+lwip-2.1.1/src/core/tcp.c:996:11: warning: comparison is always true due to limited range of data type [-Wtype-limits]
+   rcv_wnd <= TCP_WND_MAX(pcb));
+           ^~
+../../../include/lwip/debug.h:116:52: note: in definition of macro 'LWIP_ASSERT'
+ #define LWIP_ASSERT(message, assertion) do { if (!(assertion)) { \
+                                                    ^~~~~~~~~
+In file included from ../../../include/xemacps.h:349,
+                 from ../../../include/netif/xemacpsif.h:57,
+                 from contrib/ports/xilinx/netif/xemacpsif_dma.c:37:
+contrib/ports/xilinx/netif/xemacpsif_dma.c: In function 'init_dma':
+../../../include/xemacps_hw.h:611:23: warning: 'bdrxterminate' may be used uninitialized in this function [-Wmaybe-uninitialized]
+ #define XEmacPs_Out32 Xil_Out32
+                       ^~~~~~~~~
+contrib/ports/xilinx/netif/xemacpsif_dma.c:561:14: note: 'bdrxterminate' was declared here
+  XEmacPs_Bd *bdrxterminate;
+              ^~~~~~~~~~~~~
+In file included from ../../../include/xemacps.h:350,
+                 from ../../../include/netif/xemacpsif.h:57,
+                 from contrib/ports/xilinx/netif/xemacpsif_dma.c:37:
+../../../include/xemacps_bd.h:142:12: warning: 'bdtxterminate' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  (*(u32 *)((UINTPTR)((void*)(BaseAddress)) + (u32)(Offset)))
+            ^
+contrib/ports/xilinx/netif/xemacpsif_dma.c:560:14: note: 'bdtxterminate' was declared here
+  XEmacPs_Bd *bdtxterminate;
+              ^~~~~~~~~~~~~
+"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_6/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling qspips"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v4_0/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v4_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scugic"
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v7_0/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v7_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling standalone"
+In file included from usleep.c:56:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from xil_sleeptimer.c:51:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from xtime_l.c:49:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from sleep.c:53:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling xadcps"
+'Finished building libraries'
+14:24:07 **** Auto Build of configuration Debug for project mam_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/i2c_access.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/i2c_access.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mam_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/i2c_access.d" -MT"src/i2c_access.o" -o "src/i2c_access.o" "../src/i2c_access.c"
+'Finished building: ../src/i2c_access.c'
+' '
+'Building file: ../src/iic_phyreset.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/iic_phyreset.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mam_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/iic_phyreset.d" -MT"src/iic_phyreset.o" -o "src/iic_phyreset.o" "../src/iic_phyreset.c"
+'Finished building: ../src/iic_phyreset.c'
+' '
+'Building file: ../src/lvds2dma.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lvds2dma.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mam_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lvds2dma.d" -MT"src/lvds2dma.o" -o "src/lvds2dma.o" "../src/lvds2dma.c"
+../src/lvds2dma.c: In function 'XAxiDma_TransferExample':
+../src/lvds2dma.c:69:5: warning: unused variable 'RxBuffer' [-Wunused-variable]
+  u8 RxBuffer[TRANSFER_LEN];
+     ^~~~~~~~
+'Finished building: ../src/lvds2dma.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mam_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/platform_zynq.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform_zynq.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mam_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform_zynq.d" -MT"src/platform_zynq.o" -o "src/platform_zynq.o" "../src/platform_zynq.c"
+In file included from ../src/platform_zynq.c:60:
+../../mam_ps_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+'Finished building: ../src/platform_zynq.c'
+' '
+'Building file: ../src/sfp.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sfp.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mam_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sfp.d" -MT"src/sfp.o" -o "src/sfp.o" "../src/sfp.c"
+'Finished building: ../src/sfp.c'
+' '
+'Building file: ../src/si5324.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/si5324.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mam_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/si5324.d" -MT"src/si5324.o" -o "src/si5324.o" "../src/si5324.c"
+'Finished building: ../src/si5324.c'
+' '
+'Building file: ../src/tcp_perf_client.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/tcp_perf_client.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mam_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/tcp_perf_client.d" -MT"src/tcp_perf_client.o" -o "src/tcp_perf_client.o" "../src/tcp_perf_client.c"
+'Finished building: ../src/tcp_perf_client.c'
+' '
+'Building target: mam_ps.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../mam_ps_bsp/ps7_cortexa9_0/lib -o "mam_ps.elf"  ./src/i2c_access.o ./src/iic_phyreset.o ./src/lvds2dma.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o ./src/tcp_perf_client.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: mam_ps.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size mam_ps.elf  |tee "mam_ps.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 147108	   3496	31578400	31729004	1e4256c	mam_ps.elf
+'Finished building: mam_ps.elf.size'
+' '
+14:24:33 **** Incremental Build of configuration Debug for project mam_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+15:01:36 **** Incremental Build of configuration Debug for project mam_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+15:02:26 **** Incremental Build of configuration Debug for project mam_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+15:03:43 **** Auto Build of configuration Debug for project mam_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lvds2dma.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lvds2dma.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../mam_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lvds2dma.d" -MT"src/lvds2dma.o" -o "src/lvds2dma.o" "../src/lvds2dma.c"
+'Finished building: ../src/lvds2dma.c'
+' '
+'Building target: mam_ps.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../mam_ps_bsp/ps7_cortexa9_0/lib -o "mam_ps.elf"  ./src/i2c_access.o ./src/iic_phyreset.o ./src/lvds2dma.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o ./src/tcp_perf_client.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: mam_ps.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size mam_ps.elf  |tee "mam_ps.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 147036	   3496	31578400	31728932	1e42524	mam_ps.elf
+'Finished building: mam_ps.elf.size'
+' '
+15:03:57 **** Incremental Build of configuration Debug for project mam_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.

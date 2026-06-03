@@ -1,0 +1,684 @@
+12:40:02 **** Incremental Build of configuration Debug for project arith_soft ****
+make all 
+make: Nothing to be done for 'all'.
+12:40:55 **** Incremental Build of configuration Debug for project arith_soft ****
+make all 
+make: Nothing to be done for 'all'.
+12:46:14 **** Incremental Build of configuration Debug for project arith_soft ****
+make all 
+make: Nothing to be done for 'all'.
+12:56:05 **** Incremental Build of configuration Debug for project arith_soft ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../arith_soft_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:2:
+../../arith_soft_bsp/microblaze_0/include/xbasic_types.h:120:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^~~~~~~
+../../arith_soft_bsp/microblaze_0/include/xbasic_types.h:121:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^~~~~~~
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:292:18: warning: unused variable 'built_in_res' [-Wunused-variable]
+              s32 built_in_res = *(baseaddr_p + 6);
+                  ^~~~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../arith_soft_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: arith_soft.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../arith_soft_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "arith_soft.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: arith_soft.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size arith_soft.elf  |tee "arith_soft.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  18504	    336	   3616	  22456	   57b8	arith_soft.elf
+'Finished building: arith_soft.elf.size'
+' '
+13:19:03 **** Clean-only build of project arith_soft_bsp ****
+make -k clean 
+make -C microblaze_0/libsrc/arithmetic_ip_v1_0/src -s clean 
+rm: `*.o' durumlanamadý: Invalid argument
+make[1]: *** [Makefile:26: clean] Error 1
+make: *** [Makefile:33: microblaze_0/libsrc/arithmetic_ip_v1_0/src/make.clean] Error 2
+make -C microblaze_0/libsrc/bram_v4_3/src -s clean 
+make -C microblaze_0/libsrc/cpu_v2_9/src -s clean 
+make -C microblaze_0/libsrc/intc_v3_9/src -s clean 
+make -C microblaze_0/libsrc/standalone_v7_0/src -s clean 
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s clean 
+make: Target 'clean' not remade because of errors.
+13:19:04 **** Clean-only build of configuration Debug for project arith_soft ****
+make clean 
+rm -rf  ./src/helloworld.o ./src/platform.o  ./src/helloworld.d ./src/platform.d  arith_soft.elf.size  arith_soft.elf
+' '
+13:19:05 **** Build of project arith_soft_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/arithmetic_ip_v1_0/src"
+make -C microblaze_0/libsrc/arithmetic_ip_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/bram_v4_3/src"
+make -C microblaze_0/libsrc/bram_v4_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/cpu_v2_9/src"
+make -C microblaze_0/libsrc/cpu_v2_9/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/intc_v3_9/src"
+make -C microblaze_0/libsrc/intc_v3_9/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/standalone_v7_0/src"
+make -C microblaze_0/libsrc/standalone_v7_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make libs in microblaze_0/libsrc/arithmetic_ip_v1_0/src"
+make -C microblaze_0/libsrc/arithmetic_ip_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling arithmetic_ip..."
+arithmetic_ip_selftest.c: In function 'ARITHMETIC_IP_Reg_SelfTest':
+arithmetic_ip_selftest.c:52:62: warning: comparison of integer expressions of different signedness: 'u32' {aka 'long unsigned int'} and 'int' [-Wsign-compare]
+    if ( ARITHMETIC_IP_mReadReg (baseaddr, read_loop_index*4) != (read_loop_index+1)*READ_WRITE_MUL_FACTOR){
+                                                              ^~
+arithmetic_ip_selftest.c:36:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in microblaze_0/libsrc/bram_v4_3/src"
+make -C microblaze_0/libsrc/bram_v4_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling bram"
+"Running Make libs in microblaze_0/libsrc/cpu_v2_9/src"
+make -C microblaze_0/libsrc/cpu_v2_9/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling cpu"
+"Running Make libs in microblaze_0/libsrc/intc_v3_9/src"
+make -C microblaze_0/libsrc/intc_v3_9/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling intc"
+"Running Make libs in microblaze_0/libsrc/standalone_v7_0/src"
+make -C microblaze_0/libsrc/standalone_v7_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling standalone";
+microblaze_sleep.c:77:9: note: #pragma message: For the sleep routines, assembly instructions are used
+ #pragma message ("For the sleep routines, assembly instructions are used")
+         ^~~~~~~
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling uartlite"
+'Finished building libraries'
+13:19:17 **** Build of configuration Debug for project arith_soft ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../arith_soft_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:2:
+../../arith_soft_bsp/microblaze_0/include/xbasic_types.h:120:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^~~~~~~
+../../arith_soft_bsp/microblaze_0/include/xbasic_types.h:121:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^~~~~~~
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:292:18: warning: unused variable 'built_in_res' [-Wunused-variable]
+              s32 built_in_res = *(baseaddr_p + 6);
+                  ^~~~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../arith_soft_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: arith_soft.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../arith_soft_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "arith_soft.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: arith_soft.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size arith_soft.elf  |tee "arith_soft.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  18504	    336	   3616	  22456	   57b8	arith_soft.elf
+'Finished building: arith_soft.elf.size'
+' '
+13:19:44 **** Incremental Build of configuration Debug for project arith_soft ****
+make all 
+make: Nothing to be done for 'all'.
+13:20:35 **** Incremental Build of configuration Debug for project arith_soft ****
+make all 
+make: Nothing to be done for 'all'.
+13:22:43 **** Incremental Build of configuration Debug for project arith_soft ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../arith_soft_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:2:
+../../arith_soft_bsp/microblaze_0/include/xbasic_types.h:120:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^~~~~~~
+../../arith_soft_bsp/microblaze_0/include/xbasic_types.h:121:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^~~~~~~
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:292:18: warning: unused variable 'built_in_res' [-Wunused-variable]
+              s32 built_in_res = *(baseaddr_p + 6);
+                  ^~~~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: arith_soft.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../arith_soft_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "arith_soft.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: arith_soft.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size arith_soft.elf  |tee "arith_soft.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  18500	    336	   3620	  22456	   57b8	arith_soft.elf
+'Finished building: arith_soft.elf.size'
+' '
+13:25:53 **** Auto Build of configuration Debug for project arith_soft ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../arith_soft_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:2:
+../../arith_soft_bsp/microblaze_0/include/xbasic_types.h:120:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^~~~~~~
+../../arith_soft_bsp/microblaze_0/include/xbasic_types.h:121:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^~~~~~~
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:273:13: error: invalid operands to binary * (have 'int' and 'Xuint32 *' {aka 'long unsigned int *'})
+             a = (((u16)num1 << 16) | (u16)num2)
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+             *(baseaddr_p + 0) = a ;
+             ^~~~~~~~~~~~~~~~~
+../src/helloworld.c:278:40: error: expected ')' before ';' token
+             xil_printf_minimal("W: ", a;
+                                        ^
+                                        )
+../src/helloworld.c:294:14: error: expected ';' before '}' token
+             }
+              ^
+              ;
+../src/helloworld.c:298:11:
+           } break;
+           ~   
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+13:26:06 **** Auto Build of configuration Debug for project arith_soft ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../arith_soft_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:2:
+../../arith_soft_bsp/microblaze_0/include/xbasic_types.h:120:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^~~~~~~
+../../arith_soft_bsp/microblaze_0/include/xbasic_types.h:121:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^~~~~~~
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:273:13: error: invalid operands to binary * (have 'int' and 'Xuint32 *' {aka 'long unsigned int *'})
+             a = (((u16)num1 << 16) | (u16)num2)
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+             *(baseaddr_p + 0) = a ;
+             ^~~~~~~~~~~~~~~~~
+../src/helloworld.c:293:18: warning: unused variable 'built_in_res' [-Wunused-variable]
+              s32 built_in_res = *(baseaddr_p + 6);
+                  ^~~~~~~~~~~~
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+13:26:32 **** Auto Build of configuration Debug for project arith_soft ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../arith_soft_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:2:
+../../arith_soft_bsp/microblaze_0/include/xbasic_types.h:120:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^~~~~~~
+../../arith_soft_bsp/microblaze_0/include/xbasic_types.h:121:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^~~~~~~
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:273:13: error: invalid operands to binary * (have 'int' and 'Xuint32 *' {aka 'long unsigned int *'})
+             int a = (((u16)num1 << 16) | (u16)num2)
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+             *(baseaddr_p + 0) = a ;
+             ^~~~~~~~~~~~~~~~~
+../src/helloworld.c:293:18: warning: unused variable 'built_in_res' [-Wunused-variable]
+              s32 built_in_res = *(baseaddr_p + 6);
+                  ^~~~~~~~~~~~
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+13:27:23 **** Auto Build of configuration Debug for project arith_soft ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../arith_soft_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:2:
+../../arith_soft_bsp/microblaze_0/include/xbasic_types.h:120:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^~~~~~~
+../../arith_soft_bsp/microblaze_0/include/xbasic_types.h:121:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^~~~~~~
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:272:46: error: expected ';' before ')' token
+             a = ((u16)num1 << 16) | (u16)num2);
+                                              ^
+                                              ;
+../src/helloworld.c:272:46: error: expected statement before ')' token
+../src/helloworld.c:293:18: warning: unused variable 'built_in_res' [-Wunused-variable]
+              s32 built_in_res = *(baseaddr_p + 6);
+                  ^~~~~~~~~~~~
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+13:27:33 **** Auto Build of configuration Debug for project arith_soft ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../arith_soft_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:2:
+../../arith_soft_bsp/microblaze_0/include/xbasic_types.h:120:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^~~~~~~
+../../arith_soft_bsp/microblaze_0/include/xbasic_types.h:121:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^~~~~~~
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:272:46: error: expected ';' before ')' token
+             a = ((u16)num1 << 16) | (u16)num2));
+                                              ^
+                                              ;
+../src/helloworld.c:272:46: error: expected statement before ')' token
+../src/helloworld.c:272:47: error: expected statement before ')' token
+             a = ((u16)num1 << 16) | (u16)num2));
+                                               ^
+../src/helloworld.c:293:18: warning: unused variable 'built_in_res' [-Wunused-variable]
+              s32 built_in_res = *(baseaddr_p + 6);
+                  ^~~~~~~~~~~~
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+13:27:51 **** Auto Build of configuration Debug for project arith_soft ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../arith_soft_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:2:
+../../arith_soft_bsp/microblaze_0/include/xbasic_types.h:120:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^~~~~~~
+../../arith_soft_bsp/microblaze_0/include/xbasic_types.h:121:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^~~~~~~
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:293:18: warning: unused variable 'built_in_res' [-Wunused-variable]
+              s32 built_in_res = *(baseaddr_p + 6);
+                  ^~~~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: arith_soft.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../arith_soft_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "arith_soft.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: arith_soft.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size arith_soft.elf  |tee "arith_soft.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  18356	    336	   3620	  22312	   5728	arith_soft.elf
+'Finished building: arith_soft.elf.size'
+' '
+13:28:00 **** Auto Build of configuration Debug for project arith_soft ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../arith_soft_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:2:
+../../arith_soft_bsp/microblaze_0/include/xbasic_types.h:120:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^~~~~~~
+../../arith_soft_bsp/microblaze_0/include/xbasic_types.h:121:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^~~~~~~
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:293:18: warning: unused variable 'built_in_res' [-Wunused-variable]
+              s32 built_in_res = *(baseaddr_p + 6);
+                  ^~~~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: arith_soft.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../arith_soft_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "arith_soft.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: arith_soft.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size arith_soft.elf  |tee "arith_soft.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  18356	    336	   3620	  22312	   5728	arith_soft.elf
+'Finished building: arith_soft.elf.size'
+' '
+13:28:04 **** Incremental Build of configuration Debug for project arith_soft ****
+make all 
+make: Nothing to be done for 'all'.
+13:28:20 **** Incremental Build of configuration Debug for project arith_soft ****
+make all 
+make: Nothing to be done for 'all'.
+13:30:03 **** Auto Build of configuration Debug for project arith_soft ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../arith_soft_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:2:
+../../arith_soft_bsp/microblaze_0/include/xbasic_types.h:120:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^~~~~~~
+../../arith_soft_bsp/microblaze_0/include/xbasic_types.h:121:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^~~~~~~
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:296:19: warning: unused variable 'built_in_res' [-Wunused-variable]
+               s32 built_in_res = *(baseaddr_p + 6);
+                   ^~~~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: arith_soft.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../arith_soft_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "arith_soft.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: arith_soft.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size arith_soft.elf  |tee "arith_soft.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  18512	    336	   3616	  22464	   57c0	arith_soft.elf
+'Finished building: arith_soft.elf.size'
+' '
+13:30:20 **** Auto Build of configuration Debug for project arith_soft ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../arith_soft_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:2:
+../../arith_soft_bsp/microblaze_0/include/xbasic_types.h:120:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^~~~~~~
+../../arith_soft_bsp/microblaze_0/include/xbasic_types.h:121:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^~~~~~~
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:296:19: warning: unused variable 'built_in_res' [-Wunused-variable]
+               u32 built_in_res = *(baseaddr_p + 6);
+                   ^~~~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: arith_soft.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../arith_soft_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "arith_soft.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: arith_soft.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size arith_soft.elf  |tee "arith_soft.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  18508	    336	   3620	  22464	   57c0	arith_soft.elf
+'Finished building: arith_soft.elf.size'
+' '
+13:37:47 **** Auto Build of configuration Debug for project arith_soft ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../arith_soft_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:2:
+../../arith_soft_bsp/microblaze_0/include/xbasic_types.h:120:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^~~~~~~
+../../arith_soft_bsp/microblaze_0/include/xbasic_types.h:121:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^~~~~~~
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:296:19: warning: unused variable 'built_in_res' [-Wunused-variable]
+               u32 built_in_res = *(baseaddr_p + 6);
+                   ^~~~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: arith_soft.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../arith_soft_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "arith_soft.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: arith_soft.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size arith_soft.elf  |tee "arith_soft.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  18660	    336	   3620	  22616	   5858	arith_soft.elf
+'Finished building: arith_soft.elf.size'
+' '
+13:37:55 **** Incremental Build of configuration Debug for project arith_soft ****
+make all 
+make: Nothing to be done for 'all'.
+13:38:15 **** Incremental Build of configuration Debug for project arith_soft ****
+make all 
+make: Nothing to be done for 'all'.
+13:59:57 **** Incremental Build of configuration Debug for project arith_soft ****
+make all 
+make: Nothing to be done for 'all'.
+14:03:02 **** Auto Build of configuration Debug for project arith_soft ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../arith_soft_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:2:
+../../arith_soft_bsp/microblaze_0/include/xbasic_types.h:120:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^~~~~~~
+../../arith_soft_bsp/microblaze_0/include/xbasic_types.h:121:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: arith_soft.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../arith_soft_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "arith_soft.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: arith_soft.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size arith_soft.elf  |tee "arith_soft.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  18804	    336	   3620	  22760	   58e8	arith_soft.elf
+'Finished building: arith_soft.elf.size'
+' '
+14:04:23 **** Incremental Build of configuration Debug for project arith_soft ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../arith_soft_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:2:
+../../arith_soft_bsp/microblaze_0/include/xbasic_types.h:120:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^~~~~~~
+../../arith_soft_bsp/microblaze_0/include/xbasic_types.h:121:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: arith_soft.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../arith_soft_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "arith_soft.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: arith_soft.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size arith_soft.elf  |tee "arith_soft.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  18804	    336	   3620	  22760	   58e8	arith_soft.elf
+'Finished building: arith_soft.elf.size'
+' '
+14:05:57 **** Incremental Build of configuration Debug for project arith_soft ****
+make all 
+make: Nothing to be done for 'all'.
+14:07:02 **** Auto Build of configuration Debug for project arith_soft ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../arith_soft_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:2:
+../../arith_soft_bsp/microblaze_0/include/xbasic_types.h:120:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^~~~~~~
+../../arith_soft_bsp/microblaze_0/include/xbasic_types.h:121:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: arith_soft.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../arith_soft_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "arith_soft.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: arith_soft.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size arith_soft.elf  |tee "arith_soft.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  18792	    336	   3616	  22744	   58d8	arith_soft.elf
+'Finished building: arith_soft.elf.size'
+' '
+14:08:14 **** Incremental Build of configuration Debug for project arith_soft ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../arith_soft_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:2:
+../../arith_soft_bsp/microblaze_0/include/xbasic_types.h:120:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^~~~~~~
+../../arith_soft_bsp/microblaze_0/include/xbasic_types.h:121:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: arith_soft.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../arith_soft_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "arith_soft.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: arith_soft.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size arith_soft.elf  |tee "arith_soft.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  18788	    336	   3620	  22744	   58d8	arith_soft.elf
+'Finished building: arith_soft.elf.size'
+' '
+14:10:19 **** Auto Build of configuration Debug for project arith_soft ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../arith_soft_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:2:
+../../arith_soft_bsp/microblaze_0/include/xbasic_types.h:120:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^~~~~~~
+../../arith_soft_bsp/microblaze_0/include/xbasic_types.h:121:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: arith_soft.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../arith_soft_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "arith_soft.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: arith_soft.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size arith_soft.elf  |tee "arith_soft.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  18772	    336	   3620	  22728	   58c8	arith_soft.elf
+'Finished building: arith_soft.elf.size'
+' '
+14:12:04 **** Auto Build of configuration Debug for project arith_soft ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../arith_soft_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:2:
+../../arith_soft_bsp/microblaze_0/include/xbasic_types.h:120:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^~~~~~~
+../../arith_soft_bsp/microblaze_0/include/xbasic_types.h:121:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: arith_soft.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../arith_soft_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "arith_soft.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: arith_soft.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size arith_soft.elf  |tee "arith_soft.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  18700	    336	   3620	  22656	   5880	arith_soft.elf
+'Finished building: arith_soft.elf.size'
+' '
+14:12:30 **** Incremental Build of configuration Debug for project arith_soft ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../arith_soft_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:2:
+../../arith_soft_bsp/microblaze_0/include/xbasic_types.h:120:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^~~~~~~
+../../arith_soft_bsp/microblaze_0/include/xbasic_types.h:121:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: arith_soft.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../arith_soft_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "arith_soft.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: arith_soft.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size arith_soft.elf  |tee "arith_soft.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  18700	    336	   3620	  22656	   5880	arith_soft.elf
+'Finished building: arith_soft.elf.size'
+' '
+14:13:09 **** Auto Build of configuration Debug for project arith_soft ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../arith_soft_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:2:
+../../arith_soft_bsp/microblaze_0/include/xbasic_types.h:120:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^~~~~~~
+../../arith_soft_bsp/microblaze_0/include/xbasic_types.h:121:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: arith_soft.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../arith_soft_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "arith_soft.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: arith_soft.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size arith_soft.elf  |tee "arith_soft.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  18772	    336	   3620	  22728	   58c8	arith_soft.elf
+'Finished building: arith_soft.elf.size'
+' '
+14:13:12 **** Incremental Build of configuration Debug for project arith_soft ****
+make all 
+make: Nothing to be done for 'all'.
+14:14:23 **** Auto Build of configuration Debug for project arith_soft ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../arith_soft_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:2:
+../../arith_soft_bsp/microblaze_0/include/xbasic_types.h:120:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^~~~~~~
+../../arith_soft_bsp/microblaze_0/include/xbasic_types.h:121:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: arith_soft.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../arith_soft_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "arith_soft.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: arith_soft.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size arith_soft.elf  |tee "arith_soft.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  18772	    336	   3620	  22728	   58c8	arith_soft.elf
+'Finished building: arith_soft.elf.size'
+' '

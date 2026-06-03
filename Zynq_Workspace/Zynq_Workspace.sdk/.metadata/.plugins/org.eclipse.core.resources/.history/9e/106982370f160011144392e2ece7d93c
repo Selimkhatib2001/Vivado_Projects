@@ -1,0 +1,49 @@
+#include "xil_printf.h"
+#include "xparameters.h"
+#include "xstatus.h"
+#include "xttcps.h"
+
+
+#define PCLK_FREQ_HZ 			XPAR_XTTCPS_0_CLOCK_HZ /* Input freq */
+#define TmrCtrBaseAddress 		XPAR_XTTCPS_0_BASEADDR
+#define TABLE_OFFSET 9
+
+
+
+
+
+int main(void) {
+	int Status;
+	u32 RegValue;
+
+
+
+	XTtcPs_WriteReg(TmrCtrBaseAddress, XTTCPS_CLK_CNTRL_OFFSET, 0);
+
+
+	XTtcPs_WriteReg(TmrCtrBaseAddress, XTTCPS_INTERVAL_VAL_OFFSET, 3);
+
+
+
+	XTtcPs_WriteReg(TmrCtrBaseAddress, XTTCPS_MATCH_0_OFFSET, 2);
+
+
+	}
+
+	RegValue = ~(XTTCPS_CNT_CNTRL_DIS_MASK | XTTCPS_CNT_CNTRL_EN_WAVE_MASK) &
+	             (XTTCPS_CNT_CNTRL_INT_MASK | XTTCPS_CNT_CNTRL_MATCH_MASK |
+	              XTTCPS_CNT_CNTRL_RST_MASK);
+
+	  XTtcPs_WriteReg(TmrCtrBaseAddress, XTTCPS_CNT_CNTRL_OFFSET, RegValue);
+
+	  XTtcPs_WriteReg(TmrCtrBaseAddress, XTTCPS_IER_OFFSET,
+	                  XTTCPS_IXR_INTERVAL_MASK);
+
+
+	xil_printf("PWM Configured for Duty Cycle = %d\r\n", DutyCycle);
+
+	XTmrCtr_PwmEnable(&TimerCounterInst);
+
+	return XST_SUCCESS;
+}
+

@@ -1,0 +1,15 @@
+
+*** Running vivado
+    with args -log lvds_axis.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source lvds_axis.tcl -notrace
+
+
+
+****** Vivado v2024.1.2 (64-bit)
+  **** SW Build 5164865 on Thu Sep  5 14:37:11 MDT 2024
+  **** IP Build 5164407 on Fri Sep  6 08:18:11 MDT 2024
+  **** SharedData Build 5164864 on Thu Sep 05 13:09:09 MDT 2024
+  **** Start of session at: Thu Apr 16 15:02:46 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source lvds_axis.tcl -notrace

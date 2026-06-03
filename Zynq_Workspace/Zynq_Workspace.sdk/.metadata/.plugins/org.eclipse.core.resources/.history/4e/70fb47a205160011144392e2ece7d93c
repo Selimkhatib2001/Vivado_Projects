@@ -1,0 +1,114 @@
+#include "xil_printf.h"
+#include "xparameters.h"
+#include "xstatus.h"
+#include "xttcps.h"
+#include "xtmrctr.h"
+
+#define PCLK_FREQ_HZ XPAR_XTTCPS_0_CLOCK_HZ /* Input freq */
+#define TMRCTR_DEVICE_ID        XPAR_TMRCTR_0_DEVICE_ID
+
+#define TABLE_OFFSET 9
+
+#define PWM_PERIOD              50    /* PWM period in (500 ms) */
+#define TMRCTR_0                0            /* Timer 0 ID */
+#define TMRCTR_1                1            /* Timer 1 ID */
+#define MAX_DUTYCYCLE           100          /* Max duty cycle */
+#define DUTYCYCLE_DIVISOR       2            /* Duty cycle Divisor */
+
+
+XTmrCtr TimerCounterInst;  /* The instance of the Timer Counter */
+
+
+
+int main(void) {
+	int Status;
+	u32 RegValue;
+
+	Status = XTmrCtr_Initialize(&TimerCounterInst, TMRCTR_DEVICE_ID);
+	if (Status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
+
+	XTtcPs_WriteReg(TmrCtrBaseAddress, XTTCPS_CLK_CNTRL_OFFSET, 0);
+
+	Status = XTmrCtr_SelfTest(&TimerCounterInst, TMRCTR_0);
+	if (Status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
+
+	XTtcPs_WriteReg(TmrCtrBaseAddress, XTTCPS_INTERVAL_VAL_OFFSET, 3);
+
+	int Div = DUTYCYCLE_DIVISOR;
+	XTmrCtr_PwmDisable(&TimerCounterInst);
+
+	XTtcPs_WriteReg(TmrCtrBaseAddress, XTTCPS_MATCH_0_OFFSET, 2);
+
+	/* Configure PWM */
+	int Period = PWM_PERIOD;
+	int HighTime = PWM_PERIOD / Div--;
+	int DutyCycle = XTmrCtr_PwmConfigure(&TimerCounterInst, Period,
+			HighTime);
+	if (Status != XST_SUCCESS) {
+		Status = XST_FAILURE;
+
+	}
+
+	RegValue = ~(XTTCPS_CNT_CNTRL_DIS_MASK | XTTCPS_CNT_CNTRL_EN_WAVE_MASK) &
+	             (XTTCPS_CNT_CNTRL_INT_MASK | XTTCPS_CNT_CNTRL_MATCH_MASK |
+	              XTTCPS_CNT_CNTRL_RST_MASK);
+
+	  XTtcPs_WriteReg(TmrCtrBaseAddress, XTTCPS_CNT_CNTRL_OFFSET, RegValue);
+
+	  XTtcPs_WriteReg(TmrCtrBaseAddress, XTTCPS_IER_OFFSET,
+	                  XTTCPS_IXR_INTERVAL_MASK);
+
+
+	xil_printf("PWM Configured for Duty Cycle = %d\r\n", DutyCycle);
+
+	XTmrCtr_PwmEnable(&TimerCounterInst);
+
+	return XST_SUCCESS;
+}
+
+
+//int TmrCtrLowLevelExample(u8 SettingsTableOffset) {
+//	u32 RegValue;
+//	u32 TmrCtrBaseAddress;
+//	u32 IntervalValue, MatchValue;
+//	TmrCntrSetup *CurrSetup;
+//
+//	TmrCtrBaseAddress = XPAR_XTTCPS_0_BASEADDR;
+//
+//	CurrSetup = &SettingsTable[SettingsTableOffset];
+//
+//	if (16 > CurrSetup->PrescalerValue) { // 16th index val = 1
+//		RegValue = (CurrSetup->PrescalerValue << XTTCPS_CLK_CNTRL_PS_VAL_SHIFT) &
+//				XTTCPS_CLK_CNTRL_PS_VAL_MASK;
+//		RegValue |= XTTCPS_CLK_CNTRL_PS_EN_MASK;
+//	} else {
+//		RegValue = 0;
+//	}
+//
+//	XTtcPs_WriteReg(TmrCtrBaseAddress, XTTCPS_CLK_CNTRL_OFFSET, RegValue);
+//
+//	IntervalValue =
+//			PCLK_FREQ_HZ /
+//			(u32)(PrescalerSettings[CurrSetup->PrescalerValue] * CurrSetup->OutputHz);
+//
+//	XTtcPs_WriteReg(TmrCtrBaseAddress, XTTCPS_INTERVAL_VAL_OFFSET, 3);
+//
+//	MatchValue = (IntervalValue * CurrSetup->OutputDutyCycle) / 100;
+//
+//	XTtcPs_WriteReg(TmrCtrBaseAddress, XTTCPS_MATCH_0_OFFSET, 2);
+//
+//	RegValue = ~(XTTCPS_CNT_CNTRL_DIS_MASK | XTTCPS_CNT_CNTRL_EN_WAVE_MASK) &
+//			(XTTCPS_CNT_CNTRL_INT_MASK | XTTCPS_CNT_CNTRL_MATCH_MASK |
+//					XTTCPS_CNT_CNTRL_RST_MASK);
+//
+//	XTtcPs_WriteReg(TmrCtrBaseAddress, XTTCPS_CNT_CNTRL_OFFSET, RegValue);
+//
+//	XTtcPs_WriteReg(TmrCtrBaseAddress, XTTCPS_IER_OFFSET,
+//			XTTCPS_IXR_INTERVAL_MASK);
+//
+//return XST_SUCCESS;
+//}

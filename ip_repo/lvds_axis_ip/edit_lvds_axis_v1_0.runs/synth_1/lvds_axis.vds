@@ -1,0 +1,359 @@
+#-----------------------------------------------------------
+# Vivado v2024.1.2 (64-bit)
+# SW Build 5164865 on Thu Sep  5 14:37:11 MDT 2024
+# IP Build 5164407 on Fri Sep  6 08:18:11 MDT 2024
+# SharedData Build 5164864 on Thu Sep 05 13:09:09 MDT 2024
+# Start of session at: Thu Apr 16 15:01:32 2026
+# Process ID: 31908
+# Current directory: C:/Vivado_Project/ip_repo/lvds_axis_ip/edit_lvds_axis_v1_0.runs/synth_1
+# Command line: vivado.exe -log lvds_axis.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source lvds_axis.tcl
+# Log file: C:/Vivado_Project/ip_repo/lvds_axis_ip/edit_lvds_axis_v1_0.runs/synth_1/lvds_axis.vds
+# Journal file: C:/Vivado_Project/ip_repo/lvds_axis_ip/edit_lvds_axis_v1_0.runs/synth_1\vivado.jou
+# Running On        :Mango
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :26200
+# Processor Detail  :12th Gen Intel(R) Core(TM) i7-12700H
+# CPU Frequency     :2688 MHz
+# CPU Physical cores:14
+# CPU Logical cores :20
+# Host memory       :16780 MB
+# Swap memory       :10200 MB
+# Total Virtual     :26981 MB
+# Available Virtual :5284 MB
+#-----------------------------------------------------------
+source lvds_axis.tcl -notrace
+create_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 554.652 ; gain = 170.305
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/Vivado_Project/ip_repo/lvds_axis_ip/lvds_axis_1_0'. The path is contained within another repository.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Vivado_Project/ip_repo'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository 'c:/Vivado_Project/ip_repo' may become invalid. A better location for the repository would be in a path adjacent to the project. (Current project location is 'c:/Vivado_Project/ip_repo/lvds_axis_ip/edit_lvds_axis_v1_0.runs/synth_1'.)
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.1/data/ip'.
+Command: read_checkpoint -auto_incremental -incremental C:/Vivado_Project/ip_repo/lvds_axis_ip/edit_lvds_axis_v1_0.srcs/utils_1/imports/synth_1/lvds_axis.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Vivado_Project/ip_repo/lvds_axis_ip/edit_lvds_axis_v1_0.srcs/utils_1/imports/synth_1/lvds_axis.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top lvds_axis -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Device 21-9227] Part: xc7a35tcpg236-1 does not have CEAM library.
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 32496
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1417.453 ; gain = 447.816
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'lvds_axis' [C:/Vivado_Project/ip_repo/lvds_axis_ip/lvds_axis_1_0/hdl/lvds_axis.vhd:69]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'lvds_axis_slave_lite_v1_0_S00_AXI' declared at 'C:/Vivado_Project/ip_repo/lvds_axis_ip/lvds_axis_1_0/hdl/lvds_axis_slave_lite_v1_0_S00_AXI.vhd:5' bound to instance 'lvds_axis_slave_lite_v1_0_S00_AXI_inst' of component 'lvds_axis_slave_lite_v1_0_S00_AXI' [C:/Vivado_Project/ip_repo/lvds_axis_ip/lvds_axis_1_0/hdl/lvds_axis.vhd:132]
+INFO: [Synth 8-638] synthesizing module 'lvds_axis_slave_lite_v1_0_S00_AXI' [C:/Vivado_Project/ip_repo/lvds_axis_ip/lvds_axis_1_0/hdl/lvds_axis_slave_lite_v1_0_S00_AXI.vhd:86]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/Vivado_Project/ip_repo/lvds_axis_ip/lvds_axis_1_0/hdl/lvds_axis_slave_lite_v1_0_S00_AXI.vhd:218]
+INFO: [Synth 8-256] done synthesizing module 'lvds_axis_slave_lite_v1_0_S00_AXI' (0#1) [C:/Vivado_Project/ip_repo/lvds_axis_ip/lvds_axis_1_0/hdl/lvds_axis_slave_lite_v1_0_S00_AXI.vhd:86]
+INFO: [Synth 8-3491] module 'top' declared at 'C:/Vivado_Project/ip_repo/lvds_axis_ip/lvds_axis_1_0/hdl/top.vhd:16' bound to instance 'DUT_1' of component 'top' [C:/Vivado_Project/ip_repo/lvds_axis_ip/lvds_axis_1_0/hdl/lvds_axis.vhd:162]
+INFO: [Synth 8-638] synthesizing module 'top' [C:/Vivado_Project/ip_repo/lvds_axis_ip/lvds_axis_1_0/hdl/top.vhd:41]
+	Parameter available_pin bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'data_store' declared at 'C:/Vivado_Project/ip_repo/lvds_axis_ip/lvds_axis_1_0/hdl/data_store.vhd:7' bound to instance 'DUT_1' of component 'data_store' [C:/Vivado_Project/ip_repo/lvds_axis_ip/lvds_axis_1_0/hdl/top.vhd:175]
+INFO: [Synth 8-638] synthesizing module 'data_store' [C:/Vivado_Project/ip_repo/lvds_axis_ip/lvds_axis_1_0/hdl/data_store.vhd:20]
+	Parameter available_pin bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'data_store' (0#1) [C:/Vivado_Project/ip_repo/lvds_axis_ip/lvds_axis_1_0/hdl/data_store.vhd:20]
+	Parameter DIFF_TERM bound to: 1 - type: bool 
+	Parameter IBUF_LOW_PWR bound to: 0 - type: bool 
+	Parameter IOSTANDARD bound to: LVDS_25 - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'IOBUFDS_inst_1' to cell 'IOBUFDS' [C:/Vivado_Project/ip_repo/lvds_axis_ip/lvds_axis_1_0/hdl/top.vhd:189]
+	Parameter DIFF_TERM bound to: 1 - type: bool 
+	Parameter IBUF_LOW_PWR bound to: 0 - type: bool 
+	Parameter IOSTANDARD bound to: LVDS_25 - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'IOBUFDS_inst_2' to cell 'IOBUFDS' [C:/Vivado_Project/ip_repo/lvds_axis_ip/lvds_axis_1_0/hdl/top.vhd:204]
+	Parameter DIFF_TERM bound to: 1 - type: bool 
+	Parameter IBUF_LOW_PWR bound to: 0 - type: bool 
+	Parameter IOSTANDARD bound to: LVDS_25 - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'IOBUFDS_inst_3' to cell 'IOBUFDS' [C:/Vivado_Project/ip_repo/lvds_axis_ip/lvds_axis_1_0/hdl/top.vhd:220]
+INFO: [Synth 8-113] binding component instance 'BUFG_inst' to cell 'BUFG' [C:/Vivado_Project/ip_repo/lvds_axis_ip/lvds_axis_1_0/hdl/top.vhd:235]
+INFO: [Synth 8-3491] module 'fifo_generator_0' declared at 'C:/Vivado_Project/ip_repo/lvds_axis_ip/edit_lvds_axis_v1_0.runs/synth_1/.Xil/Vivado-31908-Mango/realtime/fifo_generator_0_stub.vhdl:6' bound to instance 'DUT_2' of component 'fifo_generator_0' [C:/Vivado_Project/ip_repo/lvds_axis_ip/lvds_axis_1_0/hdl/top.vhd:242]
+INFO: [Synth 8-638] synthesizing module 'fifo_generator_0' [C:/Vivado_Project/ip_repo/lvds_axis_ip/edit_lvds_axis_v1_0.runs/synth_1/.Xil/Vivado-31908-Mango/realtime/fifo_generator_0_stub.vhdl:22]
+INFO: [Synth 8-3491] module 'axis_data_fifo_0' declared at 'C:/Vivado_Project/ip_repo/lvds_axis_ip/edit_lvds_axis_v1_0.runs/synth_1/.Xil/Vivado-31908-Mango/realtime/axis_data_fifo_0_stub.vhdl:6' bound to instance 'DUT_3' of component 'axis_data_fifo_0' [C:/Vivado_Project/ip_repo/lvds_axis_ip/lvds_axis_1_0/hdl/top.vhd:258]
+INFO: [Synth 8-638] synthesizing module 'axis_data_fifo_0' [C:/Vivado_Project/ip_repo/lvds_axis_ip/edit_lvds_axis_v1_0.runs/synth_1/.Xil/Vivado-31908-Mango/realtime/axis_data_fifo_0_stub.vhdl:24]
+	Parameter DEST_SYNC_FF bound to: 2 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter SRC_INPUT_REG bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'xpm_cdc_single' declared at 'C:/Xilinx/Vivado/2024.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152' bound to instance 'xpm_cdc_single_inst' of component 'xpm_cdc_single' [C:/Vivado_Project/ip_repo/lvds_axis_ip/lvds_axis_1_0/hdl/top.vhd:277]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_single' [C:/Xilinx/Vivado/2024.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
+	Parameter DEST_SYNC_FF bound to: 2 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter SRC_INPUT_REG bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_single' (0#1) [C:/Xilinx/Vivado/2024.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
+INFO: [Synth 8-256] done synthesizing module 'top' (0#1) [C:/Vivado_Project/ip_repo/lvds_axis_ip/lvds_axis_1_0/hdl/top.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'lvds_axis' (0#1) [C:/Vivado_Project/ip_repo/lvds_axis_ip/lvds_axis_1_0/hdl/lvds_axis.vhd:69]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'DUT_1'. This will prevent further optimization [C:/Vivado_Project/ip_repo/lvds_axis_ip/lvds_axis_1_0/hdl/top.vhd:175]
+WARNING: [Synth 8-6014] Unused sequential element header_reg_1_reg was removed.  [C:/Vivado_Project/ip_repo/lvds_axis_ip/lvds_axis_1_0/hdl/data_store.vhd:68]
+WARNING: [Synth 8-6014] Unused sequential element header_reg_2_reg was removed.  [C:/Vivado_Project/ip_repo/lvds_axis_ip/lvds_axis_1_0/hdl/data_store.vhd:71]
+WARNING: [Synth 8-6014] Unused sequential element data_reg_2_reg was removed.  [C:/Vivado_Project/ip_repo/lvds_axis_ip/lvds_axis_1_0/hdl/data_store.vhd:72]
+WARNING: [Synth 8-6014] Unused sequential element flag_reg was removed.  [C:/Vivado_Project/ip_repo/lvds_axis_ip/lvds_axis_1_0/hdl/top.vhd:323]
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[2] in module lvds_axis_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[1] in module lvds_axis_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[0] in module lvds_axis_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[2] in module lvds_axis_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[1] in module lvds_axis_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[0] in module lvds_axis_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ext_clk_i_p in module lvds_axis is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1537.535 ; gain = 567.898
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1537.535 ; gain = 567.898
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1537.535 ; gain = 567.898
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1537.535 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 3 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Vivado_Project/ip_repo/lvds_axis_ip/lvds_axis_1_0/src/fifo_generator_0/fifo_generator_0/fifo_generator_0_in_context.xdc] for cell 'DUT_1/DUT_2'
+Finished Parsing XDC File [c:/Vivado_Project/ip_repo/lvds_axis_ip/lvds_axis_1_0/src/fifo_generator_0/fifo_generator_0/fifo_generator_0_in_context.xdc] for cell 'DUT_1/DUT_2'
+Parsing XDC File [c:/Vivado_Project/ip_repo/lvds_axis_ip/lvds_axis_1_0/src/axis_data_fifo_0/axis_data_fifo_0/axis_data_fifo_0_in_context.xdc] for cell 'DUT_1/DUT_3'
+Finished Parsing XDC File [c:/Vivado_Project/ip_repo/lvds_axis_ip/lvds_axis_1_0/src/axis_data_fifo_0/axis_data_fifo_0/axis_data_fifo_0_in_context.xdc] for cell 'DUT_1/DUT_3'
+Parsing XDC File [C:/Vivado_Project/ip_repo/lvds_axis_ip/edit_lvds_axis_v1_0.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Vivado_Project/ip_repo/lvds_axis_ip/edit_lvds_axis_v1_0.runs/synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Xilinx/Vivado/2024.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/lvds_axis_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/lvds_axis_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-1714] 1 XPM XDC files have been applied to the design.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1628.961 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 3 instances were transformed.
+  IOBUFDS => IOBUFDS (IBUFDS, OBUFTDS): 3 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1628.961 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1628.961 ; gain = 659.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1628.961 ; gain = 659.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for DUT_1/DUT_2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for DUT_1/DUT_3. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for DUT_1/xpm_cdc_single_inst. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1628.961 ; gain = 659.324
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_write_reg' in module 'lvds_axis_slave_lite_v1_0_S00_AXI'
+INFO: [Synth 8-802] inferred FSM for state register 'state_read_reg' in module 'lvds_axis_slave_lite_v1_0_S00_AXI'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                              001 |                               00
+                   waddr |                              010 |                               10
+                   wdata |                              100 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_write_reg' using encoding 'one-hot' in module 'lvds_axis_slave_lite_v1_0_S00_AXI'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                               00 |                               00
+                   raddr |                               01 |                               10
+                   rdata |                               10 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_read_reg' using encoding 'sequential' in module 'lvds_axis_slave_lite_v1_0_S00_AXI'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1628.961 ; gain = 659.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   10 Bit       Adders := 1     
++---Registers : 
+	               64 Bit    Registers := 1     
+	               32 Bit    Registers := 8     
+	               24 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 16    
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 7     
+	   4 Input   32 Bit        Muxes := 5     
+	   2 Input   24 Bit        Muxes := 1     
+	   3 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 3     
+	   3 Input    2 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 3     
+	   2 Input    1 Bit        Muxes := 11    
+	   3 Input    1 Bit        Muxes := 12    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port ext_clk_i_p in module lvds_axis is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axi_awprot[2] in module lvds_axis is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axi_awprot[1] in module lvds_axis is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axi_awprot[0] in module lvds_axis is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axi_arprot[2] in module lvds_axis is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axi_arprot[1] in module lvds_axis is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axi_arprot[0] in module lvds_axis is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1628.961 ; gain = 659.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1628.961 ; gain = 659.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1628.961 ; gain = 659.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1628.961 ; gain = 659.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1628.961 ; gain = 659.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1628.961 ; gain = 659.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1628.961 ; gain = 659.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1628.961 ; gain = 659.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1628.961 ; gain = 659.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1628.961 ; gain = 659.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-----------------+----------+
+|      |BlackBox name    |Instances |
++------+-----------------+----------+
+|1     |fifo_generator_0 |         1|
+|2     |axis_data_fifo_0 |         1|
++------+-----------------+----------+
+
+Report Cell Usage: 
++------+----------------------+------+
+|      |Cell                  |Count |
++------+----------------------+------+
+|1     |axis_data_fifo_0_bbox |     1|
+|2     |fifo_generator_0_bbox |     1|
+|3     |BUFG                  |     3|
+|4     |LUT1                  |     4|
+|5     |LUT2                  |     8|
+|6     |LUT3                  |    37|
+|7     |LUT4                  |     3|
+|8     |LUT5                  |     5|
+|9     |LUT6                  |    62|
+|10    |FDRE                  |   380|
+|11    |FDSE                  |     1|
+|12    |IBUF                  |    50|
+|13    |IOBUFDS               |     3|
+|14    |OBUF                  |    79|
++------+----------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1628.961 ; gain = 659.324
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 8 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:24 . Memory (MB): peak = 1628.961 ; gain = 567.898
+Synthesis Optimization Complete : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 1628.961 ; gain = 659.324
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1628.961 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 3 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1628.961 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 3 instances were transformed.
+  IOBUFDS => IOBUFDS (IBUFDS, OBUFTDS): 3 instances
+
+Synth Design complete | Checksum: bd1e37a4
+INFO: [Common 17-83] Releasing license: Synthesis
+56 Infos, 21 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1628.961 ; gain = 1052.336
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1628.961 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Vivado_Project/ip_repo/lvds_axis_ip/edit_lvds_axis_v1_0.runs/synth_1/lvds_axis.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file lvds_axis_utilization_synth.rpt -pb lvds_axis_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Apr 16 15:02:18 2026...

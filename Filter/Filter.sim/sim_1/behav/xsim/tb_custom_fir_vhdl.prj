@@ -1,0 +1,10 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Filter.srcs/sources_1/new/Coeff_Pkg.vhd" \
+"../../../../Filter.srcs/sources_1/new/LUT_Pkg.vhd" \
+"../../../../Filter.srcs/sources_1/new/analog_signal_generator.vhd" \
+"../../../../Filter.srcs/sources_1/new/custom_fir.vhd" \
+"../../../../Filter.srcs/sim_1/new/tb_custom_fir.vhd" \
+
+# Do not sort compile order
+nosort

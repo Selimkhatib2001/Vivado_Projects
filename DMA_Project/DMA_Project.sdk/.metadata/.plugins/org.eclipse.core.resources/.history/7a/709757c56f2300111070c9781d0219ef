@@ -1,0 +1,138 @@
+#include "xaxidma.h"
+#include "xparameters.h"
+#include "xdebug.h"
+
+#if defined(XPAR_UARTNS550_0_BASEADDR)
+#include "xuartns550_l.h"       /* to use uartns550 */
+#endif
+
+
+
+#define DMA_DEV_ID		XPAR_AXIDMA_0_DEVICE_ID
+
+
+#ifndef DDR_BASE_ADDR
+#warning CHECK FOR THE VALID DDR ADDRESS IN XPARAMETERS.H, \
+		 DEFAULT SET TO 0x01000000
+#define MEM_BASE_ADDR		0x01000000
+#else
+#define MEM_BASE_ADDR		(DDR_BASE_ADDR + 0x1000000)
+#endif
+
+#define TX_BUFFER_BASE		(MEM_BASE_ADDR + 0x00100000)
+#define RX_BUFFER_BASE		(MEM_BASE_ADDR + 0x00300000)
+#define RX_BUFFER_HIGH		(MEM_BASE_ADDR + 0x004FFFFF)
+
+#define MAX_PKT_LEN		0x20
+
+#define TEST_START_VALUE	0xC
+
+#define NUMBER_OF_TRANSFERS	10
+
+
+
+int XAxiDma_SimplePollExample(u16 DeviceId);
+
+XAxiDma AxiDma;
+
+int main()
+{
+	int Status;
+
+	xil_printf("\r\n--- Entering main() --- \r\n");
+
+	/* Run the poll example for simple transfer */
+	Status = XAxiDma_SimplePollExample(DMA_DEV_ID);
+
+	if (Status != XST_SUCCESS) {
+		xil_printf("XAxiDma_SimplePoll Example Failed\r\n");
+		return XST_FAILURE;
+	}
+
+	xil_printf("Successfully ran XAxiDma_SimplePoll Example\r\n");
+
+	xil_printf("--- Exiting main() --- \r\n");
+
+	return XST_SUCCESS;
+
+}
+
+int XAxiDma_SimplePollExample(u16 DeviceId)
+{
+	XAxiDma_Config *CfgPtr;
+	int Status;
+	int Tries = NUMBER_OF_TRANSFERS;
+	int Index;
+	u32 *TxBufferPtr;
+	u32 *RxBufferPtr;
+	u32 Value;
+
+	TxBufferPtr = (u32 *)TX_BUFFER_BASE ;
+	RxBufferPtr = (u32 *)RX_BUFFER_BASE;
+
+	CfgPtr = XAxiDma_LookupConfig(DeviceId);
+	if (!CfgPtr) {
+		xil_printf("No config found for %d\r\n", DeviceId);
+		return XST_FAILURE;
+	}
+
+	Status = XAxiDma_CfgInitialize(&AxiDma, CfgPtr);
+	if (Status != XST_SUCCESS) {
+		xil_printf("Initialization failed %d\r\n", Status);
+		return XST_FAILURE;
+	}
+
+	if(XAxiDma_HasSg(&AxiDma)){
+		xil_printf("Device configured as SG mode \r\n");
+		return XST_FAILURE;
+	}
+
+	XAxiDma_IntrDisable(&AxiDma, XAXIDMA_IRQ_ALL_MASK,
+						XAXIDMA_DEVICE_TO_DMA);
+	XAxiDma_IntrDisable(&AxiDma, XAXIDMA_IRQ_ALL_MASK,
+						XAXIDMA_DMA_TO_DEVICE);
+
+	Value = 0x124;
+
+	for(Index = 0; Index < MAX_PKT_LEN / 4; Index ++) {
+			TxBufferPtr[Index] = Value;
+	}
+
+	Xil_DCacheFlushRange((UINTPTR)TxBufferPtr, MAX_PKT_LEN);
+
+	Index = 0;
+	while (1) {
+
+		// S2MM: PL'den gelen veriyi (S_AXIS_S2MM) DDR'a bellege dogru yazdir
+		Status = XAxiDma_SimpleTransfer(&AxiDma,(UINTPTR) RxBufferPtr,
+					MAX_PKT_LEN, XAXIDMA_DEVICE_TO_DMA);
+
+		if (Status != XST_SUCCESS) {
+			return XST_FAILURE;
+		}
+
+		// MM2S: DDR'da hazirlanan veriyi (M_AXIS_MM2S) uzerinden disari gonder
+		Status = XAxiDma_SimpleTransfer(&AxiDma,(UINTPTR) TxBufferPtr,
+					MAX_PKT_LEN, XAXIDMA_DMA_TO_DEVICE);
+
+		if (Status != XST_SUCCESS) {
+			return XST_FAILURE;
+		}
+
+		// Her iki transferin de (okuma ve yazma) tamamlanmasini bekle
+		while ((XAxiDma_Busy(&AxiDma,XAXIDMA_DEVICE_TO_DMA)) ||
+		       (XAxiDma_Busy(&AxiDma,XAXIDMA_DMA_TO_DEVICE))) {
+		}
+
+		xil_printf("Sonsuz Transfer %d: Gonderim ve ayni zamanda DDR'a kayit islemi tamamlandi.\r\n", Index + 1);
+		Index++;
+
+	}
+
+	/* Test finishes successfully
+	 */
+	return XST_SUCCESS;
+}
+
+
+

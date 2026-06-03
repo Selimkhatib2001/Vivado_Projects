@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Feb 16 11:55:42 2026
+# Process ID: 2360
+# Current directory: D:/Vivado_Projects/ip_repo/arithmetic_ip/edit_arithmetic_ip_v1_0.runs/impl_1
+# Command line: vivado.exe -log arithmetic_ip_v1_0.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source arithmetic_ip_v1_0.tcl -notrace
+# Log file: D:/Vivado_Projects/ip_repo/arithmetic_ip/edit_arithmetic_ip_v1_0.runs/impl_1/arithmetic_ip_v1_0.vdi
+# Journal file: D:/Vivado_Projects/ip_repo/arithmetic_ip/edit_arithmetic_ip_v1_0.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source arithmetic_ip_v1_0.tcl -notrace

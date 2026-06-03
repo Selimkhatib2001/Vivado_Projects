@@ -1,0 +1,59 @@
+#include "xiic.h"
+#include "xiic_l.h"
+#include "xil_printf.h"
+#include "xparameters.h"
+
+#define IIC_DEVICE_ID XPAR_IIC_0_DEVICE_ID
+
+static volatile u8 ADDR = 0x20;
+
+int main(void) {
+	u8 WriteBuffer[3];
+	u8 VoltageVal = 120;
+	XIic_Config *ConfigPtr;
+	UINTPTR BaseAddress;
+
+
+	ConfigPtr = XIic_LookupConfig(IIC_DEVICE_ID);
+	if (ConfigPtr == NULL) {
+		return XST_FAILURE;
+	}
+	BaseAddress = ConfigPtr->BaseAddress;
+
+	XIic_WriteReg(BaseAddress, XIIC_RESETR_OFFSET, XIIC_RESET_MASK);
+	u16 case_flag = 0;
+	while (1) {
+
+		//		if (case_flag < 10){
+		//			WriteBuffer[0] = 0x06;       /* Write Volatile Memory */
+		//			WriteBuffer[1] = 0x00; /* Data */
+		//			WriteBuffer[2] = 0x00; /* Data */
+		//		} else if(case_flag > 10 && case_flag < 10000) {
+		//			WriteBuffer[0] = 0x03;       /* Write Volatile Memory */
+		//			WriteBuffer[1] = 0x33; /* Data */
+		//			WriteBuffer[2] = 0x33;
+		//		} else if (case_flag > 10000) {
+		//			case_flag = 0;
+		//		}
+		//		case_flag++;
+//		if (case_flag == 0) {
+//			case_flag = 1;
+//			WriteBuffer[0] = 0x06;       /* Write Volatile Memory */
+//			WriteBuffer[1] = 0x00; /* Data */
+//			WriteBuffer[2] = 0x00; /* Data */
+//			if(XIic_WaitBusFree(BaseAddress) == XST_SUCCESS) {
+//				XIic_Send(BaseAddress, ADDR, WriteBuffer, 3, XIIC_STOP);
+//			}
+//		} else {
+			WriteBuffer[0] = 0x03;       /* Write Volatile Memory */
+			WriteBuffer[1] = 0x72; /* Data */
+			WriteBuffer[2] = 0x72; /* Data */
+			if(XIic_WaitBusFree(BaseAddress) == XST_SUCCESS) {
+				XIic_Send(BaseAddress, ADDR, WriteBuffer, 3, XIIC_STOP);
+			}
+//		}
+
+	}
+
+	return 0;
+}

@@ -1,0 +1,20 @@
+{
+	"version": "1.0",
+	"modules": {
+		"design_1": {
+			"proto_instances": {
+				"/xadc_wiz_0/M_AXIS": {
+					"interface": "xilinx.com:interface:axis:1.0",
+					"ports": {
+						"ACLK": { "actual": "m_axis_aclk"},
+						"ARESETN": { "actual": "m_axis_resetn"},
+						"TDATA": { "actual": "m_axis_tdata[15:0]"},
+						"TID": { "actual": "m_axis_tid[4:0]"},
+						"TREADY": { "actual": "m_axis_tready"},
+						"TVALID": { "actual": "m_axis_tvalid"}
+					}
+				}
+			}
+		}
+	}
+}

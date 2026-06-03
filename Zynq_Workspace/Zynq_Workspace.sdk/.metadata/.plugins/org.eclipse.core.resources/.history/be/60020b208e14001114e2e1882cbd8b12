@@ -1,0 +1,117 @@
+
+
+#include "xil_printf.h"
+#include "xparameters.h"
+#include "xstatus.h"
+#include "xttcps.h"
+
+
+#define PCLK_FREQ_HZ XPAR_XTTCPS_0_CLOCK_HZ /* Input freq */
+
+#define TABLE_OFFSET 9
+#define MAX_LOOP_COUNT 0xFF
+
+/**************************** Type Definitions *******************************/
+
+typedef struct {
+  u32 OutputHz;       /* The frequency the timer should output on the
+                         waveout pin */
+  u8 OutputDutyCycle; /* The duty cycle of the output wave as a
+                         percentage */
+  u8 PrescalerValue;  /* Value of the prescaler in the Count Control
+                         register */
+} TmrCntrSetup;
+
+static int TmrCtrLowLevelExample(u8 SettingsTableOffset);
+
+
+
+
+static u32 PrescalerSettings[] = {2,    4,     8,     16,    32,   64,
+                                  128,  256,   512,   1024,  2048, 4096,
+                                  8192, 16384, 32768, 65536, 1};
+
+static TmrCntrSetup SettingsTable[] = {
+    /* Table offset of 0 */
+    {10, 50, 6},
+    {10, 25, 6},
+    {10, 75, 6},
+
+    /* Table offset of 3 */
+    {100, 50, 3},
+    {200, 25, 2},
+    {400, 12.5, 1},
+
+    /* Table offset of 6 */
+    {500, 50, 1},
+    {1000, 50, 0},
+    {5000, 50, 16},
+
+    /* Table offset of 9 */
+    {10000, 50, 16},
+    {50000, 50, 16},
+    {100000, 50, 16},
+
+    /* Table offset of 12 */
+    {500000, 50, 16},
+    {1000000, 50, 16},
+    {10000000, 50, 16},
+    /* Note: at greater than 1 MHz the timer reload is noticeable. */
+
+    {33000000, 50, 16},
+
+};
+
+
+int main(void) {
+  int Status;
+
+
+  Status = TmrCtrLowLevelExample(TABLE_OFFSET);
+  if (Status != XST_SUCCESS) {
+    return XST_FAILURE;
+  }
+
+  return XST_SUCCESS;
+}
+
+int TmrCtrLowLevelExample(u8 SettingsTableOffset) {
+  u32 RegValue;
+  u32 TmrCtrBaseAddress;
+  u32 IntervalValue, MatchValue;
+  TmrCntrSetup *CurrSetup;
+
+  TmrCtrBaseAddress = XPAR_XTTCPS_0_BASEADDR;
+
+  CurrSetup = &SettingsTable[SettingsTableOffset];
+
+  if (16 > CurrSetup->PrescalerValue) { // 16th index val = 1
+    RegValue = (CurrSetup->PrescalerValue << XTTCPS_CLK_CNTRL_PS_VAL_SHIFT) &
+               XTTCPS_CLK_CNTRL_PS_VAL_MASK;
+    RegValue |= XTTCPS_CLK_CNTRL_PS_EN_MASK;
+  } else {
+    RegValue = 0;
+  }
+
+  XTtcPs_WriteReg(TmrCtrBaseAddress, XTTCPS_CLK_CNTRL_OFFSET, RegValue);
+
+  IntervalValue =
+      PCLK_FREQ_HZ /
+      (u32)(PrescalerSettings[CurrSetup->PrescalerValue] * CurrSetup->OutputHz);
+
+  XTtcPs_WriteReg(TmrCtrBaseAddress, XTTCPS_INTERVAL_VAL_OFFSET, IntervalValue);
+
+  MatchValue = (IntervalValue * CurrSetup->OutputDutyCycle) / 100;
+
+  XTtcPs_WriteReg(TmrCtrBaseAddress, XTTCPS_MATCH_0_OFFSET, MatchValue);
+
+  RegValue = ~(XTTCPS_CNT_CNTRL_DIS_MASK | XTTCPS_CNT_CNTRL_EN_WAVE_MASK) &
+             (XTTCPS_CNT_CNTRL_INT_MASK | XTTCPS_CNT_CNTRL_MATCH_MASK |
+              XTTCPS_CNT_CNTRL_RST_MASK);
+  XTtcPs_WriteReg(TmrCtrBaseAddress, XTTCPS_CNT_CNTRL_OFFSET, RegValue);
+
+  XTtcPs_WriteReg(TmrCtrBaseAddress, XTTCPS_IER_OFFSET,
+                  XTTCPS_IXR_INTERVAL_MASK);
+
+  return XST_SUCCESS;
+}

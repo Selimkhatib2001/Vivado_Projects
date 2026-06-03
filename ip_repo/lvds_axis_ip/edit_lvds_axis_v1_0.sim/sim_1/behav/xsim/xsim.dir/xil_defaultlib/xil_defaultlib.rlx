@@ -1,0 +1,10 @@
+0.7
+2020.2
+Sep  5 2024
+15:23:16
+C:/Vivado_Project/ip_repo/lvds_axis_ip/edit_lvds_axis_v1_0.sim/sim_1/behav/xsim/glbl.v,1708598507,verilog,,,,glbl,,,,,,,,
+C:/Vivado_Project/ip_repo/lvds_axis_ip/edit_lvds_axis_v1_0.srcs/sim_1/new/top_tb.vhd,1776340170,vhdl,,,,top_tb,,,,,,,,
+C:/Vivado_Project/ip_repo/lvds_axis_ip/lvds_axis_1_0/hdl/data_store.vhd,1776334877,vhdl,,,,data_store,,,,,,,,
+C:/Vivado_Project/ip_repo/lvds_axis_ip/lvds_axis_1_0/hdl/top.vhd,1776340510,vhdl,,,,top,,,,,,,,
+C:/Vivado_Project/ip_repo/lvds_axis_ip/lvds_axis_1_0/src/axis_data_fifo_0/sim/axis_data_fifo_0.v,1776335881,verilog,,C:/Vivado_Project/ip_repo/lvds_axis_ip/lvds_axis_1_0/src/fifo_generator_0/sim/fifo_generator_0.v,,axis_data_fifo_0,,,../../../../edit_lvds_axis_v1_0.ip_user_files/ipstatic/hdl,,,,,
+C:/Vivado_Project/ip_repo/lvds_axis_ip/lvds_axis_1_0/src/fifo_generator_0/sim/fifo_generator_0.v,1776337723,verilog,,,,fifo_generator_0,,,../../../../edit_lvds_axis_v1_0.ip_user_files/ipstatic/hdl,,,,,

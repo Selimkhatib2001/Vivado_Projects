@@ -1,0 +1,8 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../lvds_axis_1_0/hdl/data_store.vhd" \
+"../../../../lvds_axis_1_0/hdl/top.vhd" \
+"../../../../edit_lvds_axis_v1_0.srcs/sim_1/new/top_tb.vhd" \
+
+# Do not sort compile order
+nosort

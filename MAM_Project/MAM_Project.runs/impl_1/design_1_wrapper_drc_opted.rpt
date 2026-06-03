@@ -1,0 +1,63 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Tue Apr 14 15:41:06 2026
+| Host         : PC running 64-bit major release  (build 9200)
+| Command      : report_drc -file design_1_wrapper_drc_opted.rpt -pb design_1_wrapper_drc_opted.pb -rpx design_1_wrapper_drc_opted.rpx
+| Design       : design_1_wrapper
+| Device       : xc7z010clg400-1
+| Speed File   : -1
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 5
++----------+----------+--------------------------+------------+
+| Rule     | Severity | Description              | Violations |
++----------+----------+--------------------------+------------+
+| BUFC-1   | Warning  | Input Buffer Connections | 3          |
+| LVDS-1   | Warning  | Bidirection LVDS IOs     | 1          |
+| REQP-181 | Advisory | writefirst               | 1          |
++----------+----------+--------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+BUFC-1#1 Warning
+Input Buffer Connections  
+Input buffer design_1_i/data_generator_0/U0/IOBUFDS_inst_1/IBUFDS (in design_1_i/data_generator_0/U0/IOBUFDS_inst_1 macro) has no loads. It is recommended to have an input buffer drive an internal load.
+Related violations: <none>
+
+BUFC-1#2 Warning
+Input Buffer Connections  
+Input buffer design_1_i/data_generator_0/U0/IOBUFDS_inst_2/IBUFDS (in design_1_i/data_generator_0/U0/IOBUFDS_inst_2 macro) has no loads. It is recommended to have an input buffer drive an internal load.
+Related violations: <none>
+
+BUFC-1#3 Warning
+Input Buffer Connections  
+Input buffer design_1_i/data_generator_0/U0/IOBUFDS_inst_3/IBUFDS (in design_1_i/data_generator_0/U0/IOBUFDS_inst_3 macro) has no loads. It is recommended to have an input buffer drive an internal load.
+Related violations: <none>
+
+LVDS-1#1 Warning
+Bidirection LVDS IOs  
+The following port(s) use the LVDS_25 I/O standard and have bi-directional differential usage. Please note that LVDS_25 is a fixed impedance structure optimized to 100ohm differential. This is only intended to be used in point-to-point transmissions that do not have turn around timing requirements. If the intended usage is a bus structure, please use BLVDS/BLVDS_25, instead. ext_clk_i_n_0, ext_clk_i_p_0, generator_lvds_clk_n_0, generator_lvds_clk_p_0, generator_lvds_data_n_0, generator_lvds_data_p_0, generator_lvds_valid_n_0, generator_lvds_valid_p_0, lvds_n_i_0, lvds_p_i_0, valid_n_i_0, valid_p_i_0.
+Related violations: <none>
+
+REQP-181#1 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (design_1_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+

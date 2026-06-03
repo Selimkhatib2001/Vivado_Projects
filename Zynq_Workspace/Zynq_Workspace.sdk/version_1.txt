@@ -1,0 +1,49 @@
+#include "platform.h"
+#include "xil_printf.h"
+#include "xparameters.h"
+#include <stdio.h>
+
+char Recived_Buffer[64];
+
+int main(void) {
+	init_platform();
+
+	xil_printf("UART Calculator Started\r\n");
+	xil_printf("Usage: Enter num1+num2, num1-num2, etc. and press Enter\r\n");
+
+	int i = 0;
+	int a, b;
+
+	for (;;) {
+		char c = inbyte();
+
+		if (c == '\r' || c == '\n') {
+			Recived_Buffer[i] = '\0';
+			if (i > 0) {
+
+
+				if (sscanf(Recived_Buffer, "%d+%d", &a, &b) == 2) {
+					xil_printf(" %d + %d = %d\r\n", a, b, a + b);
+				} else if (sscanf(Recived_Buffer, "%d-%d", &a, &b) == 2) {
+					xil_printf(" %d - %d = %d\r\n", a, b, a - b);
+				} else if (sscanf(Recived_Buffer, "%d*%d", &a, &b) == 2) {
+					xil_printf("%d * %d = %d\r\n", a, b, a * b);
+				} else if (sscanf(Recived_Buffer, "%d/%d", &a, &b) == 2) {
+					if (b != 0) {
+						xil_printf("%d / %d = %d\r\n", a, b, a / b);
+					} else {
+						xil_printf("Error\r\n");
+					}
+				} else {
+					xil_printf("Invalid format: %s\r\n", Recived_Buffer);
+				}
+			}
+			i = 0;
+		} else {
+				Recived_Buffer[i++] = c;
+		}
+	}
+
+	cleanup_platform();
+	return 0;
+}

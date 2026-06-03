@@ -1,0 +1,145 @@
+#include "xaxidma.h"
+#include "xscugic.h"
+#include "xil_exception.h"
+
+#define DMA_DEV_ID          XPAR_AXIDMA_0_DEVICE_ID
+#define INTC_DEVICE_ID      XPAR_SCUGIC_SINGLE_DEVICE_ID
+#define RX_INTR_ID          XPAR_FABRIC_AXIDMA_0_S2MM_INTROUT_VEC_ID
+#define TX_INTR_ID          XPAR_FABRIC_AXIDMA_0_MM2S_INTROUT_VEC_ID
+
+#define MEM_BASE_ADDR       0x01000000
+#define TX_BUFFER_BASE      (MEM_BASE_ADDR + 0x00100000)
+#define RX_BUFFER_BASE      (MEM_BASE_ADDR + 0x00300000)
+
+#define MAX_PKT_LEN         0x100
+#define NUMBER_OF_TRANSFERS 10
+#define TEST_START_VALUE    0xC
+#define RESET_TIMEOUT       10000
+
+#ifndef DEBUG
+extern void xil_printf(const char *format, ...);
+#endif
+
+static XAxiDma AxiDma;
+static XScuGic Intc;
+volatile int TxDone, RxDone, Error;
+
+static int CheckData(int Length, u8 StartValue) {
+	u8 *RxPacket = (u8 *)RX_BUFFER_BASE;
+	u8 Value = StartValue;
+#ifndef __aarch64__
+	Xil_DCacheInvalidateRange((UINTPTR)RxPacket, Length);
+#endif
+	for (int i = 0; i < Length; i++) {
+		if (RxPacket[i] != Value) {
+			xil_printf("Data error %d: %x/%x\r\n", i, RxPacket[i], Value);
+			return XST_FAILURE;
+		}
+		Value = (Value + 1) & 0xFF;
+	}
+	return XST_SUCCESS;
+}
+
+static void HandleDmaIntr(XAxiDma *AxiDmaInst, u32 Direction, volatile int *DoneFlag) {
+	u32 IrqStatus = XAxiDma_IntrGetIrq(AxiDmaInst, Direction);
+	XAxiDma_IntrAckIrq(AxiDmaInst, IrqStatus, Direction);
+
+	if (!(IrqStatus & XAXIDMA_IRQ_ALL_MASK)) return;
+
+	if (IrqStatus & XAXIDMA_IRQ_ERROR_MASK) {
+		Error = 1;
+		XAxiDma_Reset(AxiDmaInst);
+		int TimeOut = RESET_TIMEOUT;
+		while (TimeOut && !XAxiDma_ResetIsDone(AxiDmaInst)) TimeOut--;
+		return;
+	}
+	if (IrqStatus & XAXIDMA_IRQ_IOC_MASK) *DoneFlag = 1;
+}
+
+static void TxIntrHandler(void *Callback) { HandleDmaIntr((XAxiDma *)Callback, XAXIDMA_DMA_TO_DEVICE, &TxDone); }
+static void RxIntrHandler(void *Callback) { HandleDmaIntr((XAxiDma *)Callback, XAXIDMA_DEVICE_TO_DMA, &RxDone); }
+
+static int SetupIntrSystem(XScuGic *IntcInstancePtr, XAxiDma *AxiDmaPtr, u16 TxIntrId, u16 RxIntrId) {
+	XScuGic_Config *IntcConfig = XScuGic_LookupConfig(INTC_DEVICE_ID);
+	if (!IntcConfig || XScuGic_CfgInitialize(IntcInstancePtr, IntcConfig, IntcConfig->CpuBaseAddress) != XST_SUCCESS)
+		return XST_FAILURE;
+
+	// 0x1 is Active High Level trigger, recommended for Zynq PL-PS IRQs
+	XScuGic_SetPriorityTriggerType(IntcInstancePtr, TxIntrId, 0xA0, 0x1);
+	XScuGic_SetPriorityTriggerType(IntcInstancePtr, RxIntrId, 0xA0, 0x1);
+
+	if (XScuGic_Connect(IntcInstancePtr, TxIntrId, (Xil_InterruptHandler)TxIntrHandler, AxiDmaPtr) != XST_SUCCESS ||
+	    XScuGic_Connect(IntcInstancePtr, RxIntrId, (Xil_InterruptHandler)RxIntrHandler, AxiDmaPtr) != XST_SUCCESS)
+		return XST_FAILURE;
+
+	XScuGic_Enable(IntcInstancePtr, TxIntrId);
+	XScuGic_Enable(IntcInstancePtr, RxIntrId);
+
+	Xil_ExceptionInit();
+	Xil_ExceptionRegisterHandler(XIL_EXCEPTION_ID_INT, (Xil_ExceptionHandler)XScuGic_InterruptHandler, IntcInstancePtr);
+	Xil_ExceptionEnable();
+
+	return XST_SUCCESS;
+}
+
+int main(void) {
+	XAxiDma_Config *Config;
+	u8 *TxBufferPtr = (u8 *)TX_BUFFER_BASE;
+	u8 *RxBufferPtr = (u8 *)RX_BUFFER_BASE;
+
+	xil_printf("\r\n--- Entering main() --- \r\n");
+
+	Config = XAxiDma_LookupConfig(DMA_DEV_ID);
+	if (!Config || XAxiDma_CfgInitialize(&AxiDma, Config) != XST_SUCCESS || XAxiDma_HasSg(&AxiDma)) {
+		xil_printf("DMA Initialization failed or SG mode enabled.\r\n");
+		return XST_FAILURE;
+	}
+
+	if (SetupIntrSystem(&Intc, &AxiDma, TX_INTR_ID, RX_INTR_ID) != XST_SUCCESS) {
+		xil_printf("Interrupt setup failed\r\n");
+		return XST_FAILURE;
+	}
+
+	XAxiDma_IntrDisable(&AxiDma, XAXIDMA_IRQ_ALL_MASK, XAXIDMA_DMA_TO_DEVICE);
+	XAxiDma_IntrDisable(&AxiDma, XAXIDMA_IRQ_ALL_MASK, XAXIDMA_DEVICE_TO_DMA);
+	XAxiDma_IntrEnable(&AxiDma, XAXIDMA_IRQ_ALL_MASK, XAXIDMA_DMA_TO_DEVICE);
+	XAxiDma_IntrEnable(&AxiDma, XAXIDMA_IRQ_ALL_MASK, XAXIDMA_DEVICE_TO_DMA);
+
+	u8 Value = TEST_START_VALUE;
+	for (int Index = 0; Index < MAX_PKT_LEN; Index++) {
+		TxBufferPtr[Index] = Value;
+		Value = (Value + 1) & 0xFF;
+	}
+	Xil_DCacheFlushRange((UINTPTR)TxBufferPtr, MAX_PKT_LEN);
+
+	for (int Index = 0; Index < NUMBER_OF_TRANSFERS; Index++) {
+		TxDone = RxDone = Error = 0;
+
+		if (XAxiDma_SimpleTransfer(&AxiDma, (UINTPTR)RxBufferPtr, MAX_PKT_LEN, XAXIDMA_DEVICE_TO_DMA) != XST_SUCCESS ||
+		    XAxiDma_SimpleTransfer(&AxiDma, (UINTPTR)TxBufferPtr, MAX_PKT_LEN, XAXIDMA_DMA_TO_DEVICE) != XST_SUCCESS) {
+			return XST_FAILURE;
+		}
+
+		int timeOut = 100000000;
+		while ((!TxDone || !RxDone) && !Error && timeOut > 0) timeOut--;
+
+		if (timeOut == 0) {
+			xil_printf("\r\n--- TIMEOUT ERROR ---\r\nTxDone = %d, RxDone = %d\r\n", TxDone, RxDone);
+			xil_printf("TX SR: 0x%08x | RX SR: 0x%08x\r\n", 
+				XAxiDma_ReadReg(AxiDma.RegBase, XAXIDMA_TX_OFFSET + XAXIDMA_SR_OFFSET),
+				XAxiDma_ReadReg(AxiDma.RegBase, XAXIDMA_RX_OFFSET + XAXIDMA_SR_OFFSET));
+			xil_printf("Hardware transfer did not complete, or interrupts are not connected in Vivado!\r\n");
+			return XST_FAILURE;
+		}
+
+		if (Error || CheckData(MAX_PKT_LEN, TEST_START_VALUE) != XST_SUCCESS) {
+			xil_printf("Data check failed or transfer error\r\n");
+			return XST_FAILURE;
+		}
+	}
+
+	xil_printf("Successfully ran AXI DMA interrupt Example\r\n--- Exiting main() --- \r\n");
+	XScuGic_Disconnect(&Intc, TX_INTR_ID);
+	XScuGic_Disconnect(&Intc, RX_INTR_ID);
+	return XST_SUCCESS;
+}

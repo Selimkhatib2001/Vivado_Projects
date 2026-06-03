@@ -1,0 +1,332 @@
+#include "platform.h"
+#include "xbasic_types.h"
+#include "xil_exception.h"
+#include "xil_types.h"
+#include "xintc.h"
+#include "xparameters.h"
+#include "xstatus.h"
+#include "xuartlite.h"
+/* No xil_cache.h */
+
+/************************** Constant Definitions *****************************/
+#define UARTLITE_DEVICE_ID XPAR_AXI_UARTLITE_0_DEVICE_ID
+#define INTC_DEVICE_ID XPAR_INTC_0_DEVICE_ID
+#define INTC_UARTLITE_INTERRUPT_ID XPAR_INTC_0_UARTLITE_0_VEC_ID
+#define INTC_HANDLER XIntc_InterruptHandler
+#define BUFFER_SIZE 64
+
+Xuint32 *baseaddr_p = (Xuint32 *)XPAR_ARITHMETIC_IP_0_S00_AXI_BASEADDR;
+
+/* Globals */
+XIntc Intc;
+XUartLite Uartlite;
+
+static volatile u32 IntrFlag;
+static volatile u32 TxDone;
+
+u8 RecvChar;
+u8 LineBuffer[BUFFER_SIZE];
+u32 LineIndex = 0;
+u8 SendBuffer[BUFFER_SIZE];
+s32 res = 0;
+u8 RxDigits[2][BUFFER_SIZE];
+volatile u8 operation = 0;
+
+/* Prototypes */
+static void UartLiteSendHandler(void *CallBackRef, unsigned int EventData);
+static void UartLiteRecvHandler(void *CallBackRef, unsigned int EventData);
+void SendBlock(u8 *ptr, int len);
+
+/* Strings */
+int my_strlen(const char *s) {
+  int len = 0;
+  while (*s++)
+    len++;
+  return len;
+}
+
+long xtoi(char *ptr) {
+  long result = 0;
+  while (*ptr == ' ' || *ptr == '\t')
+    ptr++;
+  if (*ptr == '0' && (*(ptr + 1) == 'x' || *(ptr + 1) == 'X'))
+    ptr += 2;
+
+  while (*ptr) {
+    char c = *ptr;
+    int val = -1;
+    if (c >= '0' && c <= '9')
+      val = c - '0';
+    else if (c >= 'A' && c <= 'F')
+      val = c - 'A' + 10;
+    else if (c >= 'a' && c <= 'f')
+      val = c - 'a' + 10;
+
+    if (val >= 0) {
+      result = (result << 4) | val;
+    } else {
+      break;
+    }
+    ptr++;
+  }
+  return result;
+}
+
+void int_to_hex_str(u8 *buf, u32 val) {
+  const char hex_digits[] = "0123456789ABCDEF";
+  buf[0] = '0';
+  buf[1] = 'x';
+  /* 32-bit hex has 8 digits */
+  for (int i = 0; i < 8; i++) {
+    buf[2 + i] = hex_digits[(val >> ((7 - i) * 4)) & 0xF];
+  }
+  buf[10] = 0;
+}
+
+void SendBlock(u8 *ptr, int len) {
+  if (len <= 0)
+    return;
+  TxDone = 0;
+  if (XUartLite_Send(&Uartlite, ptr, len) != XST_SUCCESS)
+    return;
+  while (!TxDone)
+    ;
+}
+
+/* Minimal Debug Print to replace xil_printf for BRAM safety */
+void xil_printf_minimal(const char *label, s32 val) {
+  SendBlock((u8 *)label, my_strlen(label));
+  char hex_buf[14]; /* Enough for "0x" + 8 digits + null */
+  int_to_hex_str((u8 *)hex_buf, val);
+  SendBlock((u8 *)hex_buf, my_strlen(hex_buf));
+  SendBlock((u8 *)"\r\n", 2);
+}
+
+int get_msb_index(u32 val) {
+  if (val == 0)
+    return 0;
+  return 31 - __builtin_clz(val);
+}
+
+int main() {
+  init_platform();
+
+  if (XUartLite_Initialize(&Uartlite, UARTLITE_DEVICE_ID) != XST_SUCCESS)
+    return XST_FAILURE;
+  if (XUartLite_SelfTest(&Uartlite) != XST_SUCCESS)
+    return XST_FAILURE;
+
+  XUartLite_SetSendHandler(&Uartlite, UartLiteSendHandler, &Uartlite);
+  XUartLite_SetRecvHandler(&Uartlite, UartLiteRecvHandler, &Uartlite);
+
+  if (XIntc_Initialize(&Intc, INTC_DEVICE_ID) != XST_SUCCESS)
+    return XST_FAILURE;
+  if (XIntc_Connect(&Intc, INTC_UARTLITE_INTERRUPT_ID,
+                    (XInterruptHandler)XUartLite_InterruptHandler,
+                    &Uartlite) != XST_SUCCESS)
+    return XST_FAILURE;
+  if (XIntc_Start(&Intc, XIN_REAL_MODE) != XST_SUCCESS)
+    return XST_FAILURE;
+
+  XIntc_Enable(&Intc, INTC_UARTLITE_INTERRUPT_ID);
+
+  Xil_ExceptionInit();
+  Xil_ExceptionRegisterHandler(XIL_EXCEPTION_ID_INT,
+                               (Xil_ExceptionHandler)INTC_HANDLER, &Intc);
+  Xil_ExceptionEnable();
+
+  XUartLite_EnableInterrupt(&Uartlite);
+
+  SendBlock((u8 *)"Ready\r\n", 7);
+
+  XUartLite_Recv(&Uartlite, &RecvChar, 1);
+
+  for (;;) {
+    if (IntrFlag) {
+      IntrFlag = 0;
+
+      SendBlock(&RecvChar, 1);
+
+      if (RecvChar == '\r' || RecvChar == '\n') {
+        LineBuffer[LineIndex] = '\0';
+
+        if (LineIndex > 0) {
+          u8 idx_1 = 0;
+          u8 idx_2 = 0;
+          u8 flag_1 = 0;
+
+          for (int k = 0; k < BUFFER_SIZE; k++) {
+            RxDigits[0][k] = 0;
+            RxDigits[1][k] = 0;
+          }
+
+          for (u32 i = 0; i < LineIndex; i++) {
+            u8 c = LineBuffer[i];
+            if (c == 0x2D) {
+              operation = 0;
+              flag_1 = 1;
+            } // +
+            else if (c == 0x2B) {
+              operation = 1;
+              flag_1 = 1;
+            } // -
+            else if (c == 0x2A) {
+              operation = 2;
+              flag_1 = 1;
+            } // *
+            else if (c == 0x2F) {
+              operation = 3;
+              flag_1 = 1;
+            } // /
+            else {
+              if (flag_1 == 0) {
+                if (idx_1 < BUFFER_SIZE - 1)
+                  RxDigits[0][idx_1++] = c;
+              } else {
+                if (idx_2 < BUFFER_SIZE - 1)
+                  RxDigits[1][idx_2++] = c;
+              }
+            }
+          }
+
+          s16 num1 = (s16)xtoi((char *)RxDigits[0]);
+          s16 num2 = (s16)xtoi((char *)RxDigits[1]);
+
+          switch (operation) {
+          case 0: // SUB
+            *(baseaddr_p + 0) = (((s16)num1 << 16) | (s16)num2);
+            *(baseaddr_p + 1) = (0x00000004);
+            *(baseaddr_p + 2) = (0x00000000);
+
+            xil_printf_minimal("W: ", (((s16)num1 << 16) | (s16)num2));
+            xil_printf_minimal("R: ", *(baseaddr_p + 3));
+
+            res = *(baseaddr_p + 3);
+
+            break;
+          case 1: // SUM
+            *(baseaddr_p + 0) = (((u16)num1 << 16) | (u16)num2);
+            *(baseaddr_p + 1) = (0x00000005);
+            *(baseaddr_p + 2) = (0x00000000);
+
+            xil_printf_minimal("W: ", (((u16)num1 << 16) | (u16)num2));
+            xil_printf_minimal("R: ", *(baseaddr_p + 3));
+
+            break;
+          case 2: // MUL
+            *(baseaddr_p + 0) = (((u16)num1 << 16) | (u16)num2);
+            *(baseaddr_p + 1) = (0x00000006);
+            *(baseaddr_p + 2) = (0x00000000);
+
+            xil_printf_minimal("W: ", (((u16)num1 << 16) | (u16)num2));
+            xil_printf_minimal("R: ", *(baseaddr_p + 3));
+
+            res = *(baseaddr_p + 3);
+
+            break;
+          case 3: /* DIV - MSB Only */
+          {
+            if (num2 == 0) {
+              char error_msg[] = "Error: Division by zero\r\n";
+              SendBlock((u8 *)error_msg, sizeof(error_msg) - 1);
+              break;
+            }
+
+            ////////////////////////////////////////////////////////////////*
+            /* CUSTOM */
+            ////////////////////////////////////////////////////////////////*
+
+            s32 dvid = (s16)num1;
+            u32 abs_dvid = (dvid < 0) ? -dvid : dvid;
+
+            int msb_idx_1 = get_msb_index(abs_dvid);
+
+            float current_sum = 0.0f;
+            float floating_divisor = 1.0f / (float)num2;
+            int terms_indices[16] = {0};
+            int idx = 0;
+
+            for (int k = 1; k <= 15; k++) {
+              float term = 1.0f / (float)(1U << k);
+              if ((current_sum + term) <= (floating_divisor * 1.0001f)) {
+                if (k < msb_idx_1) {
+                  current_sum = current_sum + term;
+                  terms_indices[idx++] = k;
+
+                } else {
+                  terms_indices[idx++] = 0;
+                }
+
+              } else {
+                terms_indices[idx++] = 0;
+              }
+            }
+
+            u32 divider_data = 0;
+            int terms_count = 0;
+
+            for (int j = 0; j <= 15; j++) {
+              if (terms_indices[j] > 0) {
+                if (terms_count < 8) {
+                  divider_data = (divider_data << 4) | terms_indices[j];
+                  terms_count++;
+                }
+              }
+            }
+
+            *(baseaddr_p + 0) = (((u16)num1 << 16) | (u16)num2);
+
+            *(baseaddr_p + 2) = divider_data;
+            *(baseaddr_p + 1) = (0x00000007);
+
+            xil_printf_minimal("W: ", (((u16)num1 << 16) | (u16)num2));
+            xil_printf_minimal("R: ", *(baseaddr_p + 3));
+
+            res = *(baseaddr_p + 3);
+
+            ////////////////////////////////////////////////////////////////*
+            /* BUILT_IN */
+            ////////////////////////////////////////////////////////////////*
+            *(baseaddr_p + 4) = (((u16)num1 << 17) | (u16)num2 << 1);
+            *(baseaddr_p + 5) = (0x00000003);
+
+            int data_valid = *(baseaddr_p + 7);
+            if (data_valid > 0) {
+              u32 built_in_res = *(baseaddr_p + 6);
+              int msb_idx = get_msb_index(built_in_res);
+              u32 extracted_res = 0;
+              if (msb_idx >= 16) {
+                extracted_res = (built_in_res >> (msb_idx - 16)) & 0x1FFFF;
+              } else {
+                extracted_res = built_in_res;
+              }
+              xil_printf_minimal("Extracted: ", extracted_res);
+            }
+
+          } break;
+          }
+        }
+
+        LineIndex = 0;
+
+      } else {
+        if (LineIndex < BUFFER_SIZE - 1) {
+          LineBuffer[LineIndex++] = RecvChar;
+        }
+      }
+
+      XUartLite_Recv(&Uartlite, &RecvChar, 1);
+    }
+  }
+
+  cleanup_platform();
+  return 0;
+}
+
+static void UartLiteSendHandler(void *CallBackRef, unsigned int EventData) {
+  TxDone = 1;
+}
+
+static void UartLiteRecvHandler(void *CallBackRef, unsigned int EventData) {
+  IntrFlag = 1;
+}

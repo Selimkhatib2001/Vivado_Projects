@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# 
+# Start of session at: Wed Apr  8 16:40:35 2026
+# Process ID: 30676
+# Current directory: D:/Vivado_Projects/MAM_Project/MAM_Project.sdk/webtalk
+# Command line: wbtcv.exe -mode batch -source sdk_webtalk.tcl
+# Log file: D:/Vivado_Projects/MAM_Project/MAM_Project.sdk/webtalk/webtalk.log
+# Journal file: D:/Vivado_Projects/MAM_Project/MAM_Project.sdk/webtalk\webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl

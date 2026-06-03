@@ -1,0 +1,259 @@
+
+*** Running vivado
+    with args -log design_1_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source design_1_wrapper.tcl -notrace
+
+
+
+****** Vivado v2024.1.2 (64-bit)
+  **** SW Build 5164865 on Thu Sep  5 14:37:11 MDT 2024
+  **** IP Build 5164407 on Fri Sep  6 08:18:11 MDT 2024
+  **** SharedData Build 5164864 on Thu Sep 05 13:09:09 MDT 2024
+  **** Start of session at: Thu Apr 16 16:56:19 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source design_1_wrapper.tcl -notrace
+create_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 555.227 ; gain = 170.324
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Vivado_Project/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.1/data/ip'.
+add_files: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 662.594 ; gain = 100.402
+Command: link_design -top design_1_wrapper -part xc7a35tcpg236-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Device 21-9227] Part: xc7a35tcpg236-1 does not have CEAM library.
+INFO: [Project 1-454] Reading design checkpoint 'c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_0_1/design_1_axi_bram_ctrl_0_1.dcp' for cell 'design_1_i/axi_bram_ctrl_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_axi_dma_0_1/design_1_axi_dma_0_1.dcp' for cell 'design_1_i/axi_dma_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_blk_mem_gen_0_1/design_1_blk_mem_gen_0_1.dcp' for cell 'design_1_i/blk_mem_gen_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_3/design_1_clk_wiz_1_3.dcp' for cell 'design_1_i/clk_wiz_1'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_data_generator_0_0/design_1_data_generator_0_0.dcp' for cell 'design_1_i/data_generator_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_ila_0_0/design_1_ila_0_0.dcp' for cell 'design_1_i/ila_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_lvds2axis_0_0/design_1_lvds2axis_0_0.dcp' for cell 'design_1_i/lvds2axis_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_mdm_1_riscv_3/design_1_mdm_1_riscv_3.dcp' for cell 'design_1_i/mdm_1'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_riscv_3/design_1_microblaze_0_riscv_3.dcp' for cell 'design_1_i/microblaze_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_3/design_1_rst_clk_wiz_1_100M_3.dcp' for cell 'design_1_i/rst_clk_wiz_1_100M'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/design_1_smartconnect_0_0.dcp' for cell 'design_1_i/smartconnect_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0.dcp' for cell 'design_1_i/microblaze_0_axi_periph/xbar'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_3/design_1_dlmb_bram_if_cntlr_3.dcp' for cell 'design_1_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_dlmb_v10_3/design_1_dlmb_v10_3.dcp' for cell 'design_1_i/microblaze_0_local_memory/dlmb_v10'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_ilmb_bram_if_cntlr_3/design_1_ilmb_bram_if_cntlr_3.dcp' for cell 'design_1_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_ilmb_v10_3/design_1_ilmb_v10_3.dcp' for cell 'design_1_i/microblaze_0_local_memory/ilmb_v10'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_lmb_bram_3/design_1_lmb_bram_3.dcp' for cell 'design_1_i/microblaze_0_local_memory/lmb_bram'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.616 . Memory (MB): peak = 1204.613 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 797 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2024.1.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Constraints 18-550] Could not create 'DIFF_TERM' constraint because net 'design_1_i/data_generator_0/clk_i' is not directly connected to top level port. 'DIFF_TERM' is ignored for synthesis but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'design_1_i/data_generator_0/clk_i' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored for synthesis but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/data_generator_0/clk_i' is not directly connected to top level port. 'IOSTANDARD' is ignored for synthesis but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'SLEW' constraint because net 'design_1_i/data_generator_0/clk_i' is not directly connected to top level port. 'SLEW' is ignored for synthesis but preserved for implementation.
+INFO: [Chipscope 16-324] Core: design_1_i/ila_0 UUID: be177176-557e-59fe-ace2-fe04795a2b22 
+Parsing XDC File [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_1/bd_48ac_psr_aclk_0_board.xdc] for cell 'design_1_i/smartconnect_0/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_1/bd_48ac_psr_aclk_0_board.xdc] for cell 'design_1_i/smartconnect_0/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_1/bd_48ac_psr_aclk_0.xdc] for cell 'design_1_i/smartconnect_0/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_1/bd_48ac_psr_aclk_0.xdc] for cell 'design_1_i/smartconnect_0/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_11/bd_48ac_sarn_0_clocks.xdc] for cell 'design_1_i/smartconnect_0/inst/s00_nodes/s00_ar_node/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_11/bd_48ac_sarn_0_clocks.xdc:49]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_11/bd_48ac_sarn_0_clocks.xdc:52]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_11/bd_48ac_sarn_0_clocks.xdc:55]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_11/bd_48ac_sarn_0_clocks.xdc:59]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_11/bd_48ac_sarn_0_clocks.xdc:63]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_11/bd_48ac_sarn_0_clocks.xdc:66]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_11/bd_48ac_sarn_0_clocks.xdc:70]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_11/bd_48ac_sarn_0_clocks.xdc:73]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_11/bd_48ac_sarn_0_clocks.xdc:76]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_11/bd_48ac_sarn_0_clocks.xdc:79]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_11/bd_48ac_sarn_0_clocks.xdc:82]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_11/bd_48ac_sarn_0_clocks.xdc:85]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_11/bd_48ac_sarn_0_clocks.xdc:88]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_11/bd_48ac_sarn_0_clocks.xdc:91]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_11/bd_48ac_sarn_0_clocks.xdc:94]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_11/bd_48ac_sarn_0_clocks.xdc:97]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_11/bd_48ac_sarn_0_clocks.xdc:100]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_11/bd_48ac_sarn_0_clocks.xdc:104]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_11/bd_48ac_sarn_0_clocks.xdc:107]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_11/bd_48ac_sarn_0_clocks.xdc:110]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_11/bd_48ac_sarn_0_clocks.xdc:113]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_11/bd_48ac_sarn_0_clocks.xdc:116]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_11/bd_48ac_sarn_0_clocks.xdc:119]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-13' -to list should not be empty. [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_11/bd_48ac_sarn_0_clocks.xdc:122]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_11/bd_48ac_sarn_0_clocks.xdc:125]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_11/bd_48ac_sarn_0_clocks.xdc:128]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-13' -to list should not be empty. [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_11/bd_48ac_sarn_0_clocks.xdc:131]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_11/bd_48ac_sarn_0_clocks.xdc:134]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_11/bd_48ac_sarn_0_clocks.xdc:137]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_11/bd_48ac_sarn_0_clocks.xdc:140]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_11/bd_48ac_sarn_0_clocks.xdc:143]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_11/bd_48ac_sarn_0_clocks.xdc:146]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_11/bd_48ac_sarn_0_clocks.xdc:149]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_11/bd_48ac_sarn_0_clocks.xdc:152]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_11/bd_48ac_sarn_0_clocks.xdc:155]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_11/bd_48ac_sarn_0_clocks.xdc:161]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_11/bd_48ac_sarn_0_clocks.xdc:164]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_11/bd_48ac_sarn_0_clocks.xdc:167]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_11/bd_48ac_sarn_0_clocks.xdc:171]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_11/bd_48ac_sarn_0_clocks.xdc:174]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_11/bd_48ac_sarn_0_clocks.xdc:178]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_11/bd_48ac_sarn_0_clocks.xdc:181]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-13' -to list should not be empty. [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_11/bd_48ac_sarn_0_clocks.xdc:184]
+Finished Parsing XDC File [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_11/bd_48ac_sarn_0_clocks.xdc] for cell 'design_1_i/smartconnect_0/inst/s00_nodes/s00_ar_node/inst'
+Parsing XDC File [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_12/bd_48ac_srn_0_clocks.xdc] for cell 'design_1_i/smartconnect_0/inst/s00_nodes/s00_r_node/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_12/bd_48ac_srn_0_clocks.xdc:49]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_12/bd_48ac_srn_0_clocks.xdc:52]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_12/bd_48ac_srn_0_clocks.xdc:55]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_12/bd_48ac_srn_0_clocks.xdc:59]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_12/bd_48ac_srn_0_clocks.xdc:63]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_12/bd_48ac_srn_0_clocks.xdc:66]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_12/bd_48ac_srn_0_clocks.xdc:70]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_12/bd_48ac_srn_0_clocks.xdc:73]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_12/bd_48ac_srn_0_clocks.xdc:76]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_12/bd_48ac_srn_0_clocks.xdc:79]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_12/bd_48ac_srn_0_clocks.xdc:82]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_12/bd_48ac_srn_0_clocks.xdc:85]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_12/bd_48ac_srn_0_clocks.xdc:88]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_12/bd_48ac_srn_0_clocks.xdc:91]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_12/bd_48ac_srn_0_clocks.xdc:94]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_12/bd_48ac_srn_0_clocks.xdc:97]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_12/bd_48ac_srn_0_clocks.xdc:100]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_12/bd_48ac_srn_0_clocks.xdc:104]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_12/bd_48ac_srn_0_clocks.xdc:107]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_12/bd_48ac_srn_0_clocks.xdc:110]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_12/bd_48ac_srn_0_clocks.xdc:113]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_12/bd_48ac_srn_0_clocks.xdc:116]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_12/bd_48ac_srn_0_clocks.xdc:119]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-13' -to list should not be empty. [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_12/bd_48ac_srn_0_clocks.xdc:122]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_12/bd_48ac_srn_0_clocks.xdc:125]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_12/bd_48ac_srn_0_clocks.xdc:128]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-13' -to list should not be empty. [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_12/bd_48ac_srn_0_clocks.xdc:131]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_12/bd_48ac_srn_0_clocks.xdc:134]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_12/bd_48ac_srn_0_clocks.xdc:137]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_12/bd_48ac_srn_0_clocks.xdc:140]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_12/bd_48ac_srn_0_clocks.xdc:143]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_12/bd_48ac_srn_0_clocks.xdc:146]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_12/bd_48ac_srn_0_clocks.xdc:149]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_12/bd_48ac_srn_0_clocks.xdc:152]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_12/bd_48ac_srn_0_clocks.xdc:155]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_12/bd_48ac_srn_0_clocks.xdc:158]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_12/bd_48ac_srn_0_clocks.xdc:161]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_12/bd_48ac_srn_0_clocks.xdc:164]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_12/bd_48ac_srn_0_clocks.xdc:167]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_12/bd_48ac_srn_0_clocks.xdc:171]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_12/bd_48ac_srn_0_clocks.xdc:174]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_12/bd_48ac_srn_0_clocks.xdc:178]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_12/bd_48ac_srn_0_clocks.xdc:181]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-13' -to list should not be empty. [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_12/bd_48ac_srn_0_clocks.xdc:184]
+Finished Parsing XDC File [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_12/bd_48ac_srn_0_clocks.xdc] for cell 'design_1_i/smartconnect_0/inst/s00_nodes/s00_r_node/inst'
+Parsing XDC File [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_13/bd_48ac_sawn_0_clocks.xdc] for cell 'design_1_i/smartconnect_0/inst/s00_nodes/s00_aw_node/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_13/bd_48ac_sawn_0_clocks.xdc:49]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_13/bd_48ac_sawn_0_clocks.xdc:52]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_13/bd_48ac_sawn_0_clocks.xdc:55]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_13/bd_48ac_sawn_0_clocks.xdc:59]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_13/bd_48ac_sawn_0_clocks.xdc:63]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_13/bd_48ac_sawn_0_clocks.xdc:66]
+INFO: [Common 17-14] Message 'Vivado 12-180' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_13/bd_48ac_sawn_0_clocks.xdc:70]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_13/bd_48ac_sawn_0_clocks.xdc:70]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_13/bd_48ac_sawn_0_clocks.xdc:73]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_13/bd_48ac_sawn_0_clocks.xdc:76]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_13/bd_48ac_sawn_0_clocks.xdc:79]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_13/bd_48ac_sawn_0_clocks.xdc:82]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_13/bd_48ac_sawn_0_clocks.xdc:85]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_13/bd_48ac_sawn_0_clocks.xdc:88]
+INFO: [Common 17-14] Message 'Vivado_Tcl 4-921' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_13/bd_48ac_sawn_0_clocks.xdc:88]
+Finished Parsing XDC File [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_13/bd_48ac_sawn_0_clocks.xdc] for cell 'design_1_i/smartconnect_0/inst/s00_nodes/s00_aw_node/inst'
+Parsing XDC File [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_14/bd_48ac_swn_0_clocks.xdc] for cell 'design_1_i/smartconnect_0/inst/s00_nodes/s00_w_node/inst'
+Finished Parsing XDC File [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_14/bd_48ac_swn_0_clocks.xdc] for cell 'design_1_i/smartconnect_0/inst/s00_nodes/s00_w_node/inst'
+Parsing XDC File [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_15/bd_48ac_sbn_0_clocks.xdc] for cell 'design_1_i/smartconnect_0/inst/s00_nodes/s00_b_node/inst'
+Finished Parsing XDC File [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_15/bd_48ac_sbn_0_clocks.xdc] for cell 'design_1_i/smartconnect_0/inst/s00_nodes/s00_b_node/inst'
+Parsing XDC File [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_20/bd_48ac_sarn_1_clocks.xdc] for cell 'design_1_i/smartconnect_0/inst/s01_nodes/s01_ar_node/inst'
+Finished Parsing XDC File [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_20/bd_48ac_sarn_1_clocks.xdc] for cell 'design_1_i/smartconnect_0/inst/s01_nodes/s01_ar_node/inst'
+Parsing XDC File [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_21/bd_48ac_srn_1_clocks.xdc] for cell 'design_1_i/smartconnect_0/inst/s01_nodes/s01_r_node/inst'
+Finished Parsing XDC File [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_21/bd_48ac_srn_1_clocks.xdc] for cell 'design_1_i/smartconnect_0/inst/s01_nodes/s01_r_node/inst'
+Parsing XDC File [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_26/bd_48ac_sawn_1_clocks.xdc] for cell 'design_1_i/smartconnect_0/inst/s02_nodes/s02_aw_node/inst'
+Finished Parsing XDC File [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_26/bd_48ac_sawn_1_clocks.xdc] for cell 'design_1_i/smartconnect_0/inst/s02_nodes/s02_aw_node/inst'
+Parsing XDC File [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_27/bd_48ac_swn_1_clocks.xdc] for cell 'design_1_i/smartconnect_0/inst/s02_nodes/s02_w_node/inst'
+Finished Parsing XDC File [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_27/bd_48ac_swn_1_clocks.xdc] for cell 'design_1_i/smartconnect_0/inst/s02_nodes/s02_w_node/inst'
+Parsing XDC File [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_28/bd_48ac_sbn_1_clocks.xdc] for cell 'design_1_i/smartconnect_0/inst/s02_nodes/s02_b_node/inst'
+Finished Parsing XDC File [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_28/bd_48ac_sbn_1_clocks.xdc] for cell 'design_1_i/smartconnect_0/inst/s02_nodes/s02_b_node/inst'
+Parsing XDC File [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_30/bd_48ac_m00arn_0_clocks.xdc] for cell 'design_1_i/smartconnect_0/inst/m00_nodes/m00_ar_node/inst'
+Finished Parsing XDC File [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_30/bd_48ac_m00arn_0_clocks.xdc] for cell 'design_1_i/smartconnect_0/inst/m00_nodes/m00_ar_node/inst'
+Parsing XDC File [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_31/bd_48ac_m00rn_0_clocks.xdc] for cell 'design_1_i/smartconnect_0/inst/m00_nodes/m00_r_node/inst'
+Finished Parsing XDC File [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_31/bd_48ac_m00rn_0_clocks.xdc] for cell 'design_1_i/smartconnect_0/inst/m00_nodes/m00_r_node/inst'
+Parsing XDC File [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_32/bd_48ac_m00awn_0_clocks.xdc] for cell 'design_1_i/smartconnect_0/inst/m00_nodes/m00_aw_node/inst'
+Finished Parsing XDC File [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_32/bd_48ac_m00awn_0_clocks.xdc] for cell 'design_1_i/smartconnect_0/inst/m00_nodes/m00_aw_node/inst'
+Parsing XDC File [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_33/bd_48ac_m00wn_0_clocks.xdc] for cell 'design_1_i/smartconnect_0/inst/m00_nodes/m00_w_node/inst'
+Finished Parsing XDC File [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_33/bd_48ac_m00wn_0_clocks.xdc] for cell 'design_1_i/smartconnect_0/inst/m00_nodes/m00_w_node/inst'
+Parsing XDC File [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_34/bd_48ac_m00bn_0_clocks.xdc] for cell 'design_1_i/smartconnect_0/inst/m00_nodes/m00_b_node/inst'
+Finished Parsing XDC File [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_34/bd_48ac_m00bn_0_clocks.xdc] for cell 'design_1_i/smartconnect_0/inst/m00_nodes/m00_b_node/inst'
+Parsing XDC File [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/smartconnect.xdc] for cell 'design_1_i/smartconnect_0/inst'
+WARNING: [Vivado_Tcl 4-919] Waiver ID 'CDC-1' -from list should not be empty. [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/smartconnect.xdc:1]
+Finished Parsing XDC File [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/smartconnect.xdc] for cell 'design_1_i/smartconnect_0/inst'
+Parsing XDC File [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_3/design_1_clk_wiz_1_3_board.xdc] for cell 'design_1_i/clk_wiz_1/inst'
+Finished Parsing XDC File [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_3/design_1_clk_wiz_1_3_board.xdc] for cell 'design_1_i/clk_wiz_1/inst'
+Parsing XDC File [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_3/design_1_clk_wiz_1_3.xdc] for cell 'design_1_i/clk_wiz_1/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_3/design_1_clk_wiz_1_3.xdc:54]
+INFO: [Timing 38-2] Deriving generated clocks [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_3/design_1_clk_wiz_1_3.xdc:54]
+get_clocks: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1977.102 ; gain = 588.477
+Finished Parsing XDC File [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_3/design_1_clk_wiz_1_3.xdc] for cell 'design_1_i/clk_wiz_1/inst'
+Parsing XDC File [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_3/design_1_rst_clk_wiz_1_100M_3_board.xdc] for cell 'design_1_i/rst_clk_wiz_1_100M/U0'
+Finished Parsing XDC File [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_3/design_1_rst_clk_wiz_1_100M_3_board.xdc] for cell 'design_1_i/rst_clk_wiz_1_100M/U0'
+Parsing XDC File [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_3/design_1_rst_clk_wiz_1_100M_3.xdc] for cell 'design_1_i/rst_clk_wiz_1_100M/U0'
+Finished Parsing XDC File [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_3/design_1_rst_clk_wiz_1_100M_3.xdc] for cell 'design_1_i/rst_clk_wiz_1_100M/U0'
+Parsing XDC File [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_riscv_3/design_1_microblaze_0_riscv_3.xdc] for cell 'design_1_i/microblaze_0/U0'
+Finished Parsing XDC File [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_riscv_3/design_1_microblaze_0_riscv_3.xdc] for cell 'design_1_i/microblaze_0/U0'
+Parsing XDC File [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_axi_dma_0_1/design_1_axi_dma_0_1.xdc] for cell 'design_1_i/axi_dma_0/U0'
+WARNING: [Vivado_Tcl 4-919] Waiver ID 'CDC-1' -from list should not be empty. [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_axi_dma_0_1/design_1_axi_dma_0_1.xdc:61]
+Finished Parsing XDC File [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_axi_dma_0_1/design_1_axi_dma_0_1.xdc] for cell 'design_1_i/axi_dma_0/U0'
+Parsing XDC File [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_lvds2axis_0_0/src/fifo_generator_0/fifo_generator_0.xdc] for cell 'design_1_i/lvds2axis_0/U0/DUT_1/DUT_2/U0'
+Finished Parsing XDC File [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_lvds2axis_0_0/src/fifo_generator_0/fifo_generator_0.xdc] for cell 'design_1_i/lvds2axis_0/U0/DUT_1/DUT_2/U0'
+Parsing XDC File [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_ila_0_0/ila_v6_2/constraints/ila_impl.xdc] for cell 'design_1_i/ila_0/U0'
+Finished Parsing XDC File [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_ila_0_0/ila_v6_2/constraints/ila_impl.xdc] for cell 'design_1_i/ila_0/U0'
+Parsing XDC File [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_ila_0_0/ila_v6_2/constraints/ila.xdc] for cell 'design_1_i/ila_0/U0'
+Finished Parsing XDC File [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_ila_0_0/ila_v6_2/constraints/ila.xdc] for cell 'design_1_i/ila_0/U0'
+Parsing XDC File [C:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.srcs/constrs_1/new/config.xdc]
+Finished Parsing XDC File [C:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.srcs/constrs_1/new/config.xdc]
+Parsing XDC File [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_mdm_1_riscv_3/design_1_mdm_1_riscv_3.xdc] for cell 'design_1_i/mdm_1/U0'
+INFO: [Timing 38-2] Deriving generated clocks [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_mdm_1_riscv_3/design_1_mdm_1_riscv_3.xdc:6]
+Finished Parsing XDC File [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_mdm_1_riscv_3/design_1_mdm_1_riscv_3.xdc] for cell 'design_1_i/mdm_1/U0'
+Parsing XDC File [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_axi_dma_0_1/design_1_axi_dma_0_1_clocks.xdc] for cell 'design_1_i/axi_dma_0/U0'
+Finished Parsing XDC File [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_axi_dma_0_1/design_1_axi_dma_0_1_clocks.xdc] for cell 'design_1_i/axi_dma_0/U0'
+Parsing XDC File [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_lvds2axis_0_0/src/fifo_generator_0/fifo_generator_0_clocks.xdc] for cell 'design_1_i/lvds2axis_0/U0/DUT_1/DUT_2/U0'
+Finished Parsing XDC File [c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_lvds2axis_0_0/src/fifo_generator_0/fifo_generator_0_clocks.xdc] for cell 'design_1_i/lvds2axis_0/U0/DUT_1/DUT_2/U0'
+INFO: [Project 1-1714] 68 XPM XDC files have been applied to the design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Generating merged BMM file for the design top 'design_1_wrapper'...
+INFO: [Memdata 28-144] Successfully populated the BRAM INIT strings from the following elf files: c:/Vivado_Project/MAM_Project_Basys3/MAM_Project_Basys3.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_riscv_3/data/riscv_bootloop.elf 
+INFO: [Project 1-1687] 693 scoped IP constraints or related sub-commands were skipped due to synthesis logic optimizations usually triggered by constant connectivity or unconnected output pins. To review the skipped constraints and messages, run the command 'set_param netlist.IPMsgFiltering false' before opening the design.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 1977.102 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 300 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 80 instances
+  IOBUFDS => IOBUFDS (IBUFDS, OBUFTDS): 6 instances
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 32 instances
+  RAM16X1D => RAM32X1D (RAMD32(x2)): 2 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 139 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 41 instances
+
+37 Infos, 106 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:29 . Memory (MB): peak = 1977.102 ; gain = 1314.508
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net design_1_i/lvds2axis_0/U0/DUT_1/IOBUFDS_inst_3/IOB has multiple drivers: design_1_i/lvds2axis_0/U0/DUT_1/IOBUFDS_inst_3/OBUFTDS/O, and design_1_i/lvds2axis_0/U0/DUT_1/IOBUFDS_inst_3/OBUFTDS/OB.
+INFO: [Project 1-461] DRC finished with 1 Errors, 1 Warnings
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+ERROR: [Vivado_Tcl 4-78] Error(s) found during DRC. Opt_design not run.
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1977.102 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+42 Infos, 106 Warnings, 0 Critical Warnings and 2 Errors encountered.
+opt_design failed
+ERROR: [Common 17-39] 'opt_design' failed due to earlier errors.
+
+INFO: [Common 17-206] Exiting Vivado at Thu Apr 16 16:57:08 2026...

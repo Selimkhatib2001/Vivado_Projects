@@ -1,0 +1,4 @@
+Time resolution is 1 ps
+Failure: SIM DONE
+Time: 10050 ns  Iteration: 0  Process: /lap_timer_tb/stim_proc  File: D:/Vivado_Projects/Digital_Stopwatch_Timer/Digital_Stopwatch_Timer.srcs/sim_1/new/lap_timer_tb.vhd
+$finish called at time : 10050 ns : File "D:/Vivado_Projects/Digital_Stopwatch_Timer/Digital_Stopwatch_Timer.srcs/sim_1/new/lap_timer_tb.vhd" Line 112

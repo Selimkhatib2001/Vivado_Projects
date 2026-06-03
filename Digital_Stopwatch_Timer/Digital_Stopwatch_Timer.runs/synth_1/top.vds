@@ -1,0 +1,377 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Mon Jan 19 10:31:08 2026
+# Process ID         : 20808
+# Current directory  : D:/Vivado_Projects/Digital_Stopwatch_Timer/Digital_Stopwatch_Timer.runs/synth_1
+# Command line       : vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file           : D:/Vivado_Projects/Digital_Stopwatch_Timer/Digital_Stopwatch_Timer.runs/synth_1/top.vds
+# Journal file       : D:/Vivado_Projects/Digital_Stopwatch_Timer/Digital_Stopwatch_Timer.runs/synth_1\vivado.jou
+# Running On         : PC
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : AMD Ryzen 7 PRO 8840HS w/ Radeon 780M Graphics 
+# CPU Frequency      : 3294 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 12527 MB
+# Swap memory        : 12527 MB
+# Total Virtual      : 25054 MB
+# Available Virtual  : 7834 MB
+#-----------------------------------------------------------
+source top.tcl -notrace
+create_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:09 . Memory (MB): peak = 580.809 ; gain = 219.219
+Command: read_checkpoint -auto_incremental -incremental D:/Vivado_Projects/Digital_Stopwatch_Timer/Digital_Stopwatch_Timer.srcs/utils_1/imports/synth_1/top.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from D:/Vivado_Projects/Digital_Stopwatch_Timer/Digital_Stopwatch_Timer.srcs/utils_1/imports/synth_1/top.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top top -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 20212
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1455.816 ; gain = 542.754
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top' [D:/Vivado_Projects/Digital_Stopwatch_Timer/Digital_Stopwatch_Timer.srcs/sources_1/new/top.vhd:19]
+	Parameter clk_freq bound to: 100000000 - type: integer 
+	Parameter stable_time bound to: 10 - type: integer 
+INFO: [Synth 8-3491] module 'rise_fall_deb' declared at 'D:/Vivado_Projects/Digital_Stopwatch_Timer/Digital_Stopwatch_Timer.srcs/sources_1/new/deb_button.vhd:5' bound to instance 'deb_inst' of component 'rise_fall_deb' [D:/Vivado_Projects/Digital_Stopwatch_Timer/Digital_Stopwatch_Timer.srcs/sources_1/new/top.vhd:134]
+INFO: [Synth 8-638] synthesizing module 'rise_fall_deb' [D:/Vivado_Projects/Digital_Stopwatch_Timer/Digital_Stopwatch_Timer.srcs/sources_1/new/deb_button.vhd:19]
+	Parameter clk_freq bound to: 100000000 - type: integer 
+	Parameter stable_time bound to: 10 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'rise_fall_deb' (0#1) [D:/Vivado_Projects/Digital_Stopwatch_Timer/Digital_Stopwatch_Timer.srcs/sources_1/new/deb_button.vhd:19]
+	Parameter clk_freq bound to: 100000000 - type: integer 
+	Parameter stable_time bound to: 10 - type: integer 
+INFO: [Synth 8-3491] module 'rise_fall_deb' declared at 'D:/Vivado_Projects/Digital_Stopwatch_Timer/Digital_Stopwatch_Timer.srcs/sources_1/new/deb_button.vhd:5' bound to instance 'deb_inst' of component 'rise_fall_deb' [D:/Vivado_Projects/Digital_Stopwatch_Timer/Digital_Stopwatch_Timer.srcs/sources_1/new/top.vhd:134]
+	Parameter clk_freq bound to: 100000000 - type: integer 
+	Parameter stable_time bound to: 10 - type: integer 
+INFO: [Synth 8-3491] module 'rise_fall_deb' declared at 'D:/Vivado_Projects/Digital_Stopwatch_Timer/Digital_Stopwatch_Timer.srcs/sources_1/new/deb_button.vhd:5' bound to instance 'deb_inst' of component 'rise_fall_deb' [D:/Vivado_Projects/Digital_Stopwatch_Timer/Digital_Stopwatch_Timer.srcs/sources_1/new/top.vhd:134]
+	Parameter clk_freq bound to: 100000000 - type: integer 
+	Parameter stable_time bound to: 10 - type: integer 
+INFO: [Synth 8-3491] module 'rise_fall_deb' declared at 'D:/Vivado_Projects/Digital_Stopwatch_Timer/Digital_Stopwatch_Timer.srcs/sources_1/new/deb_button.vhd:5' bound to instance 'deb_inst' of component 'rise_fall_deb' [D:/Vivado_Projects/Digital_Stopwatch_Timer/Digital_Stopwatch_Timer.srcs/sources_1/new/top.vhd:134]
+	Parameter clk_freq bound to: 100000000 - type: integer 
+	Parameter stable_time bound to: 10 - type: integer 
+INFO: [Synth 8-3491] module 'rise_fall_deb' declared at 'D:/Vivado_Projects/Digital_Stopwatch_Timer/Digital_Stopwatch_Timer.srcs/sources_1/new/deb_button.vhd:5' bound to instance 'deb_inst' of component 'rise_fall_deb' [D:/Vivado_Projects/Digital_Stopwatch_Timer/Digital_Stopwatch_Timer.srcs/sources_1/new/top.vhd:134]
+INFO: [Synth 8-226] default block is never used [D:/Vivado_Projects/Digital_Stopwatch_Timer/Digital_Stopwatch_Timer.srcs/sources_1/new/top.vhd:152]
+	Parameter CLK_FREQ bound to: 100000000 - type: integer 
+INFO: [Synth 8-3491] module 'stopwatch' declared at 'D:/Vivado_Projects/Digital_Stopwatch_Timer/Digital_Stopwatch_Timer.srcs/sources_1/new/stopwatch.vhd:5' bound to instance 'inst_stopwatch' of component 'stopwatch' [D:/Vivado_Projects/Digital_Stopwatch_Timer/Digital_Stopwatch_Timer.srcs/sources_1/new/top.vhd:163]
+INFO: [Synth 8-638] synthesizing module 'stopwatch' [D:/Vivado_Projects/Digital_Stopwatch_Timer/Digital_Stopwatch_Timer.srcs/sources_1/new/stopwatch.vhd:18]
+	Parameter CLK_FREQ bound to: 100000000 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'stopwatch' (0#1) [D:/Vivado_Projects/Digital_Stopwatch_Timer/Digital_Stopwatch_Timer.srcs/sources_1/new/stopwatch.vhd:18]
+	Parameter CLK_FREQ bound to: 100000000 - type: integer 
+INFO: [Synth 8-3491] module 'countdown' declared at 'D:/Vivado_Projects/Digital_Stopwatch_Timer/Digital_Stopwatch_Timer.srcs/sources_1/new/countdown.vhd:6' bound to instance 'insta_countdown' of component 'countdown' [D:/Vivado_Projects/Digital_Stopwatch_Timer/Digital_Stopwatch_Timer.srcs/sources_1/new/top.vhd:173]
+INFO: [Synth 8-638] synthesizing module 'countdown' [D:/Vivado_Projects/Digital_Stopwatch_Timer/Digital_Stopwatch_Timer.srcs/sources_1/new/countdown.vhd:20]
+	Parameter CLK_FREQ bound to: 100000000 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'countdown' (0#1) [D:/Vivado_Projects/Digital_Stopwatch_Timer/Digital_Stopwatch_Timer.srcs/sources_1/new/countdown.vhd:20]
+	Parameter CLK_FREQ bound to: 100000000 - type: integer 
+INFO: [Synth 8-3491] module 'clock' declared at 'D:/Vivado_Projects/Digital_Stopwatch_Timer/Digital_Stopwatch_Timer.srcs/sources_1/new/clock.vhd:5' bound to instance 'inst_clock' of component 'clock' [D:/Vivado_Projects/Digital_Stopwatch_Timer/Digital_Stopwatch_Timer.srcs/sources_1/new/top.vhd:184]
+INFO: [Synth 8-638] synthesizing module 'clock' [D:/Vivado_Projects/Digital_Stopwatch_Timer/Digital_Stopwatch_Timer.srcs/sources_1/new/clock.vhd:18]
+	Parameter CLK_FREQ bound to: 100000000 - type: integer 
+WARNING: [Synth 8-614] signal 'v_h12' is read in the process but is not in the sensitivity list [D:/Vivado_Projects/Digital_Stopwatch_Timer/Digital_Stopwatch_Timer.srcs/sources_1/new/clock.vhd:105]
+INFO: [Synth 8-256] done synthesizing module 'clock' (0#1) [D:/Vivado_Projects/Digital_Stopwatch_Timer/Digital_Stopwatch_Timer.srcs/sources_1/new/clock.vhd:18]
+	Parameter CLK_FREQ bound to: 100000000 - type: integer 
+INFO: [Synth 8-3491] module 'lap_timer' declared at 'D:/Vivado_Projects/Digital_Stopwatch_Timer/Digital_Stopwatch_Timer.srcs/sources_1/new/lap_timer.vhd:5' bound to instance 'inst_lap_timer' of component 'lap_timer' [D:/Vivado_Projects/Digital_Stopwatch_Timer/Digital_Stopwatch_Timer.srcs/sources_1/new/top.vhd:195]
+INFO: [Synth 8-638] synthesizing module 'lap_timer' [D:/Vivado_Projects/Digital_Stopwatch_Timer/Digital_Stopwatch_Timer.srcs/sources_1/new/lap_timer.vhd:20]
+	Parameter CLK_FREQ bound to: 100000000 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'lap_timer' (0#1) [D:/Vivado_Projects/Digital_Stopwatch_Timer/Digital_Stopwatch_Timer.srcs/sources_1/new/lap_timer.vhd:20]
+INFO: [Synth 8-226] default block is never used [D:/Vivado_Projects/Digital_Stopwatch_Timer/Digital_Stopwatch_Timer.srcs/sources_1/new/top.vhd:212]
+	Parameter CLK_FREQ bound to: 100000000 - type: integer 
+INFO: [Synth 8-3491] module 'display' declared at 'D:/Vivado_Projects/Digital_Stopwatch_Timer/Digital_Stopwatch_Timer.srcs/sources_1/new/display.vhd:6' bound to instance 'inst_main_display' of component 'display' [D:/Vivado_Projects/Digital_Stopwatch_Timer/Digital_Stopwatch_Timer.srcs/sources_1/new/top.vhd:234]
+INFO: [Synth 8-638] synthesizing module 'display' [D:/Vivado_Projects/Digital_Stopwatch_Timer/Digital_Stopwatch_Timer.srcs/sources_1/new/display.vhd:20]
+	Parameter CLK_FREQ bound to: 100000000 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'display' (0#1) [D:/Vivado_Projects/Digital_Stopwatch_Timer/Digital_Stopwatch_Timer.srcs/sources_1/new/display.vhd:20]
+	Parameter CLK_FREQ bound to: 100000000 - type: integer 
+INFO: [Synth 8-3491] module 'lap_disp' declared at 'D:/Vivado_Projects/Digital_Stopwatch_Timer/Digital_Stopwatch_Timer.srcs/sources_1/new/lap_disp.vhd:5' bound to instance 'inst_lap_display' of component 'lap_disp' [D:/Vivado_Projects/Digital_Stopwatch_Timer/Digital_Stopwatch_Timer.srcs/sources_1/new/top.vhd:246]
+INFO: [Synth 8-638] synthesizing module 'lap_disp' [D:/Vivado_Projects/Digital_Stopwatch_Timer/Digital_Stopwatch_Timer.srcs/sources_1/new/lap_disp.vhd:22]
+	Parameter CLK_FREQ bound to: 100000000 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'lap_disp' (0#1) [D:/Vivado_Projects/Digital_Stopwatch_Timer/Digital_Stopwatch_Timer.srcs/sources_1/new/lap_disp.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'top' (0#1) [D:/Vivado_Projects/Digital_Stopwatch_Timer/Digital_Stopwatch_Timer.srcs/sources_1/new/top.vhd:19]
+WARNING: [Synth 8-6014] Unused sequential element flag_reg was removed.  [D:/Vivado_Projects/Digital_Stopwatch_Timer/Digital_Stopwatch_Timer.srcs/sources_1/new/countdown.vhd:80]
+WARNING: [Synth 8-6014] Unused sequential element five_sec_reg was removed.  [D:/Vivado_Projects/Digital_Stopwatch_Timer/Digital_Stopwatch_Timer.srcs/sources_1/new/countdown.vhd:57]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1580.996 ; gain = 667.934
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1580.996 ; gain = 667.934
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1580.996 ; gain = 667.934
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 1580.996 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/Vivado_Projects/Digital_Stopwatch_Timer/Digital_Stopwatch_Timer.srcs/constrs_1/new/config.xdc]
+Finished Parsing XDC File [D:/Vivado_Projects/Digital_Stopwatch_Timer/Digital_Stopwatch_Timer.srcs/constrs_1/new/config.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Vivado_Projects/Digital_Stopwatch_Timer/Digital_Stopwatch_Timer.srcs/constrs_1/new/config.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1597.102 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1597.102 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1597.102 ; gain = 684.039
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1597.102 ; gain = 684.039
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1597.102 ; gain = 684.039
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'countdown'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                   s_set |                               00 |                               00
+             s_countdown |                               01 |                               01
+                  s_stop |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'countdown'
+WARNING: [Synth 8-327] inferring latch for variable 'v_h12_reg' [D:/Vivado_Projects/Digital_Stopwatch_Timer/Digital_Stopwatch_Timer.srcs/sources_1/new/clock.vhd:111]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1597.102 ; gain = 684.039
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   27 Bit       Adders := 3     
+	   2 Input   17 Bit       Adders := 2     
+	   2 Input    8 Bit       Adders := 3     
+	   2 Input    7 Bit       Adders := 2     
+	   2 Input    6 Bit       Adders := 9     
+	   2 Input    5 Bit       Adders := 5     
+	   2 Input    4 Bit       Adders := 4     
++---XORs : 
+	   2 Input      1 Bit         XORs := 5     
++---Registers : 
+	               27 Bit    Registers := 3     
+	               17 Bit    Registers := 2     
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 3     
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 6     
+	                5 Bit    Registers := 4     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 5     
+	                1 Bit    Registers := 30    
++---RAMs : 
+	               80 Bit	(10 X 8 bit)          RAMs := 3     
++---Muxes : 
+	   3 Input   16 Bit        Muxes := 1     
+	   4 Input   16 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 18    
+	   7 Input    8 Bit        Muxes := 2     
+	  10 Input    8 Bit        Muxes := 3     
+	  12 Input    8 Bit        Muxes := 3     
+	  13 Input    8 Bit        Muxes := 1     
+	   4 Input    8 Bit        Muxes := 3     
+	   2 Input    7 Bit        Muxes := 1     
+	   3 Input    7 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 8     
+	   3 Input    6 Bit        Muxes := 3     
+	   2 Input    5 Bit        Muxes := 7     
+	   4 Input    5 Bit        Muxes := 3     
+	   2 Input    4 Bit        Muxes := 3     
+	   3 Input    2 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 3     
+	   4 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 30    
+	   3 Input    1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 1715.082 ; gain = 802.020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++---------------+-----------------+-----------+----------------------+-------------+
+|Module Name    | RTL Object      | Inference | Size (Depth x Width) | Primitives  | 
++---------------+-----------------+-----------+----------------------+-------------+
+|inst_lap_timer | lap_sec_arr_reg | Implied   | 16 x 8               | RAM32M x 2  | 
+|inst_lap_timer | lap_min_arr_reg | Implied   | 16 x 8               | RAM32M x 2  | 
+|inst_lap_timer | lap_hrs_arr_reg | Implied   | 16 x 8               | RAM32M x 2  | 
++---------------+-----------------+-----------+----------------------+-------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:45 ; elapsed = 00:00:48 . Memory (MB): peak = 1787.219 ; gain = 874.156
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:47 ; elapsed = 00:00:50 . Memory (MB): peak = 1818.719 ; gain = 905.656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++---------------+-----------------+-----------+----------------------+-------------+
+|Module Name    | RTL Object      | Inference | Size (Depth x Width) | Primitives  | 
++---------------+-----------------+-----------+----------------------+-------------+
+|inst_lap_timer | lap_sec_arr_reg | Implied   | 16 x 8               | RAM32M x 2  | 
+|inst_lap_timer | lap_min_arr_reg | Implied   | 16 x 8               | RAM32M x 2  | 
+|inst_lap_timer | lap_hrs_arr_reg | Implied   | 16 x 8               | RAM32M x 2  | 
++---------------+-----------------+-----------+----------------------+-------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:47 ; elapsed = 00:00:50 . Memory (MB): peak = 1843.207 ; gain = 930.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:53 ; elapsed = 00:00:56 . Memory (MB): peak = 2049.496 ; gain = 1136.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:53 ; elapsed = 00:00:56 . Memory (MB): peak = 2049.496 ; gain = 1136.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:53 ; elapsed = 00:00:57 . Memory (MB): peak = 2049.496 ; gain = 1136.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:53 ; elapsed = 00:00:57 . Memory (MB): peak = 2049.496 ; gain = 1136.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:53 ; elapsed = 00:00:57 . Memory (MB): peak = 2049.496 ; gain = 1136.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:53 ; elapsed = 00:00:57 . Memory (MB): peak = 2049.496 ; gain = 1136.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    82|
+|3     |LUT1   |    26|
+|4     |LUT2   |   146|
+|5     |LUT3   |    91|
+|6     |LUT4   |   102|
+|7     |LUT5   |   142|
+|8     |LUT6   |   220|
+|9     |RAM32M |     4|
+|10    |FDRE   |   432|
+|11    |FDSE   |     7|
+|12    |LD     |     5|
+|13    |IBUF   |     8|
+|14    |OBUF   |    32|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:53 ; elapsed = 00:00:57 . Memory (MB): peak = 2049.496 ; gain = 1136.434
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:40 ; elapsed = 00:00:54 . Memory (MB): peak = 2049.496 ; gain = 1120.328
+Synthesis Optimization Complete : Time (s): cpu = 00:00:54 ; elapsed = 00:00:57 . Memory (MB): peak = 2049.496 ; gain = 1136.434
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 2058.672 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 91 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 5 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2062.375 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 9 instances were transformed.
+  LD => LDCE (inverted pins: G): 5 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 4 instances
+
+Synth Design complete | Checksum: a6972639
+INFO: [Common 17-83] Releasing license: Synthesis
+52 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:00 ; elapsed = 00:01:06 . Memory (MB): peak = 2062.375 ; gain = 1338.129
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 2062.375 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/Vivado_Projects/Digital_Stopwatch_Timer/Digital_Stopwatch_Timer.runs/synth_1/top.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Jan 19 10:32:36 2026...

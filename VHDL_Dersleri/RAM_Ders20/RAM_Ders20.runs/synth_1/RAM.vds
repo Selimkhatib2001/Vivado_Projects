@@ -1,0 +1,55 @@
+#-----------------------------------------------------------
+# Vivado v2024.1.1 (64-bit)
+# SW Build 5094488 on Fri Jun 14 08:59:21 MDT 2024
+# IP Build 5091682 on Fri Jun 14 16:55:04 MDT 2024
+# SharedData Build 5094118 on Fri Jun 14 01:09:43 MDT 2024
+# Start of session at: Mon Jun 23 01:18:40 2025
+# Process ID: 6156
+# Current directory: C:/Vivado_Project/VHDL_Dersleri/RAM_Ders20/RAM_Ders20.runs/synth_1
+# Command line: vivado.exe -log RAM.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source RAM.tcl
+# Log file: C:/Vivado_Project/VHDL_Dersleri/RAM_Ders20/RAM_Ders20.runs/synth_1/RAM.vds
+# Journal file: C:/Vivado_Project/VHDL_Dersleri/RAM_Ders20/RAM_Ders20.runs/synth_1\vivado.jou
+# Running On        :Mango
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :26100
+# Processor Detail  :12th Gen Intel(R) Core(TM) i7-12700H
+# CPU Frequency     :2688 MHz
+# CPU Physical cores:14
+# CPU Logical cores :20
+# Host memory       :16780 MB
+# Swap memory       :6174 MB
+# Total Virtual     :22954 MB
+# Available Virtual :6871 MB
+#-----------------------------------------------------------
+source RAM.tcl -notrace
+create_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 554.051 ; gain = 238.617
+Command: read_checkpoint -auto_incremental -incremental C:/Vivado_Project/VHDL_Dersleri/RAM_Ders20/RAM_Ders20.srcs/utils_1/imports/synth_1/RAM.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Vivado_Project/VHDL_Dersleri/RAM_Ders20/RAM_Ders20.srcs/utils_1/imports/synth_1/RAM.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top RAM -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 23720
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1011.426 ; gain = 445.582
+---------------------------------------------------------------------------------
+ERROR: [Synth 8-10097] type error near w_e ; current type std_logic; expected type std_logic_vector [C:/Vivado_Project/VHDL_Dersleri/RAM_Ders20/RAM_Ders20.srcs/sources_1/new/RAM.vhd:42]
+ERROR: [Synth 8-10097] type error near w_e ; current type std_logic; expected type std_logic_vector [C:/Vivado_Project/VHDL_Dersleri/RAM_Ders20/RAM_Ders20.srcs/sources_1/new/RAM.vhd:42]
+INFO: [Synth 8-11252] unit 'behavioral' is ignored due to previous errors [C:/Vivado_Project/VHDL_Dersleri/RAM_Ders20/RAM_Ders20.srcs/sources_1/new/RAM.vhd:46]
+INFO: [Synth 8-10443] VHDL file 'C:/Vivado_Project/VHDL_Dersleri/RAM_Ders20/RAM_Ders20.srcs/sources_1/new/RAM.vhd' is ignored due to errors
+INFO: [Synth 8-638] synthesizing module 'RAM' [C:/Vivado_Project/VHDL_Dersleri/RAM_Ders20/RAM_Ders20.srcs/sources_1/new/RAM.vhd:5]
+INFO: [Synth 8-256] done synthesizing module 'RAM' (0#1) [C:/Vivado_Project/VHDL_Dersleri/RAM_Ders20/RAM_Ders20.srcs/sources_1/new/RAM.vhd:5]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1120.004 ; gain = 554.160
+---------------------------------------------------------------------------------
+synthesize failed
+INFO: [Common 17-83] Releasing license: Synthesis
+13 Infos, 0 Warnings, 0 Critical Warnings and 3 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Vivado Synthesis failed
+INFO: [Common 17-206] Exiting Vivado at Mon Jun 23 01:19:13 2025...

@@ -1,0 +1,156 @@
+#include "xaxidma.h"
+#include "xparameters.h"
+#include "xil_exception.h"
+#include "xdebug.h"
+#include "xscugic.h"
+
+#define DMA_DEV_ID		XPAR_AXIDMA_0_DEVICE_ID
+#define MEM_BASE_ADDR		0x01000000
+#define RX_INTR_ID		XPAR_FABRIC_AXIDMA_0_S2MM_INTROUT_VEC_ID
+#define TX_INTR_ID		XPAR_FABRIC_AXIDMA_0_MM2S_INTROUT_VEC_ID
+#define TX_BUFFER_BASE		(MEM_BASE_ADDR + 0x00100000)
+#define RX_BUFFER_BASE		(MEM_BASE_ADDR + 0x00300000)
+
+#define INTC_DEVICE_ID		XPAR_SCUGIC_SINGLE_DEVICE_ID
+#define INTC			XScuGic
+#define INTC_HANDLER		XScuGic_InterruptHandler
+
+#define TEST_START_VALUE	0xC
+#define MAX_PKT_LEN		0x100
+#define NUMBER_OF_TRANSFERS	10
+
+static void TxIntrHandler(void *Callback);
+static void RxIntrHandler(void *Callback);
+static int SetupIntrSystem(INTC * IntcInstancePtr, XAxiDma * AxiDmaPtr, u16 TxIntrId, u16 RxIntrId);
+
+static XAxiDma AxiDma;
+static INTC Intc;
+
+volatile int TxDone, RxDone, Error;
+
+int main(void)
+{
+	int Status, Index;
+	XAxiDma_Config *Config;
+	u8 *TxBufferPtr = (u8 *)TX_BUFFER_BASE;
+	u8 *RxBufferPtr = (u8 *)RX_BUFFER_BASE;
+	u8 Value = TEST_START_VALUE;
+
+	xil_printf("\r\n--- Entering main() --- \r\n");
+
+	Config = XAxiDma_LookupConfig(DMA_DEV_ID);
+	if (!Config) {
+		xil_printf("No config found for %d\r\n", DMA_DEV_ID);
+		return XST_FAILURE;
+	}
+
+	Status = XAxiDma_CfgInitialize(&AxiDma, Config);
+	if (Status != XST_SUCCESS) {
+		xil_printf("Initialization failed %d\r\n", Status);
+		return XST_FAILURE;
+	}
+
+	if(XAxiDma_HasSg(&AxiDma)){
+		xil_printf("Device configured as SG mode \r\n");
+		return XST_FAILURE;
+	}
+
+	Status = SetupIntrSystem(&Intc, &AxiDma, TX_INTR_ID, RX_INTR_ID);
+	if (Status != XST_SUCCESS) {
+		xil_printf("Failed intr setup\r\n");
+		return XST_FAILURE;
+	}
+
+	XAxiDma_IntrDisable(&AxiDma, XAXIDMA_IRQ_ALL_MASK, XAXIDMA_DMA_TO_DEVICE);
+	XAxiDma_IntrDisable(&AxiDma, XAXIDMA_IRQ_ALL_MASK, XAXIDMA_DEVICE_TO_DMA);
+	XAxiDma_IntrEnable(&AxiDma, XAXIDMA_IRQ_ALL_MASK, XAXIDMA_DMA_TO_DEVICE);
+	XAxiDma_IntrEnable(&AxiDma, XAXIDMA_IRQ_ALL_MASK, XAXIDMA_DEVICE_TO_DMA);
+
+	TxDone = 0; RxDone = 0; Error = 0;
+
+	for(Index = 0; Index < MAX_PKT_LEN; Index++) {
+		TxBufferPtr[Index] = Value;
+		Value = (Value + 1) & 0xFF;
+	}
+
+	Xil_DCacheFlushRange((UINTPTR)TxBufferPtr, MAX_PKT_LEN);
+
+	for(Index = 0; Index < NUMBER_OF_TRANSFERS; Index++) {
+		Status = XAxiDma_SimpleTransfer(&AxiDma, (UINTPTR) RxBufferPtr, MAX_PKT_LEN, XAXIDMA_DEVICE_TO_DMA);
+		if (Status != XST_SUCCESS) return XST_FAILURE;
+
+		Status = XAxiDma_SimpleTransfer(&AxiDma, (UINTPTR) TxBufferPtr, MAX_PKT_LEN, XAXIDMA_DMA_TO_DEVICE);
+		if (Status != XST_SUCCESS) return XST_FAILURE;
+
+		while (!TxDone && !RxDone && !Error) { /* NOP */ }
+
+		if (Error) {
+			xil_printf("Failed test transmit%s done, receive%s done\r\n", TxDone? "":" not", RxDone? "":" not");
+			goto Done;
+		}
+	}
+
+	xil_printf("Successfully ran AXI DMA interrupt Example\r\n");
+	XScuGic_Disconnect(&Intc, TX_INTR_ID);
+	XScuGic_Disconnect(&Intc, RX_INTR_ID);
+
+Done:
+	xil_printf("--- Exiting main() --- \r\n");
+	return XST_SUCCESS;
+}
+
+static void TxIntrHandler(void *Callback)
+{
+	u32 IrqStatus;
+	XAxiDma *AxiDmaInst = (XAxiDma *)Callback;
+	
+	IrqStatus = XAxiDma_IntrGetIrq(AxiDmaInst, XAXIDMA_DMA_TO_DEVICE);
+	XAxiDma_IntrAckIrq(AxiDmaInst, IrqStatus, XAXIDMA_DMA_TO_DEVICE);
+	
+	if ((IrqStatus & XAXIDMA_IRQ_IOC_MASK)) {
+		TxDone = 1;
+	}
+}
+
+static void RxIntrHandler(void *Callback)
+{
+	u32 IrqStatus;
+	XAxiDma *AxiDmaInst = (XAxiDma *)Callback;
+	
+	IrqStatus = XAxiDma_IntrGetIrq(AxiDmaInst, XAXIDMA_DEVICE_TO_DMA);
+	XAxiDma_IntrAckIrq(AxiDmaInst, IrqStatus, XAXIDMA_DEVICE_TO_DMA);
+	
+	if ((IrqStatus & XAXIDMA_IRQ_IOC_MASK)) {
+		RxDone = 1;
+	}
+}
+
+static int SetupIntrSystem(INTC * IntcInstancePtr, XAxiDma * AxiDmaPtr, u16 TxIntrId, u16 RxIntrId)
+{
+	int Status;
+	XScuGic_Config *IntcConfig;
+
+	IntcConfig = XScuGic_LookupConfig(INTC_DEVICE_ID);
+	if (NULL == IntcConfig) return XST_FAILURE;
+
+	Status = XScuGic_CfgInitialize(IntcInstancePtr, IntcConfig, IntcConfig->CpuBaseAddress);
+	if (Status != XST_SUCCESS) return XST_FAILURE;
+
+	XScuGic_SetPriorityTriggerType(IntcInstancePtr, TxIntrId, 0xA0, 0x3);
+	XScuGic_SetPriorityTriggerType(IntcInstancePtr, RxIntrId, 0xA0, 0x3);
+
+	Status = XScuGic_Connect(IntcInstancePtr, TxIntrId, (Xil_InterruptHandler)TxIntrHandler, AxiDmaPtr);
+	if (Status != XST_SUCCESS) return Status;
+
+	Status = XScuGic_Connect(IntcInstancePtr, RxIntrId, (Xil_InterruptHandler)RxIntrHandler, AxiDmaPtr);
+	if (Status != XST_SUCCESS) return Status;
+
+	XScuGic_Enable(IntcInstancePtr, TxIntrId);
+	XScuGic_Enable(IntcInstancePtr, RxIntrId);
+
+	Xil_ExceptionInit();
+	Xil_ExceptionRegisterHandler(XIL_EXCEPTION_ID_INT, (Xil_ExceptionHandler)INTC_HANDLER, (void *)IntcInstancePtr);
+	Xil_ExceptionEnable();
+
+	return XST_SUCCESS;
+}

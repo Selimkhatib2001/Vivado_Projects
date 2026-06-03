@@ -1,0 +1,12 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Vivado_Projects/Traffic_Lamb/Traffic_Lamb.sim/sim_1/synth/func/xsim/top_tb_func_synth.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'bcd_to_sevenseg'
+INFO: [VRFC 10-3107] analyzing entity 'debounce'
+INFO: [VRFC 10-3107] analyzing entity 'debounce_0'
+INFO: [VRFC 10-3107] analyzing entity 'debounce_1'
+INFO: [VRFC 10-3107] analyzing entity 'debounce_2'
+INFO: [VRFC 10-3107] analyzing entity 'debounce_3'
+INFO: [VRFC 10-3107] analyzing entity 'main'
+INFO: [VRFC 10-3107] analyzing entity 'rgb'
+INFO: [VRFC 10-3107] analyzing entity 'top'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Vivado_Projects/Traffic_Lamb/Traffic_Lamb.srcs/sim_1/new/top_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'top_tb'
